@@ -1,0 +1,329 @@
+{
+  "generato": "2026-09-22T23:05:27",
+  "misura": "il ciclo giornaliero contro il metà-giornaliero, per risoluzione",
+  "fonte": "CyclicalResearch, carta CR-049",
+  "commit_ricerca": "044cff8",
+  "procedura": "Per ogni (simbolo, timeframe) si carica la serie canonica, si prende la catena di QUEL timeframe con get_full_level_chain e si esegue il phaser di produzione run_phaser(px, px, px, ...) — highs = lows = close, gli stessi argomenti con cui theory/run_level_validity.py misura CR-007. Sui minimi si applica la regola di produzione evaluate_levels con le sue soglie di default, e si legge la voce T-3, il cui confronto e' col livello immediatamente sotto nella catena: su M5, M15 e M30 e' T-4 in tutti e tre i casi, verificato sulla catena e non assunto. Nessuna soglia nuova: overlap 0.80, rapporto 1.5 e vuoti 0.50 sono quelli di CR-007, l'oggetto in esame, e la soglia del rapporto si LEGGE dalla firma di evaluate_levels invece di essere ricopiata. Il braccio di controllo e' il Daily, dove la regola deve marcare T+1 RIDONDANTE su tutti gli asset valutabili; si applica PRIMA di leggere i bracci nuovi. Si riporta anche quanti e quali livelli la regola marca su ogni timeframe (il verso opposto), perche' uno 0 su n non e' leggibile se la regola non marcasse niente da nessuna parte.",
+  "dataset": [
+    {
+      "symbol": "BTCUSDT",
+      "tf": "D",
+      "n_bars": 3304,
+      "price_sha256": "7a987e2069f6fe08"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "tf": "D",
+      "n_bars": 3304,
+      "price_sha256": "fbf07ab7257e5118"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "tf": "D",
+      "n_bars": 2214,
+      "price_sha256": "69b3b13fe8cb14bc"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "H2",
+      "n_bars": 39636,
+      "price_sha256": "9f45595da175577d"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "tf": "H2",
+      "n_bars": 39636,
+      "price_sha256": "732d127315756013"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "tf": "H2",
+      "n_bars": 26555,
+      "price_sha256": "a2e50902e5355881"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "H1",
+      "n_bars": 79271,
+      "price_sha256": "7b1824c36188c99a"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "tf": "H1",
+      "n_bars": 79271,
+      "price_sha256": "9640ad438afeb378"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "tf": "H1",
+      "n_bars": 53109,
+      "price_sha256": "59da9487960ed843"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "M30",
+      "n_bars": 158542,
+      "price_sha256": "f9567a60d287647f"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "tf": "M30",
+      "n_bars": 158542,
+      "price_sha256": "2ae2f8c52fc3e2e8"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "tf": "M30",
+      "n_bars": 106218,
+      "price_sha256": "e3d3b72434d33bec"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "M15",
+      "n_bars": 317083,
+      "price_sha256": "76f0fc992e88ae15"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "tf": "M15",
+      "n_bars": 317083,
+      "price_sha256": "1082310dc300c991"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "tf": "M15",
+      "n_bars": 212435,
+      "price_sha256": "1ded9a38d3b8b3d7"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "M5",
+      "n_bars": 951248,
+      "price_sha256": "99d465bbcbd62e98"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "tf": "M5",
+      "n_bars": 951248,
+      "price_sha256": "ea12915ae3396085"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "tf": "M5",
+      "n_bars": 637304,
+      "price_sha256": "b378ae30949ef2f5"
+    }
+  ],
+  "coppia": {
+    "alto": "T-3",
+    "nome_alto": "ciclo giornaliero",
+    "basso": "T-4",
+    "nome_basso": "ciclo metà-giornaliero",
+    "periodo_nominale_giorni": {
+      "T-3": 1.0,
+      "T-4": 0.5
+    }
+  },
+  "soglie": {
+    "overlap": 0.8,
+    "rapporto": 1.5,
+    "cicli_vuoti": 0.5
+  },
+  "gradiente": [
+    {
+      "timeframe": "M30",
+      "ruolo": "risoluzione crescente",
+      "livello": "T-3",
+      "confronto_con": "T-4",
+      "barre_per_giorno": 48,
+      "n_asset_valutabili": 3,
+      "n_ridondante": 0,
+      "rapporto_min": 1.7,
+      "rapporto_max": 1.79,
+      "overlap_min": 0.594,
+      "overlap_max": 0.599,
+      "vuoti_min": 0.489,
+      "vuoti_max": 0.502,
+      "esito": "SEPARA"
+    },
+    {
+      "timeframe": "M15",
+      "ruolo": "risoluzione crescente",
+      "livello": "T-3",
+      "confronto_con": "T-4",
+      "barre_per_giorno": 96,
+      "n_asset_valutabili": 3,
+      "n_ridondante": 0,
+      "rapporto_min": 2.06,
+      "rapporto_max": 2.09,
+      "overlap_min": 0.482,
+      "overlap_max": 0.488,
+      "vuoti_min": 0.319,
+      "vuoti_max": 0.33,
+      "esito": "SEPARA"
+    },
+    {
+      "timeframe": "M5",
+      "ruolo": "risoluzione crescente",
+      "livello": "T-3",
+      "confronto_con": "T-4",
+      "barre_per_giorno": 288,
+      "n_asset_valutabili": 3,
+      "n_ridondante": 0,
+      "rapporto_min": 2.34,
+      "rapporto_max": 2.38,
+      "overlap_min": 0.428,
+      "overlap_max": 0.43,
+      "vuoti_min": 0.15,
+      "vuoti_max": 0.167,
+      "esito": "SEPARA"
+    }
+  ],
+  "controllo_t_t1": [
+    {
+      "timeframe": "D",
+      "ruolo": "non risolve la coppia: e' il braccio di controllo",
+      "livello": "T+1",
+      "confronto_con": "T",
+      "barre_per_giorno": 1,
+      "n_asset_valutabili": 3,
+      "n_ridondante": 3,
+      "rapporto_min": 1.15,
+      "rapporto_max": 1.25,
+      "overlap_min": 0.835,
+      "overlap_max": 0.87,
+      "vuoti_min": 0.829,
+      "vuoti_max": 0.869,
+      "esito": "RIDONDANTE"
+    },
+    {
+      "timeframe": "H2",
+      "ruolo": "proprietario di T+1",
+      "livello": "T+1",
+      "confronto_con": "T",
+      "barre_per_giorno": 12,
+      "n_asset_valutabili": 3,
+      "n_ridondante": 0,
+      "rapporto_min": 2.2,
+      "rapporto_max": 2.3,
+      "overlap_min": 0.439,
+      "overlap_max": 0.451,
+      "vuoti_min": 0.157,
+      "vuoti_max": 0.205,
+      "esito": "SEPARA"
+    },
+    {
+      "timeframe": "H1",
+      "ruolo": "risolve la coppia",
+      "livello": "T+1",
+      "confronto_con": "T",
+      "barre_per_giorno": 24,
+      "n_asset_valutabili": 3,
+      "n_ridondante": 0,
+      "rapporto_min": 2.11,
+      "rapporto_max": 2.21,
+      "overlap_min": 0.469,
+      "overlap_max": 0.476,
+      "vuoti_min": 0.164,
+      "vuoti_max": 0.182,
+      "esito": "SEPARA"
+    }
+  ],
+  "proprietari": {
+    "T-4": {
+      "BTCUSDT": "M5",
+      "ETHUSDT": "M5",
+      "SOLUSDT": "M5"
+    },
+    "T-3": {
+      "BTCUSDT": "M5",
+      "ETHUSDT": "M5",
+      "SOLUSDT": "M5"
+    },
+    "T": {
+      "BTCUSDT": "H1",
+      "ETHUSDT": "H1",
+      "SOLUSDT": "H1"
+    },
+    "T+1": {
+      "BTCUSDT": "H2",
+      "ETHUSDT": "H2",
+      "SOLUSDT": "H2"
+    }
+  },
+  "ridondanti_per_timeframe": {
+    "D": {
+      "livelli": [
+        "T+1"
+      ],
+      "asset_per_livello": {
+        "T+1": 3
+      },
+      "barre_per_giorno": 1
+    },
+    "H2": {
+      "livelli": [
+        "T-2",
+        "T-3",
+        "T-4"
+      ],
+      "asset_per_livello": {
+        "T-2": 3,
+        "T-3": 3,
+        "T-4": 3
+      },
+      "barre_per_giorno": 12
+    },
+    "H1": {
+      "livelli": [
+        "T-3",
+        "T-4",
+        "T-5"
+      ],
+      "asset_per_livello": {
+        "T-3": 3,
+        "T-4": 3,
+        "T-5": 3
+      },
+      "barre_per_giorno": 24
+    },
+    "M30": {
+      "livelli": [
+        "T-4",
+        "T-5",
+        "T-6"
+      ],
+      "asset_per_livello": {
+        "T-4": 3,
+        "T-5": 3,
+        "T-6": 3
+      },
+      "barre_per_giorno": 48
+    },
+    "M15": {
+      "livelli": [
+        "T-5",
+        "T-6",
+        "T-7"
+      ],
+      "asset_per_livello": {
+        "T-5": 3,
+        "T-6": 3,
+        "T-7": 3
+      },
+      "barre_per_giorno": 96
+    },
+    "M5": {
+      "livelli": [
+        "T-5",
+        "T-6"
+      ],
+      "asset_per_livello": {
+        "T-5": 3,
+        "T-6": 3
+      },
+      "barre_per_giorno": 288
+    }
+  },
+  "conclusione": "ramo (c1): decidono i PARAMETRI del rilevatore; la finestra N non morde a 96, e la regola del centro e' prudente non stretta"
+}

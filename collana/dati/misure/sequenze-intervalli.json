@@ -1,0 +1,94 @@
+{
+ "snapshot": "2026-06-15",
+ "confidenza": 0.95,
+ "metodo": "Clopper-Pearson (scipy.stats.beta)",
+ "minimo_per_mercato": 30,
+ "per_mercato": [
+  {
+   "struttura": "quattro",
+   "asset": "Bitcoin",
+   "strutture": 10,
+   "conformi": 3,
+   "quota": 0.3,
+   "intervallo_basso": 0.0667,
+   "intervallo_alto": 0.6525,
+   "comprende_il_caso": true,
+   "campione_sufficiente": false
+  },
+  {
+   "struttura": "quattro",
+   "asset": "Ethereum",
+   "strutture": 11,
+   "conformi": 8,
+   "quota": 0.7273,
+   "intervallo_basso": 0.3903,
+   "intervallo_alto": 0.9398,
+   "comprende_il_caso": true,
+   "campione_sufficiente": false
+  },
+  {
+   "struttura": "quattro",
+   "asset": "Solana",
+   "strutture": 6,
+   "conformi": 5,
+   "quota": 0.8333,
+   "intervallo_basso": 0.3588,
+   "intervallo_alto": 0.9958,
+   "comprende_il_caso": true,
+   "campione_sufficiente": false
+  },
+  {
+   "struttura": "tre",
+   "asset": "Bitcoin",
+   "strutture": 25,
+   "conformi": 21,
+   "quota": 0.84,
+   "intervallo_basso": 0.6392,
+   "intervallo_alto": 0.9546,
+   "comprende_il_caso": true,
+   "campione_sufficiente": false
+  },
+  {
+   "struttura": "tre",
+   "asset": "Ethereum",
+   "strutture": 22,
+   "conformi": 13,
+   "quota": 0.5909,
+   "intervallo_basso": 0.3635,
+   "intervallo_alto": 0.7929,
+   "comprende_il_caso": true,
+   "campione_sufficiente": false
+  },
+  {
+   "struttura": "tre",
+   "asset": "Solana",
+   "strutture": 16,
+   "conformi": 13,
+   "quota": 0.8125,
+   "intervallo_basso": 0.5435,
+   "intervallo_alto": 0.9595,
+   "comprende_il_caso": true,
+   "campione_sufficiente": false
+  }
+ ],
+ "aggregati": {
+  "quattro": {
+   "strutture": 27,
+   "conformi": 16,
+   "quota": 0.5926,
+   "intervallo_basso": 0.388,
+   "intervallo_alto": 0.7761,
+   "attesa_sotto_il_caso": 0.5,
+   "comprende_il_caso": true
+  },
+  "tre": {
+   "strutture": 63,
+   "conformi": 47,
+   "quota": 0.746,
+   "intervallo_basso": 0.6206,
+   "intervallo_alto": 0.8473,
+   "attesa_sotto_il_caso": 0.75,
+   "comprende_il_caso": true
+  }
+ }
+}

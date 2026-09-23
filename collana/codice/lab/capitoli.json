@@ -1,0 +1,219 @@
+{
+ "capitoli": {
+  "1-01": {
+   "quaderno": "v1_c01_la_domanda.py",
+   "figure": [
+    {
+     "nome": "due_tradizioni",
+     "libro": 1,
+     "generatore": "libro1_cap01_due_tradizioni.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "tolleranza_nesting",
+     "libro": 1,
+     "generatore": "libro1_cap01_tolleranza.py",
+     "legge_il_testo": false
+    }
+   ],
+   "figure_dal_testo": [],
+   "figure_senza_generatore": [],
+   "misure": [],
+   "secondi_stimati": 1.3
+  },
+  "1-05": {
+   "quaderno": "v1_c05_misurare_un_ciclo.py",
+   "figure": [
+    {
+     "nome": "anatomia_ciclo",
+     "libro": 1,
+     "generatore": "libro1_cap05_anatomia.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "tre_rilevatori",
+     "libro": 1,
+     "generatore": "libro1_cap05_tre_rilevatori.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "risoluzione_righello",
+     "libro": 1,
+     "generatore": "libro1_cap05_risoluzione.py",
+     "legge_il_testo": false
+    }
+   ],
+   "figure_dal_testo": [],
+   "figure_senza_generatore": [],
+   "misure": [
+    {
+     "esito": "tre-rilevatori.json",
+     "script": "tre_rilevatori.py",
+     "secondi": 1.51,
+     "modo": "rifai"
+    }
+   ],
+   "secondi_stimati": 3.8
+  },
+  "2-01": {
+   "quaderno": "v2_c01_quanti_livelli.py",
+   "figure": [
+    {
+     "nome": "attesa_sovrapposizione",
+     "libro": 2,
+     "generatore": "libro2_cap01_attesa_sovrapposizione.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "livelli_sovrapposizione",
+     "libro": 2,
+     "generatore": "libro2_struttura.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "overlap_nulla",
+     "libro": 2,
+     "generatore": "libro2_cap01_overlap.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "t_t1_righello",
+     "libro": 2,
+     "generatore": "libro2_cap01_t_t1_righello.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "fantasmi_per_righello",
+     "libro": 2,
+     "generatore": "libro2_cap01_fantasmi_per_righello.py",
+     "legge_il_testo": false
+    }
+   ],
+   "figure_dal_testo": [],
+   "figure_senza_generatore": [],
+   "misure": [
+    {
+     "esito": "livelli-sovrapposizione.json",
+     "script": "livelli_sovrapposizione.py",
+     "secondi": 6.06,
+     "modo": "rifai"
+    },
+    {
+     "esito": "overlap-esteso.json",
+     "script": null,
+     "secondi": null,
+     "modo": "senza"
+    },
+    {
+     "esito": "overlap-nulla.json",
+     "script": null,
+     "secondi": null,
+     "modo": "senza"
+    },
+    {
+     "esito": "ciclo-giornaliero.json",
+     "script": null,
+     "secondi": null,
+     "modo": "senza"
+    }
+   ],
+   "secondi_stimati": 10.5
+  },
+  "2-23": {
+   "quaderno": "v2_c23_misurare_lo_strumento.py",
+   "figure": [
+    {
+     "nome": "soglia_contro_lo_strumento",
+     "libro": 3,
+     "generatore": "libro2_cap23_strumento.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "cap23_nulla_della_posizione",
+     "libro": 2,
+     "generatore": "libro2_cap23_nulla_della_posizione.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "strumento_nulle_credute",
+     "libro": 2,
+     "generatore": "libro2_cap23_nulle.py",
+     "legge_il_testo": false
+    }
+   ],
+   "figure_dal_testo": [],
+   "figure_senza_generatore": [],
+   "misure": [
+    {
+     "esito": "overlap-nulla.json",
+     "script": null,
+     "secondi": null,
+     "modo": "senza"
+    },
+    {
+     "esito": "posizione-massimo-nulla.json",
+     "script": null,
+     "secondi": null,
+     "modo": "senza"
+    }
+   ],
+   "secondi_stimati": 2.1
+  },
+  "3-01": {
+   "quaderno": "v3_c01_bilancio.py",
+   "figure": [
+    {
+     "nome": "bilancio_per_fonte",
+     "libro": 3,
+     "generatore": "libro3_bilancio_per_fonte.py",
+     "legge_il_testo": false
+    }
+   ],
+   "figure_dal_testo": [],
+   "figure_senza_generatore": [],
+   "misure": [
+    {
+     "esito": "carte-ricerca.json",
+     "script": null,
+     "secondi": null,
+     "modo": "senza"
+    }
+   ],
+   "secondi_stimati": 0.7
+  },
+  "3-06": {
+   "quaderno": "v3_c06_il_ritracciamento_e_della_definizione.py",
+   "figure": [
+    {
+     "nome": "cap06_ritracciamento",
+     "libro": 3,
+     "generatore": "libro3_cap06_ritracciamento.py",
+     "legge_il_testo": false
+    },
+    {
+     "nome": "cap06_potere_su_fibonacci",
+     "libro": 3,
+     "generatore": "libro3_cap06_potere_su_fibonacci.py",
+     "legge_il_testo": false
+    }
+   ],
+   "figure_dal_testo": [],
+   "figure_senza_generatore": [],
+   "misure": [
+    {
+     "esito": "ritracciamento.json",
+     "script": null,
+     "secondi": null,
+     "modo": "senza"
+    },
+    {
+     "esito": "potenza-quaternario-fibonacci.json",
+     "script": null,
+     "secondi": null,
+     "modo": "senza"
+    }
+   ],
+   "secondi_stimati": 1.3
+  }
+ }
+}

@@ -1,0 +1,250 @@
+{
+ "snapshot": "2026-06-15",
+ "serie": "cross_asset",
+ "listino": {
+  "T": 10,
+  "T+1": 20,
+  "T+2": 45,
+  "T+3": 90,
+  "T+4": 160,
+  "T+5": 480
+ },
+ "confronti": [
+  {
+   "asset": "Bitcoin",
+   "livello": "T",
+   "nominale": 10,
+   "mediana": 16.0,
+   "cicli": 167,
+   "scarto_percentuale": 60.0
+  },
+  {
+   "asset": "Bitcoin",
+   "livello": "T+1",
+   "nominale": 20,
+   "mediana": 19.0,
+   "cicli": 144,
+   "scarto_percentuale": -5.0
+  },
+  {
+   "asset": "Bitcoin",
+   "livello": "T+2",
+   "nominale": 45,
+   "mediana": 34.0,
+   "cicli": 79,
+   "scarto_percentuale": -24.4
+  },
+  {
+   "asset": "Bitcoin",
+   "livello": "T+3",
+   "nominale": 90,
+   "mediana": 75.0,
+   "cicli": 38,
+   "scarto_percentuale": -16.7
+  },
+  {
+   "asset": "Bitcoin",
+   "livello": "T+4",
+   "nominale": 160,
+   "mediana": 158.0,
+   "cicli": 19,
+   "scarto_percentuale": -1.2
+  },
+  {
+   "asset": "Bitcoin",
+   "livello": "T+5",
+   "nominale": 480,
+   "mediana": 495.0,
+   "cicli": 5,
+   "scarto_percentuale": 3.1
+  },
+  {
+   "asset": "Ethereum",
+   "livello": "T",
+   "nominale": 10,
+   "mediana": 16.0,
+   "cicli": 165,
+   "scarto_percentuale": 60.0
+  },
+  {
+   "asset": "Ethereum",
+   "livello": "T+1",
+   "nominale": 20,
+   "mediana": 20.0,
+   "cicli": 137,
+   "scarto_percentuale": 0.0
+  },
+  {
+   "asset": "Ethereum",
+   "livello": "T+2",
+   "nominale": 45,
+   "mediana": 34.0,
+   "cicli": 80,
+   "scarto_percentuale": -24.4
+  },
+  {
+   "asset": "Ethereum",
+   "livello": "T+3",
+   "nominale": 90,
+   "mediana": 72.0,
+   "cicli": 37,
+   "scarto_percentuale": -20.0
+  },
+  {
+   "asset": "Ethereum",
+   "livello": "T+4",
+   "nominale": 160,
+   "mediana": 117.0,
+   "cicli": 21,
+   "scarto_percentuale": -26.9
+  },
+  {
+   "asset": "Ethereum",
+   "livello": "T+5",
+   "nominale": 480,
+   "mediana": 481.0,
+   "cicli": 5,
+   "scarto_percentuale": 0.2
+  },
+  {
+   "asset": "Solana",
+   "livello": "T",
+   "nominale": 10,
+   "mediana": 17.0,
+   "cicli": 110,
+   "scarto_percentuale": 70.0
+  },
+  {
+   "asset": "Solana",
+   "livello": "T+1",
+   "nominale": 20,
+   "mediana": 20.0,
+   "cicli": 95,
+   "scarto_percentuale": 0.0
+  },
+  {
+   "asset": "Solana",
+   "livello": "T+2",
+   "nominale": 45,
+   "mediana": 33.0,
+   "cicli": 51,
+   "scarto_percentuale": -26.7
+  },
+  {
+   "asset": "Solana",
+   "livello": "T+3",
+   "nominale": 90,
+   "mediana": 75.0,
+   "cicli": 28,
+   "scarto_percentuale": -16.7
+  },
+  {
+   "asset": "Solana",
+   "livello": "T+4",
+   "nominale": 160,
+   "mediana": 152.0,
+   "cicli": 12,
+   "scarto_percentuale": -5.0
+  },
+  {
+   "asset": "Solana",
+   "livello": "T+5",
+   "nominale": 480,
+   "mediana": 368.0,
+   "cicli": 4,
+   "scarto_percentuale": -23.3
+  }
+ ],
+ "convergenza": [
+  {
+   "livello": "T",
+   "mediane": [
+    16.0,
+    16.0,
+    17.0
+   ],
+   "campo_percentuale": 6.1,
+   "mercati": 3
+  },
+  {
+   "livello": "T+1",
+   "mediane": [
+    19.0,
+    20.0,
+    20.0
+   ],
+   "campo_percentuale": 5.1,
+   "mercati": 3
+  },
+  {
+   "livello": "T+2",
+   "mediane": [
+    34.0,
+    34.0,
+    33.0
+   ],
+   "campo_percentuale": 3.0,
+   "mercati": 3
+  },
+  {
+   "livello": "T+3",
+   "mediane": [
+    75.0,
+    72.0,
+    75.0
+   ],
+   "campo_percentuale": 4.1,
+   "mercati": 3
+  },
+  {
+   "livello": "T+4",
+   "mediane": [
+    158.0,
+    117.0,
+    152.0
+   ],
+   "campo_percentuale": 28.8,
+   "mercati": 3
+  },
+  {
+   "livello": "T+5",
+   "mediane": [
+    495.0,
+    481.0,
+    368.0
+   ],
+   "campo_percentuale": 28.3,
+   "mercati": 3
+  }
+ ],
+ "discordanza_t3": [
+  {
+   "asset": "Bitcoin",
+   "cicli_scelta": 38,
+   "mediana_scelta": 75.0,
+   "cicli_alternativa": 28,
+   "mediana_alternativa": 92.5
+  },
+  {
+   "asset": "Ethereum",
+   "cicli_scelta": 37,
+   "mediana_scelta": 72.0,
+   "cicli_alternativa": 24,
+   "mediana_alternativa": 104.0
+  },
+  {
+   "asset": "Solana",
+   "cicli_scelta": 28,
+   "mediana_scelta": 75.0,
+   "cicli_alternativa": 19,
+   "mediana_alternativa": 89.0
+  }
+ ],
+ "sintesi": {
+  "combinazioni": 18,
+  "misurata_sopra_il_listino": 5,
+  "misurata_sotto_il_listino": 13,
+  "scarto_minimo": -26.9,
+  "scarto_massimo": 70.0
+ }
+}

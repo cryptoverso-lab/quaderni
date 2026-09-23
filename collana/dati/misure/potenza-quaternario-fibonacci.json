@@ -1,0 +1,55 @@
+{
+ "generato": "2026-09-22",
+ "misura": "controllo di potenza di CR-024 (A42) e del ritracciamento su Fibonacci (A46)",
+ "fonte": "CyclicalResearch, _research/potenza_quaternario_fibonacci/esito.json",
+ "commit_ricerca": "c210e438",
+ "a42": {
+  "celle": 12,
+  "repliche": 360,
+  "padri_a_quattro_figli_restituiti": 110,
+  "padri_a_quattro_figli_massimo_per_replica": 6,
+  "padri_a_quattro_figli_da_intensita_minima_in_su": 0,
+  "minimo_centrale_piu_basso": 0,
+  "prove_a_effetto_debole": 180,
+  "padri_impiantati_per_prova": 300,
+  "cardinalita_per_cento": {
+   "1": 28,
+   "2": 71,
+   "3": 1,
+   "4": 0,
+   "5": 0
+  },
+  "rilevazioni": 0,
+  "collocazioni": 3,
+  "oracolo_per_cento_a_meta_intensita": 64,
+  "oracolo_per_cento_a_intensita_minima": 90,
+  "verdetto": "NON_PROVATA"
+ },
+ "a46": {
+  "repliche_per_intensita": 100,
+  "rilevazioni_per_intensita": {
+   "0.0": 0,
+   "0.1": 0,
+   "0.2": 29,
+   "0.3": 87,
+   "0.5": 100
+  },
+  "al_bordo_per_intensita": {
+   "0.0": false,
+   "0.1": false,
+   "0.2": false,
+   "0.3": true,
+   "0.5": false
+  },
+  "livello_adiacente_confermato": {
+   "0.0": 0,
+   "0.1": 0,
+   "0.2": 0,
+   "0.3": 3,
+   "0.5": 37
+  },
+  "quota_in_banda_con_rumore_a_intensita_minima": 0.11,
+  "quota_in_banda_senza_rumore_a_intensita_minima": 0.26,
+  "verdetto": "NON_PROVATA"
+ }
+}

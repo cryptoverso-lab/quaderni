@@ -1,0 +1,286 @@
+{
+  "snapshot": "2026-06-15",
+  "vicinanza_frazione_periodo": 0.1,
+  "banda_ottave": 0.5,
+  "righe": [
+    {
+      "asset": "Bitcoin",
+      "livello": "T+1",
+      "periodo_barre": 20,
+      "soglia_inversione": 0.0333,
+      "conteggi": {
+        "a soglia": 262,
+        "a finestra": 101,
+        "a banda": 148
+      },
+      "accordo": {
+        "a finestra / a soglia": {
+          "comuni_dal_primo": 97,
+          "comuni_dal_secondo": 101,
+          "quota_sul_primo_pct": 96.04,
+          "quota_sul_secondo_pct": 38.55
+        },
+        "a banda / a soglia": {
+          "comuni_dal_primo": 101,
+          "comuni_dal_secondo": 110,
+          "quota_sul_primo_pct": 68.24,
+          "quota_sul_secondo_pct": 41.98
+        },
+        "a banda / a finestra": {
+          "comuni_dal_primo": 71,
+          "comuni_dal_secondo": 71,
+          "quota_sul_primo_pct": 47.97,
+          "quota_sul_secondo_pct": 70.3
+        }
+      }
+    },
+    {
+      "asset": "Bitcoin",
+      "livello": "T+2",
+      "periodo_barre": 45,
+      "soglia_inversione": 0.05,
+      "conteggi": {
+        "a soglia": 170,
+        "a finestra": 40,
+        "a banda": 67
+      },
+      "accordo": {
+        "a finestra / a soglia": {
+          "comuni_dal_primo": 40,
+          "comuni_dal_secondo": 42,
+          "quota_sul_primo_pct": 100.0,
+          "quota_sul_secondo_pct": 24.71
+        },
+        "a banda / a soglia": {
+          "comuni_dal_primo": 43,
+          "comuni_dal_secondo": 48,
+          "quota_sul_primo_pct": 64.18,
+          "quota_sul_secondo_pct": 28.24
+        },
+        "a banda / a finestra": {
+          "comuni_dal_primo": 17,
+          "comuni_dal_secondo": 17,
+          "quota_sul_primo_pct": 25.37,
+          "quota_sul_secondo_pct": 42.5
+        }
+      }
+    },
+    {
+      "asset": "Bitcoin",
+      "livello": "T+3",
+      "periodo_barre": 90,
+      "soglia_inversione": 0.0707,
+      "conteggi": {
+        "a soglia": 123,
+        "a finestra": 24,
+        "a banda": 35
+      },
+      "accordo": {
+        "a finestra / a soglia": {
+          "comuni_dal_primo": 24,
+          "comuni_dal_secondo": 28,
+          "quota_sul_primo_pct": 100.0,
+          "quota_sul_secondo_pct": 22.76
+        },
+        "a banda / a soglia": {
+          "comuni_dal_primo": 31,
+          "comuni_dal_secondo": 37,
+          "quota_sul_primo_pct": 88.57,
+          "quota_sul_secondo_pct": 30.08
+        },
+        "a banda / a finestra": {
+          "comuni_dal_primo": 14,
+          "comuni_dal_secondo": 14,
+          "quota_sul_primo_pct": 40.0,
+          "quota_sul_secondo_pct": 58.33
+        }
+      }
+    },
+    {
+      "asset": "Ethereum",
+      "livello": "T+1",
+      "periodo_barre": 20,
+      "soglia_inversione": 0.0333,
+      "conteggi": {
+        "a soglia": 331,
+        "a finestra": 100,
+        "a banda": 151
+      },
+      "accordo": {
+        "a finestra / a soglia": {
+          "comuni_dal_primo": 100,
+          "comuni_dal_secondo": 104,
+          "quota_sul_primo_pct": 100.0,
+          "quota_sul_secondo_pct": 31.42
+        },
+        "a banda / a soglia": {
+          "comuni_dal_primo": 114,
+          "comuni_dal_secondo": 129,
+          "quota_sul_primo_pct": 75.5,
+          "quota_sul_secondo_pct": 38.97
+        },
+        "a banda / a finestra": {
+          "comuni_dal_primo": 70,
+          "comuni_dal_secondo": 70,
+          "quota_sul_primo_pct": 46.36,
+          "quota_sul_secondo_pct": 70.0
+        }
+      }
+    },
+    {
+      "asset": "Ethereum",
+      "livello": "T+2",
+      "periodo_barre": 45,
+      "soglia_inversione": 0.05,
+      "conteggi": {
+        "a soglia": 229,
+        "a finestra": 49,
+        "a banda": 70
+      },
+      "accordo": {
+        "a finestra / a soglia": {
+          "comuni_dal_primo": 49,
+          "comuni_dal_secondo": 57,
+          "quota_sul_primo_pct": 100.0,
+          "quota_sul_secondo_pct": 24.89
+        },
+        "a banda / a soglia": {
+          "comuni_dal_primo": 48,
+          "comuni_dal_secondo": 58,
+          "quota_sul_primo_pct": 68.57,
+          "quota_sul_secondo_pct": 25.33
+        },
+        "a banda / a finestra": {
+          "comuni_dal_primo": 21,
+          "comuni_dal_secondo": 21,
+          "quota_sul_primo_pct": 30.0,
+          "quota_sul_secondo_pct": 42.86
+        }
+      }
+    },
+    {
+      "asset": "Ethereum",
+      "livello": "T+3",
+      "periodo_barre": 90,
+      "soglia_inversione": 0.0707,
+      "conteggi": {
+        "a soglia": 166,
+        "a finestra": 20,
+        "a banda": 33
+      },
+      "accordo": {
+        "a finestra / a soglia": {
+          "comuni_dal_primo": 20,
+          "comuni_dal_secondo": 27,
+          "quota_sul_primo_pct": 100.0,
+          "quota_sul_secondo_pct": 16.27
+        },
+        "a banda / a soglia": {
+          "comuni_dal_primo": 27,
+          "comuni_dal_secondo": 39,
+          "quota_sul_primo_pct": 81.82,
+          "quota_sul_secondo_pct": 23.49
+        },
+        "a banda / a finestra": {
+          "comuni_dal_primo": 11,
+          "comuni_dal_secondo": 11,
+          "quota_sul_primo_pct": 33.33,
+          "quota_sul_secondo_pct": 55.0
+        }
+      }
+    },
+    {
+      "asset": "Solana",
+      "livello": "T+1",
+      "periodo_barre": 20,
+      "soglia_inversione": 0.0333,
+      "conteggi": {
+        "a soglia": 282,
+        "a finestra": 72,
+        "a banda": 100
+      },
+      "accordo": {
+        "a finestra / a soglia": {
+          "comuni_dal_primo": 72,
+          "comuni_dal_secondo": 74,
+          "quota_sul_primo_pct": 100.0,
+          "quota_sul_secondo_pct": 26.24
+        },
+        "a banda / a soglia": {
+          "comuni_dal_primo": 84,
+          "comuni_dal_secondo": 98,
+          "quota_sul_primo_pct": 84.0,
+          "quota_sul_secondo_pct": 34.75
+        },
+        "a banda / a finestra": {
+          "comuni_dal_primo": 48,
+          "comuni_dal_secondo": 48,
+          "quota_sul_primo_pct": 48.0,
+          "quota_sul_secondo_pct": 66.67
+        }
+      }
+    },
+    {
+      "asset": "Solana",
+      "livello": "T+2",
+      "periodo_barre": 45,
+      "soglia_inversione": 0.05,
+      "conteggi": {
+        "a soglia": 205,
+        "a finestra": 32,
+        "a banda": 41
+      },
+      "accordo": {
+        "a finestra / a soglia": {
+          "comuni_dal_primo": 32,
+          "comuni_dal_secondo": 40,
+          "quota_sul_primo_pct": 100.0,
+          "quota_sul_secondo_pct": 19.51
+        },
+        "a banda / a soglia": {
+          "comuni_dal_primo": 31,
+          "comuni_dal_secondo": 36,
+          "quota_sul_primo_pct": 75.61,
+          "quota_sul_secondo_pct": 17.56
+        },
+        "a banda / a finestra": {
+          "comuni_dal_primo": 15,
+          "comuni_dal_secondo": 15,
+          "quota_sul_primo_pct": 36.59,
+          "quota_sul_secondo_pct": 46.88
+        }
+      }
+    },
+    {
+      "asset": "Solana",
+      "livello": "T+3",
+      "periodo_barre": 90,
+      "soglia_inversione": 0.0707,
+      "conteggi": {
+        "a soglia": 147,
+        "a finestra": 18,
+        "a banda": 21
+      },
+      "accordo": {
+        "a finestra / a soglia": {
+          "comuni_dal_primo": 18,
+          "comuni_dal_secondo": 30,
+          "quota_sul_primo_pct": 100.0,
+          "quota_sul_secondo_pct": 20.41
+        },
+        "a banda / a soglia": {
+          "comuni_dal_primo": 16,
+          "comuni_dal_secondo": 31,
+          "quota_sul_primo_pct": 76.19,
+          "quota_sul_secondo_pct": 21.09
+        },
+        "a banda / a finestra": {
+          "comuni_dal_primo": 10,
+          "comuni_dal_secondo": 10,
+          "quota_sul_primo_pct": 47.62,
+          "quota_sul_secondo_pct": 55.56
+        }
+      }
+    }
+  ]
+}

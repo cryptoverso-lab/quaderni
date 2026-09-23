@@ -1,0 +1,183 @@
+{
+  "per_asset": {
+    "BTCUSDT": {
+      "T": {
+        "median": 16.0,
+        "cv": 0.527,
+        "n": 167
+      },
+      "T+1": {
+        "median": 19.0,
+        "cv": 0.493,
+        "n": 144
+      },
+      "T+2": {
+        "median": 34.0,
+        "cv": 0.438,
+        "n": 79
+      },
+      "T+3": {
+        "median": 75.0,
+        "cv": 0.412,
+        "n": 38
+      },
+      "T+4": {
+        "median": 158.0,
+        "cv": 0.3,
+        "n": 19
+      },
+      "T+5": {
+        "median": 495.0,
+        "cv": 0.149,
+        "n": 5
+      }
+    },
+    "ETHUSDT": {
+      "T": {
+        "median": 16.0,
+        "cv": 0.561,
+        "n": 165
+      },
+      "T+1": {
+        "median": 20.0,
+        "cv": 0.515,
+        "n": 137
+      },
+      "T+2": {
+        "median": 34.0,
+        "cv": 0.453,
+        "n": 80
+      },
+      "T+3": {
+        "median": 72.0,
+        "cv": 0.479,
+        "n": 37
+      },
+      "T+4": {
+        "median": 117.0,
+        "cv": 0.337,
+        "n": 21
+      },
+      "T+5": {
+        "median": 481.0,
+        "cv": 0.272,
+        "n": 5
+      },
+      "T+7": {
+        "median": 1153.0,
+        "cv": 0.157,
+        "n": 2
+      }
+    },
+    "SOLUSDT": {
+      "T": {
+        "median": 17.0,
+        "cv": 0.495,
+        "n": 110
+      },
+      "T+1": {
+        "median": 20.0,
+        "cv": 0.482,
+        "n": 95
+      },
+      "T+2": {
+        "median": 33.0,
+        "cv": 0.476,
+        "n": 51
+      },
+      "T+3": {
+        "median": 75.0,
+        "cv": 0.398,
+        "n": 28
+      },
+      "T+4": {
+        "median": 152.0,
+        "cv": 0.291,
+        "n": 12
+      },
+      "T+5": {
+        "median": 368.0,
+        "cv": 0.285,
+        "n": 4
+      }
+    },
+    "BNBUSDT": {
+      "T": {
+        "median": 17.0,
+        "cv": 0.471,
+        "n": 163
+      },
+      "T+1": {
+        "median": 18.0,
+        "cv": 0.467,
+        "n": 148
+      },
+      "T+2": {
+        "median": 32.5,
+        "cv": 0.502,
+        "n": 78
+      },
+      "T+3": {
+        "median": 74.0,
+        "cv": 0.461,
+        "n": 40
+      },
+      "T+4": {
+        "median": 128.0,
+        "cv": 0.263,
+        "n": 21
+      },
+      "T+5": {
+        "median": 461.0,
+        "cv": 0.102,
+        "n": 5
+      }
+    }
+  },
+  "levels_common": [
+    "T",
+    "T+1",
+    "T+2",
+    "T+3",
+    "T+4",
+    "T+5"
+  ],
+  "convergence": {
+    "T": {
+      "range_pct": 6.1,
+      "converged": true,
+      "min_median": 16.0,
+      "max_median": 17.0
+    },
+    "T+1": {
+      "range_pct": 10.4,
+      "converged": true,
+      "min_median": 18.0,
+      "max_median": 20.0
+    },
+    "T+2": {
+      "range_pct": 4.5,
+      "converged": true,
+      "min_median": 32.5,
+      "max_median": 34.0
+    },
+    "T+3": {
+      "range_pct": 4.1,
+      "converged": true,
+      "min_median": 72.0,
+      "max_median": 75.0
+    },
+    "T+4": {
+      "range_pct": 29.5,
+      "converged": true,
+      "min_median": 117.0,
+      "max_median": 158.0
+    },
+    "T+5": {
+      "range_pct": 28.1,
+      "converged": true,
+      "min_median": 368.0,
+      "max_median": 495.0
+    }
+  }
+}

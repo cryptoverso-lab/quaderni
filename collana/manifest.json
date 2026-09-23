@@ -1,0 +1,555 @@
+{
+ "prodotto": "vetrina-cicli",
+ "generato": "2026-09-23T19:55:31+00:00",
+ "capitoli": [
+  "1-01",
+  "1-05",
+  "2-01",
+  "2-23",
+  "3-01",
+  "3-06"
+ ],
+ "file": [
+  {
+   "percorso": "codice/figure/libro1_cap01_due_tradizioni.py",
+   "sha256": "6ddd1bc57d5ce8a06ef9e55eaf018875bde420422decb36b440a32935d5e2ff0",
+   "byte": 3825
+  },
+  {
+   "percorso": "codice/figure/libro1_cap01_tolleranza.py",
+   "sha256": "29ff68fea12292725c3ac636cba8818d3820465bab420a02efc03ca13a49190b",
+   "byte": 5657
+  },
+  {
+   "percorso": "codice/figure/libro1_cap05_anatomia.py",
+   "sha256": "c26de11543b3cad15bb702b97e5758c07a3864950a29d3eaddfa46e202c926c2",
+   "byte": 6430
+  },
+  {
+   "percorso": "codice/figure/libro1_cap05_risoluzione.py",
+   "sha256": "6ccb695cbde7ff007b761d9e9877b1790400b45cd6b237b1ea79dda68ce1535c",
+   "byte": 5517
+  },
+  {
+   "percorso": "codice/figure/libro1_cap05_tre_rilevatori.py",
+   "sha256": "9f6117ee478db588e11622a08c4f12b8414c3dcef72c52d91fb1967671e10506",
+   "byte": 3999
+  },
+  {
+   "percorso": "codice/figure/libro2_cap01_attesa_sovrapposizione.py",
+   "sha256": "76b0a2780cc39cbc465bd35d01d9cdc7ccbdf9e1d073a134e2081faf9da11136",
+   "byte": 3228
+  },
+  {
+   "percorso": "codice/figure/libro2_cap01_fantasmi_per_righello.py",
+   "sha256": "19bbff7447ac2be6128500b399c1a34677d7ac816696c4b57113630b31873d59",
+   "byte": 4196
+  },
+  {
+   "percorso": "codice/figure/libro2_cap01_overlap.py",
+   "sha256": "9e8d12ddf46a5e0283ac29d732b329f83757f58d310b48bec61470d90a814abc",
+   "byte": 5327
+  },
+  {
+   "percorso": "codice/figure/libro2_cap01_t_t1_righello.py",
+   "sha256": "d5f19dd07a758f16b492c9658191f0375b493f880fdce99b6f45eed0c82541e4",
+   "byte": 3782
+  },
+  {
+   "percorso": "codice/figure/libro2_cap23_nulla_della_posizione.py",
+   "sha256": "a6c20bdf4c7b021e5e77a3e2592f75afc9d7407d2e9c6fcacebdfdaec55e27b1",
+   "byte": 3837
+  },
+  {
+   "percorso": "codice/figure/libro2_cap23_nulle.py",
+   "sha256": "e4a456897f64341a50202c786cbae371cf972b290a32637e619c994db1ac8055",
+   "byte": 5285
+  },
+  {
+   "percorso": "codice/figure/libro2_cap23_strumento.py",
+   "sha256": "acddd7a9d0de1eeb1a08a1e3503bc944caec4f09f390c8a79649799e1e3e3caf",
+   "byte": 5025
+  },
+  {
+   "percorso": "codice/figure/libro2_struttura.py",
+   "sha256": "5ddbf4f68d91b9e987e41aca1a66b9f060c14e9a62ec7777292b04c29f03d3f6",
+   "byte": 17637
+  },
+  {
+   "percorso": "codice/figure/libro3_bilancio_per_fonte.py",
+   "sha256": "999ea2ad3660b03c2fe62a60b8e24b9a90a73b5bf962366b129f9adec06f1b02",
+   "byte": 5350
+  },
+  {
+   "percorso": "codice/figure/libro3_cap06_potere_su_fibonacci.py",
+   "sha256": "27608ce61aabe95088ad220a9b2ea131cc34e119cb858fe662927bab8e33ba01",
+   "byte": 3498
+  },
+  {
+   "percorso": "codice/figure/libro3_cap06_ritracciamento.py",
+   "sha256": "a91828d3886c8324c0fc5d39f4f6de7128c09c028df162380e64cbfc7b3e4c0b",
+   "byte": 6211
+  },
+  {
+   "percorso": "codice/lab/avvio.py",
+   "sha256": "c803ace90cd6c443f89f2e4e81eb0d2acf0b3803291a5871f3be3eab00e8f6e3",
+   "byte": 6838
+  },
+  {
+   "percorso": "codice/lab/capitoli.json",
+   "sha256": "520791364d93baa0e617d014b30405fac1804bfdc818734c9ff700001862fcbb",
+   "byte": 4730
+  },
+  {
+   "percorso": "codice/lab/scarica_pacchetto.py",
+   "sha256": "e2e04a75d2d9b839e847be6dc46e772284796f0884d0016069ad4b110bef0d94",
+   "byte": 6657
+  },
+  {
+   "percorso": "codice/src/acbook/layout.py",
+   "sha256": "7e4b88b5502160a13c12d740f315df42270171ccdbc03c9cb1ee8b5bff3be40c",
+   "byte": 15689
+  },
+  {
+   "percorso": "codice/src/acbook/movimenti.py",
+   "sha256": "b07e8fc3b04d2eef61e6392d4445a5a071fc72c76858838c37aa6feba872469f",
+   "byte": 10828
+  },
+  {
+   "percorso": "codice/src/acbook/quaderno.py",
+   "sha256": "87883e0f254eb231f8518342f4ebc3a4b2ba19ba2486e66b54227d1cd681745a",
+   "byte": 7824
+  },
+  {
+   "percorso": "codice/src/acbook/quaderno_misure.py",
+   "sha256": "9261d2112a5e1794a8b391c5d29dc3e7f0e4a709c38752676d13716cd1ad61bd",
+   "byte": 8087
+  },
+  {
+   "percorso": "codice/src/acbook/sidecar.py",
+   "sha256": "246f63d99abdfb790189c474af24235dd6c31ce1cbb33d0fc35596285e9e397f",
+   "byte": 9454
+  },
+  {
+   "percorso": "codice/src/acbook/surrogati.py",
+   "sha256": "99213755d5be914b34dd3edd8ba6adf7e5fc418e863948f9e17a1ca406363c99",
+   "byte": 10184
+  },
+  {
+   "percorso": "codice/traduzione/genera_figure_en.py",
+   "sha256": "a89701f4660c8c70598eb61b7d9f35204bed1b1730c8f8bbbad5194797a1c82c",
+   "byte": 7817
+  },
+  {
+   "percorso": "codice/traduzione/raccogli_testi_figure.py",
+   "sha256": "a246aa09a83e902e52624e15db575a3c0354307ea78c455b1068a2b0076bd69b",
+   "byte": 6245
+  },
+  {
+   "percorso": "codice/traduzione/testi_figure_en.json",
+   "sha256": "e71b4a2374cf09d6d5a7c20d8b64c4588e919fbe0c483147f4b3ddebc619f86e",
+   "byte": 74548
+  },
+  {
+   "percorso": "codice/verifica/livelli_sovrapposizione.py",
+   "sha256": "caefa6e6e74c3c1ad291aa22c69b29e7f026f17ef5bd56b02b0e884f7dd0b2b4",
+   "byte": 16999
+  },
+  {
+   "percorso": "codice/verifica/tre_rilevatori.py",
+   "sha256": "182705dcafb6166008bf4540fa5b09236ca31c8623895a762e923bdddaf348b2",
+   "byte": 6335
+  },
+  {
+   "percorso": "dati/misure/asimmetria-surrogati.json",
+   "sha256": "a0a7a66735e4b0046317fe37288e5ce3fe271f8fe50556e1ed7f248af6dfde66",
+   "byte": 7446
+  },
+  {
+   "percorso": "dati/misure/carte-ricerca.json",
+   "sha256": "8d0901b17b3a034eab69c4f6fd0973af4183743b2d37b948f714cdb847b04d47",
+   "byte": 57982
+  },
+  {
+   "percorso": "dati/misure/ciclo-giornaliero.json",
+   "sha256": "9f3360a4e10a701bc85f7a09d348af573b64877ad3a1a1b4b1c90afbc7c78512",
+   "byte": 8371
+  },
+  {
+   "percorso": "dati/misure/listino-misura.json",
+   "sha256": "93dadad8b0541dd1d007d9a3766b23894a539801cc182ae8cbc908296ea14ef4",
+   "byte": 4306
+  },
+  {
+   "percorso": "dati/misure/livelli-sovrapposizione.json",
+   "sha256": "589f703c7eaf69d30a7023590e85cf11a7b1ea95fc149e1d2a0aa2124d50ccaa",
+   "byte": 9829
+  },
+  {
+   "percorso": "dati/misure/overlap-esteso.json",
+   "sha256": "48fac7c7d3e6e12d47e1784d540c61ebb5fec1444cf74998d7b75658b3354dd6",
+   "byte": 11939
+  },
+  {
+   "percorso": "dati/misure/overlap-nulla.json",
+   "sha256": "1e90014a924c794a2a506dc0411074f19a2fa733b22e737a36fd28fd83b5b283",
+   "byte": 9673
+  },
+  {
+   "percorso": "dati/misure/posizione-massimo-nulla.json",
+   "sha256": "41cdf30d9b30387b230595df24dcdcbc1da2d5a80072daf884505c6cb0a0969e",
+   "byte": 12696
+  },
+  {
+   "percorso": "dati/misure/potenza-quaternario-fibonacci.json",
+   "sha256": "f06ad28cfefef40bb88d0ec0bb1adaf3e5052c07bd98311966df078139f8f1c7",
+   "byte": 1358
+  },
+  {
+   "percorso": "dati/misure/ritracciamento.json",
+   "sha256": "0f125f385669913baea033cb696559e30f1574fd34ffbe5b9ce6d7b3708df864",
+   "byte": 32826
+  },
+  {
+   "percorso": "dati/misure/sequenze-h4.json",
+   "sha256": "948dec3b8a0eefdee7b9ff1d4c66275fc2a0a3c287aca652181dcd7f228d8de9",
+   "byte": 6450
+  },
+  {
+   "percorso": "dati/misure/sequenze-intervalli.json",
+   "sha256": "74b22cf9a6c9b952aec1acfaa386b20d00f3e18f63e0ec2626361d04b76c756d",
+   "byte": 2089
+  },
+  {
+   "percorso": "dati/misure/tre-rilevatori.json",
+   "sha256": "6c2ae0aa2bafcd179b49a9cab914b25cfb81973c2d9ec1b443d4d5bb61f12cee",
+   "byte": 7949
+  },
+  {
+   "percorso": "dati/serie/BTCUSDT_D/phantom/matrix.json",
+   "sha256": "3f940ec156901caf23f84562602f42847d15630d45888f28a5be75e435dc4dfe",
+   "byte": 1157
+  },
+  {
+   "percorso": "dati/serie/BTCUSDT_D/structures/nesting_scatter.json",
+   "sha256": "764f6e83d6b1e0f2d4d72f2bfbbd1f961a1daa530680e5cf2f93fdd1736d504e",
+   "byte": 600
+  },
+  {
+   "percorso": "dati/serie/BTCUSDT_D/swing/success_rate.json",
+   "sha256": "7668986686f4f475e66428c214bf20e72237df848208ec051261e8faeee4e8cd",
+   "byte": 427
+  },
+  {
+   "percorso": "dati/serie/BTCUSDT_D/top_violation/dp_rate.json",
+   "sha256": "2c062842365294600bd8cf7f619145a20b7e914a52f4a567ab2278d25273c3d9",
+   "byte": 421
+  },
+  {
+   "percorso": "dati/serie/ETHUSDT_D/phantom/matrix.json",
+   "sha256": "9bf1c54bbe65aca11084f8975087167574983cabe132d4c05c2b253956ac01e4",
+   "byte": 1151
+  },
+  {
+   "percorso": "dati/serie/ETHUSDT_D/structures/nesting_scatter.json",
+   "sha256": "be3201c7c77cb4a778d66f1b7677d33c1f3724f4123ec3bae0a7a19b52477bc6",
+   "byte": 663
+  },
+  {
+   "percorso": "dati/serie/ETHUSDT_D/swing/success_rate.json",
+   "sha256": "b56ca773ac078257cd11eb4129c92ea58f29fbf7568b098220e656df3c5c9ef0",
+   "byte": 476
+  },
+  {
+   "percorso": "dati/serie/ETHUSDT_D/top_violation/dp_rate.json",
+   "sha256": "f962493ba1cedace4fa20493c17613506c4d5eabcebfe6406e43f10f07732f3f",
+   "byte": 468
+  },
+  {
+   "percorso": "dati/serie/SOLUSDT_D/phantom/matrix.json",
+   "sha256": "779d0023b8b371e308c6693ac2fea22ceac862e85e244fc0a98381e66c6f94ed",
+   "byte": 934
+  },
+  {
+   "percorso": "dati/serie/SOLUSDT_D/structures/nesting_scatter.json",
+   "sha256": "12156022348c3694d814ed61bd7c093d8a6501637dd39203f86a90596aeb69b4",
+   "byte": 638
+  },
+  {
+   "percorso": "dati/serie/SOLUSDT_D/swing/success_rate.json",
+   "sha256": "96b700b0d725d276c59884c1268b445cbe0035ddd3bd6841415d5b3d232150a9",
+   "byte": 427
+  },
+  {
+   "percorso": "dati/serie/SOLUSDT_D/top_violation/dp_rate.json",
+   "sha256": "154dc8aed4ad72646f34d0a1b82b0fa51b5ccf76ea498006bd0a2b25d7f00cbe",
+   "byte": 421
+  },
+  {
+   "percorso": "dati/snapshot/BTCUSDT_D.csv",
+   "sha256": "251f1f35e0b79ad7734c75b7aca5c32e0f9095993b2938ce11270983e6a57d3d",
+   "byte": 184767
+  },
+  {
+   "percorso": "dati/snapshot/ETHUSDT_D.csv",
+   "sha256": "120fbaaf067065308d399ec4e6f01a0878ceede81bcdf69d931f1527a5c939f3",
+   "byte": 170680
+  },
+  {
+   "percorso": "dati/snapshot/SOLUSDT_D.csv",
+   "sha256": "c59b0e65dc3a6c30b185122917d68bc7f697d855c8737e456a17cdba09d59228",
+   "byte": 102871
+  },
+  {
+   "percorso": "dati/verdetti/BTCUSDT_D/cross_asset/data.json",
+   "sha256": "ed278d42af127ba26ee05bcb16d66c8f50fb59db7fc1fd54e42d20ff4e44e2f3",
+   "byte": 3261
+  },
+  {
+   "percorso": "dati/verdetti/ETHUSDT_D/cross_asset/data.json",
+   "sha256": "ed278d42af127ba26ee05bcb16d66c8f50fb59db7fc1fd54e42d20ff4e44e2f3",
+   "byte": 3261
+  },
+  {
+   "percorso": "dati/verdetti/SOLUSDT_D/cross_asset/data.json",
+   "sha256": "ed278d42af127ba26ee05bcb16d66c8f50fb59db7fc1fd54e42d20ff4e44e2f3",
+   "byte": 3261
+  }
+ ],
+ "scritti": [
+  {
+   "percorso": ".gitignore"
+  },
+  {
+   "percorso": "LICENSE"
+  },
+  {
+   "percorso": "README.md"
+  },
+  {
+   "percorso": "avvio_cicli.ipynb"
+  },
+  {
+   "percorso": "avvio_cicli_en.ipynb"
+  },
+  {
+   "percorso": "codice/figure/libro1_cap01_due_tradizioni.py"
+  },
+  {
+   "percorso": "codice/figure/libro1_cap01_tolleranza.py"
+  },
+  {
+   "percorso": "codice/figure/libro1_cap05_anatomia.py"
+  },
+  {
+   "percorso": "codice/figure/libro1_cap05_risoluzione.py"
+  },
+  {
+   "percorso": "codice/figure/libro1_cap05_tre_rilevatori.py"
+  },
+  {
+   "percorso": "codice/figure/libro2_cap01_attesa_sovrapposizione.py"
+  },
+  {
+   "percorso": "codice/figure/libro2_cap01_fantasmi_per_righello.py"
+  },
+  {
+   "percorso": "codice/figure/libro2_cap01_overlap.py"
+  },
+  {
+   "percorso": "codice/figure/libro2_cap01_t_t1_righello.py"
+  },
+  {
+   "percorso": "codice/figure/libro2_cap23_nulla_della_posizione.py"
+  },
+  {
+   "percorso": "codice/figure/libro2_cap23_nulle.py"
+  },
+  {
+   "percorso": "codice/figure/libro2_cap23_strumento.py"
+  },
+  {
+   "percorso": "codice/figure/libro2_struttura.py"
+  },
+  {
+   "percorso": "codice/figure/libro3_bilancio_per_fonte.py"
+  },
+  {
+   "percorso": "codice/figure/libro3_cap06_potere_su_fibonacci.py"
+  },
+  {
+   "percorso": "codice/figure/libro3_cap06_ritracciamento.py"
+  },
+  {
+   "percorso": "codice/lab/avvio.py"
+  },
+  {
+   "percorso": "codice/lab/capitoli.json"
+  },
+  {
+   "percorso": "codice/lab/scarica_pacchetto.py"
+  },
+  {
+   "percorso": "codice/src/acbook/layout.py"
+  },
+  {
+   "percorso": "codice/src/acbook/movimenti.py"
+  },
+  {
+   "percorso": "codice/src/acbook/quaderno.py"
+  },
+  {
+   "percorso": "codice/src/acbook/quaderno_misure.py"
+  },
+  {
+   "percorso": "codice/src/acbook/sidecar.py"
+  },
+  {
+   "percorso": "codice/src/acbook/surrogati.py"
+  },
+  {
+   "percorso": "codice/traduzione/genera_figure_en.py"
+  },
+  {
+   "percorso": "codice/traduzione/raccogli_testi_figure.py"
+  },
+  {
+   "percorso": "codice/traduzione/testi_figure_en.json"
+  },
+  {
+   "percorso": "codice/verifica/livelli_sovrapposizione.py"
+  },
+  {
+   "percorso": "codice/verifica/tre_rilevatori.py"
+  },
+  {
+   "percorso": "dati/misure/asimmetria-surrogati.json"
+  },
+  {
+   "percorso": "dati/misure/carte-ricerca.json"
+  },
+  {
+   "percorso": "dati/misure/ciclo-giornaliero.json"
+  },
+  {
+   "percorso": "dati/misure/listino-misura.json"
+  },
+  {
+   "percorso": "dati/misure/livelli-sovrapposizione.json"
+  },
+  {
+   "percorso": "dati/misure/overlap-esteso.json"
+  },
+  {
+   "percorso": "dati/misure/overlap-nulla.json"
+  },
+  {
+   "percorso": "dati/misure/posizione-massimo-nulla.json"
+  },
+  {
+   "percorso": "dati/misure/potenza-quaternario-fibonacci.json"
+  },
+  {
+   "percorso": "dati/misure/ritracciamento.json"
+  },
+  {
+   "percorso": "dati/misure/sequenze-h4.json"
+  },
+  {
+   "percorso": "dati/misure/sequenze-intervalli.json"
+  },
+  {
+   "percorso": "dati/misure/tre-rilevatori.json"
+  },
+  {
+   "percorso": "dati/serie/BTCUSDT_D/phantom/matrix.json"
+  },
+  {
+   "percorso": "dati/serie/BTCUSDT_D/structures/nesting_scatter.json"
+  },
+  {
+   "percorso": "dati/serie/BTCUSDT_D/swing/success_rate.json"
+  },
+  {
+   "percorso": "dati/serie/BTCUSDT_D/top_violation/dp_rate.json"
+  },
+  {
+   "percorso": "dati/serie/ETHUSDT_D/phantom/matrix.json"
+  },
+  {
+   "percorso": "dati/serie/ETHUSDT_D/structures/nesting_scatter.json"
+  },
+  {
+   "percorso": "dati/serie/ETHUSDT_D/swing/success_rate.json"
+  },
+  {
+   "percorso": "dati/serie/ETHUSDT_D/top_violation/dp_rate.json"
+  },
+  {
+   "percorso": "dati/serie/SOLUSDT_D/phantom/matrix.json"
+  },
+  {
+   "percorso": "dati/serie/SOLUSDT_D/structures/nesting_scatter.json"
+  },
+  {
+   "percorso": "dati/serie/SOLUSDT_D/swing/success_rate.json"
+  },
+  {
+   "percorso": "dati/serie/SOLUSDT_D/top_violation/dp_rate.json"
+  },
+  {
+   "percorso": "dati/snapshot/BTCUSDT_D.csv"
+  },
+  {
+   "percorso": "dati/snapshot/ETHUSDT_D.csv"
+  },
+  {
+   "percorso": "dati/snapshot/SOLUSDT_D.csv"
+  },
+  {
+   "percorso": "dati/verdetti/BTCUSDT_D/cross_asset/data.json"
+  },
+  {
+   "percorso": "dati/verdetti/ETHUSDT_D/cross_asset/data.json"
+  },
+  {
+   "percorso": "dati/verdetti/SOLUSDT_D/cross_asset/data.json"
+  },
+  {
+   "percorso": "en/v1_c01_la_domanda.ipynb"
+  },
+  {
+   "percorso": "en/v1_c05_misurare_un_ciclo.ipynb"
+  },
+  {
+   "percorso": "en/v2_c01_quanti_livelli.ipynb"
+  },
+  {
+   "percorso": "en/v2_c23_misurare_lo_strumento.ipynb"
+  },
+  {
+   "percorso": "en/v3_c01_bilancio.ipynb"
+  },
+  {
+   "percorso": "en/v3_c06_il_ritracciamento_e_della_definizione.ipynb"
+  },
+  {
+   "percorso": "v1_c01_la_domanda.ipynb"
+  },
+  {
+   "percorso": "v1_c05_misurare_un_ciclo.ipynb"
+  },
+  {
+   "percorso": "v2_c01_quanti_livelli.ipynb"
+  },
+  {
+   "percorso": "v2_c23_misurare_lo_strumento.ipynb"
+  },
+  {
+   "percorso": "v3_c01_bilancio.ipynb"
+  },
+  {
+   "percorso": "v3_c06_il_ritracciamento_e_della_definizione.ipynb"
+  }
+ ]
+}

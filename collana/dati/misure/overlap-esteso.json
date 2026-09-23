@@ -1,0 +1,431 @@
+{
+  "generato": "2026-09-15T09:06:05",
+  "misura": "la soglia dell'80% di overlap a copertura piena: ogni coppia adiacente sul righello che la risolve, contro la nulla dello stesso rilevatore",
+  "fonte": "CyclicalResearch: corsa _research/overlap_nullo_esteso (lavoro 86), chiusa il 2026-09-13",
+  "criterio": "_research/overlap_nullo_esteso/00_CRITERIO.md (addendum 1)",
+  "commit_ricerca": "60b98ad8",
+  "corsa_deposito": "pavimento-COMPLETO-20260908",
+  "parametri": {
+    "soglia": 0.8,
+    "n_surrogati_per_famiglia": 100,
+    "margine_minimo": 0.1,
+    "quota_nullo_sopra_soglia": 0.5,
+    "catena": "produzione (names_catena), errata §12.363",
+    "nubi_a_passate": {
+      "nubi": 42,
+      "passate": 4200,
+      "riprese_da_disco": 4200,
+      "calcolate": 0,
+      "processi": 18,
+      "nota": "una passata per unita' di lavoro; lo stato del generatore prima di ogni surrogato si prende in fila nel padre, quindi l'uscita e' identica alla nube in fila (errata 12.373)"
+    },
+    "esecuzione": {
+      "blocchi": 21,
+      "processi": 18,
+      "misurato": true,
+      "ripiego_sulla_sequenza": false,
+      "causa_del_ripiego": null,
+      "processi_previsti": 18,
+      "core_logici": 20,
+      "nota": "i blocchi sono indipendenti per costruzione (ognuno crea la propria default_rng col seme dichiarato), e i risultati si ricompongono nell'ordine degli argomenti: l'uscita non dipende dal numero di processi. Criterio _research/costo_phaser/21_CRITERIO_parallelo_dichiarato_prima.md"
+    }
+  },
+  "impronte_prezzi": {
+    "BTCUSDT:M1": "d180af48ad348c7b",
+    "BTCUSDT:M5": "54658e328e0f4216",
+    "BTCUSDT:M30": "5493c8b6952822df",
+    "BTCUSDT:H1": "5b00e51ecc18d267",
+    "BTCUSDT:H2": "e8d35fcfa152a9ff",
+    "BTCUSDT:H4": "3106d22373bcc029",
+    "BTCUSDT:D": "e07a7903efd38e91",
+    "ETHUSDT:M1": "4d6b28d1ca5c82fe",
+    "ETHUSDT:M5": "e116f6c8baccc6d3",
+    "ETHUSDT:M30": "c1710c87388ab70c",
+    "ETHUSDT:H1": "940ccd1a7c097a23",
+    "ETHUSDT:H2": "d829c1b61ead3da9",
+    "ETHUSDT:H4": "766a6adc6ce0399b",
+    "ETHUSDT:D": "fea47e80d2348d1a",
+    "SOLUSDT:M1": "84473e93a7430e5f",
+    "SOLUSDT:M5": "840da5faca78528f",
+    "SOLUSDT:M30": "8c75398aae5bba31",
+    "SOLUSDT:H1": "9f5b0c33fbe151e1",
+    "SOLUSDT:H2": "4c2a4ae18f684bd5",
+    "SOLUSDT:H4": "7ee0e86e202eb326",
+    "SOLUSDT:D": "72d2e9e60c0a2003"
+  },
+  "soglia_in_uso": 0.8,
+  "coppie_misurate": [
+    "T+1/T+2",
+    "T+2/T+3",
+    "T+4/T+5",
+    "T-1/T",
+    "T-2/T-1",
+    "T-3/T-2",
+    "T-4/T-3",
+    "T-5/T-4",
+    "T-6/T-5",
+    "T-7/T-6",
+    "T/T+1"
+  ],
+  "coppie_non_testabili": [
+    "T+3/T+4"
+  ],
+  "n_coppie_misurabili": 11,
+  "righe": [
+    {
+      "righello": "H4",
+      "mercato": "BTCUSDT",
+      "coppia": "T+1/T+2",
+      "osservato": 0.463,
+      "nulla_mediana": 0.4515,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.3485,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H4",
+      "mercato": "ETHUSDT",
+      "coppia": "T+1/T+2",
+      "osservato": 0.43,
+      "nulla_mediana": 0.449,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.351,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H4",
+      "mercato": "SOLUSDT",
+      "coppia": "T+1/T+2",
+      "osservato": 0.486,
+      "nulla_mediana": 0.45,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.35,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H4",
+      "mercato": "BTCUSDT",
+      "coppia": "T+2/T+3",
+      "osservato": 0.486,
+      "nulla_mediana": 0.5,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.3,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H4",
+      "mercato": "ETHUSDT",
+      "coppia": "T+2/T+3",
+      "osservato": 0.507,
+      "nulla_mediana": 0.5,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.3,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H4",
+      "mercato": "SOLUSDT",
+      "coppia": "T+2/T+3",
+      "osservato": 0.471,
+      "nulla_mediana": 0.532,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.268,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "D",
+      "mercato": "BTCUSDT",
+      "coppia": "T+4/T+5",
+      "osservato": 0.273,
+      "nulla_mediana": 0.286,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.514,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "D",
+      "mercato": "ETHUSDT",
+      "coppia": "T+4/T+5",
+      "osservato": 0.273,
+      "nulla_mediana": 0.283,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.517,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "D",
+      "mercato": "SOLUSDT",
+      "coppia": "T+4/T+5",
+      "osservato": 0.357,
+      "nulla_mediana": 0.267,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.533,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H1",
+      "mercato": "BTCUSDT",
+      "coppia": "T-1/T",
+      "osservato": 0.508,
+      "nulla_mediana": 0.499,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.301,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H1",
+      "mercato": "ETHUSDT",
+      "coppia": "T-1/T",
+      "osservato": 0.49,
+      "nulla_mediana": 0.502,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.298,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H1",
+      "mercato": "SOLUSDT",
+      "coppia": "T-1/T",
+      "osservato": 0.5,
+      "nulla_mediana": 0.499,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.301,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M30",
+      "mercato": "BTCUSDT",
+      "coppia": "T-2/T-1",
+      "osservato": 0.489,
+      "nulla_mediana": 0.493,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.307,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M30",
+      "mercato": "ETHUSDT",
+      "coppia": "T-2/T-1",
+      "osservato": 0.502,
+      "nulla_mediana": 0.49,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.31,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M30",
+      "mercato": "SOLUSDT",
+      "coppia": "T-2/T-1",
+      "osservato": 0.489,
+      "nulla_mediana": 0.499,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.301,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M5",
+      "mercato": "BTCUSDT",
+      "coppia": "T-3/T-2",
+      "osservato": 0.401,
+      "nulla_mediana": 0.406,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.394,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M5",
+      "mercato": "ETHUSDT",
+      "coppia": "T-3/T-2",
+      "osservato": 0.409,
+      "nulla_mediana": 0.402,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.398,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M5",
+      "mercato": "SOLUSDT",
+      "coppia": "T-3/T-2",
+      "osservato": 0.402,
+      "nulla_mediana": 0.401,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.399,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M5",
+      "mercato": "BTCUSDT",
+      "coppia": "T-4/T-3",
+      "osservato": 0.499,
+      "nulla_mediana": 0.503,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.297,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M5",
+      "mercato": "ETHUSDT",
+      "coppia": "T-4/T-3",
+      "osservato": 0.495,
+      "nulla_mediana": 0.504,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.296,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M5",
+      "mercato": "SOLUSDT",
+      "coppia": "T-4/T-3",
+      "osservato": 0.494,
+      "nulla_mediana": 0.499,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.301,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M1",
+      "mercato": "BTCUSDT",
+      "coppia": "T-5/T-4",
+      "osservato": 0.571,
+      "nulla_mediana": 0.597,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.203,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M1",
+      "mercato": "ETHUSDT",
+      "coppia": "T-5/T-4",
+      "osservato": 0.58,
+      "nulla_mediana": 0.59,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.21,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M1",
+      "mercato": "SOLUSDT",
+      "coppia": "T-5/T-4",
+      "osservato": 0.578,
+      "nulla_mediana": 0.583,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.217,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M1",
+      "mercato": "BTCUSDT",
+      "coppia": "T-6/T-5",
+      "osservato": 0.674,
+      "nulla_mediana": 0.67,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.13,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M1",
+      "mercato": "ETHUSDT",
+      "coppia": "T-6/T-5",
+      "osservato": 0.669,
+      "nulla_mediana": 0.673,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.127,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M1",
+      "mercato": "SOLUSDT",
+      "coppia": "T-6/T-5",
+      "osservato": 0.672,
+      "nulla_mediana": 0.674,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.126,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M1",
+      "mercato": "BTCUSDT",
+      "coppia": "T-7/T-6",
+      "osservato": 0.706,
+      "nulla_mediana": 0.701,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.099,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M1",
+      "mercato": "ETHUSDT",
+      "coppia": "T-7/T-6",
+      "osservato": 0.696,
+      "nulla_mediana": 0.704,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.096,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "M1",
+      "mercato": "SOLUSDT",
+      "coppia": "T-7/T-6",
+      "osservato": 0.705,
+      "nulla_mediana": 0.703,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.097,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H2",
+      "mercato": "BTCUSDT",
+      "coppia": "T/T+1",
+      "osservato": 0.472,
+      "nulla_mediana": 0.503,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.297,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H2",
+      "mercato": "ETHUSDT",
+      "coppia": "T/T+1",
+      "osservato": 0.495,
+      "nulla_mediana": 0.502,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.298,
+      "nulla_supera_la_soglia": false
+    },
+    {
+      "righello": "H2",
+      "mercato": "SOLUSDT",
+      "coppia": "T/T+1",
+      "osservato": 0.475,
+      "nulla_mediana": 0.502,
+      "quota_surrogati_sopra_soglia": 0.0,
+      "margine": 0.298,
+      "nulla_supera_la_soglia": false
+    }
+  ],
+  "righello_per_coppia": {
+    "T+1/T+2": "H4",
+    "T+2/T+3": "H4",
+    "T+4/T+5": "D",
+    "T-1/T": "H1",
+    "T-2/T-1": "M30",
+    "T-3/T-2": "M5",
+    "T-4/T-3": "M5",
+    "T-5/T-4": "M1",
+    "T-6/T-5": "M1",
+    "T-7/T-6": "M1",
+    "T/T+1": "H2"
+  },
+  "verdetto": {
+    "n_coppie": 33,
+    "n_coppie_in_cui_il_nullo_supera_la_soglia": 0,
+    "margine_peggiore": 0.096,
+    "verdetto_soglia": "NON_PROVATA"
+  },
+  "margine_peggiore_dove": {
+    "coppia": "T-7/T-6",
+    "mercato": "ETHUSDT",
+    "righello": "M1",
+    "margine": 0.096
+  }
+}

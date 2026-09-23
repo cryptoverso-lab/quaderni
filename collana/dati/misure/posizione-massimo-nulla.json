@@ -1,0 +1,528 @@
+{
+ "generato": "2026-09-23",
+ "carta": "CR-005 (V2, nulla misurata)",
+ "titolo": "La nulla della posizione del massimo, misurata sul rilevatore (V2 su CR-005)",
+ "fonte": {
+  "percorso": "theory/evidence/CR-005-20260901-nullo-misurato.json",
+  "sha256": "7b773c2f80212564c37592032b4743f269aeb6b3c25c5a1cd93adac77c7af07e",
+  "commit_ricerca": "82276581ca"
+ },
+ "git_commit_della_misura": "f929d87",
+ "seme_della_ricerca": "42",
+ "procedura": "Due nulle sullo stesso rilevatore: N1 fase randomizzata (funzione di produzione phase_randomized, conserva lo spettro e ricolloca gli estremi) e N2 passeggiata aleatoria (rendimenti logaritmici rimescolati, ricostruzione per somma cumulata, generatore dichiarato in theory/). Entrambe sul logaritmo dei close, con ritorno a prezzo via np.exp, come le altre nulle del progetto. 199 surrogati per nulla, seme 42: il p minimo dichiarabile e' 0.005. Su ogni replica gira la catena di produzione con i suoi argomenti — get_full_level_chain('D'), run_phaser(px, px, px, nomi, periodi) — e la posizione del massimo esce dalla sorgente unica _massimo.posizione_relativa (close, CR-044), con i filtri della misura originale (>=6 minimi, >=5 posizioni). highs e lows non entrano nella gerarchia: li usa solo detect_tongues. Valore p bilaterale con stimatore (k+1)/(n+1) e coda inclusiva, k = surrogati con distanza dal centro della nulla >= a quella dell'osservato.",
+ "soglie": {
+  "centro_nullo": 0.02,
+  "alpha": 0.05,
+  "n_surrogati": 199,
+  "livelli_decisivi": [
+   "T",
+   "T+1",
+   "T+2",
+   "T+3",
+   "T+4"
+  ]
+ },
+ "nulla_mediana": "centro_nullo della carta: la mediana delle repliche",
+ "nota_decisive": "le coppie decisive sono T..T+4 sui tre mercati (15); T+5 ha pochi cicli ed e' fuori dal verdetto della carta",
+ "sintesi": {
+  "fase": {
+   "coppie_decisive": 15,
+   "dentro_la_nulla": 14,
+   "fuori_dalla_nulla": 1,
+   "centri_oltre_soglia_da_050": [],
+   "n_centri_oltre_soglia": 0
+  },
+  "passeggiata": {
+   "coppie_decisive": 15,
+   "dentro_la_nulla": 14,
+   "fuori_dalla_nulla": 1,
+   "centri_oltre_soglia_da_050": [
+    {
+     "symbol": "BTCUSDT",
+     "livello": "T",
+     "centro_nullo": 0.5333,
+     "scarto": 0.0333
+    },
+    {
+     "symbol": "BTCUSDT",
+     "livello": "T+1",
+     "centro_nullo": 0.5357,
+     "scarto": 0.0357
+    },
+    {
+     "symbol": "BTCUSDT",
+     "livello": "T+2",
+     "centro_nullo": 0.5455,
+     "scarto": 0.0455
+    },
+    {
+     "symbol": "BTCUSDT",
+     "livello": "T+3",
+     "centro_nullo": 0.5476,
+     "scarto": 0.0476
+    },
+    {
+     "symbol": "BTCUSDT",
+     "livello": "T+4",
+     "centro_nullo": 0.595,
+     "scarto": 0.095
+    },
+    {
+     "symbol": "ETHUSDT",
+     "livello": "T",
+     "centro_nullo": 0.5228,
+     "scarto": 0.0228
+    },
+    {
+     "symbol": "ETHUSDT",
+     "livello": "T+1",
+     "centro_nullo": 0.5263,
+     "scarto": 0.0263
+    },
+    {
+     "symbol": "ETHUSDT",
+     "livello": "T+2",
+     "centro_nullo": 0.5324,
+     "scarto": 0.0324
+    },
+    {
+     "symbol": "ETHUSDT",
+     "livello": "T+3",
+     "centro_nullo": 0.541,
+     "scarto": 0.041
+    },
+    {
+     "symbol": "ETHUSDT",
+     "livello": "T+4",
+     "centro_nullo": 0.5612,
+     "scarto": 0.0612
+    },
+    {
+     "symbol": "SOLUSDT",
+     "livello": "T+3",
+     "centro_nullo": 0.5396,
+     "scarto": 0.0396
+    },
+    {
+     "symbol": "SOLUSDT",
+     "livello": "T+4",
+     "centro_nullo": 0.578,
+     "scarto": 0.078
+    }
+   ],
+   "n_centri_oltre_soglia": 12
+  }
+ },
+ "righe": [
+  {
+   "mercato": "BTCUSDT",
+   "livello": "T",
+   "osservato": 0.5,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4612,
+    "nulla_p95": 0.5333,
+    "p_bilaterale": 1.0,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5333,
+    "nulla_p05": 0.5,
+    "nulla_p95": 0.5714,
+    "p_bilaterale": 0.305,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "BTCUSDT",
+   "livello": "T+1",
+   "osservato": 0.5,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4622,
+    "nulla_p95": 0.5423,
+    "p_bilaterale": 1.0,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5357,
+    "nulla_p05": 0.5,
+    "nulla_p95": 0.577,
+    "p_bilaterale": 0.29,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "BTCUSDT",
+   "livello": "T+2",
+   "osservato": 0.52,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4417,
+    "nulla_p95": 0.5455,
+    "p_bilaterale": 0.575,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5455,
+    "nulla_p05": 0.4941,
+    "nulla_p95": 0.5845,
+    "p_bilaterale": 0.445,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "BTCUSDT",
+   "livello": "T+3",
+   "osservato": 0.5143,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.4953,
+    "nulla_p05": 0.4109,
+    "nulla_p95": 0.5686,
+    "p_bilaterale": 0.665,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5476,
+    "nulla_p05": 0.4828,
+    "nulla_p95": 0.6326,
+    "p_bilaterale": 0.42,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "BTCUSDT",
+   "livello": "T+4",
+   "osservato": 0.5952,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.4955,
+    "nulla_p05": 0.4049,
+    "nulla_p95": 0.5837,
+    "p_bilaterale": 0.08,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.595,
+    "nulla_p05": 0.4774,
+    "nulla_p95": 0.6966,
+    "p_bilaterale": 0.995,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "BTCUSDT",
+   "livello": "T+5",
+   "osservato": 0.5779,
+   "decisiva": false,
+   "fase": {
+    "nulla_mediana": 0.4593,
+    "nulla_p05": 0.2748,
+    "nulla_p95": 0.6745,
+    "p_bilaterale": 0.37,
+    "fuori_dalla_nulla": false
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.6299,
+    "nulla_p05": 0.4404,
+    "nulla_p95": 0.814,
+    "p_bilaterale": 0.73,
+    "fuori_dalla_nulla": false
+   }
+  },
+  {
+   "mercato": "ETHUSDT",
+   "livello": "T",
+   "osservato": 0.5385,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4684,
+    "nulla_p95": 0.53,
+    "p_bilaterale": 0.07,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5228,
+    "nulla_p05": 0.4929,
+    "nulla_p95": 0.56,
+    "p_bilaterale": 0.75,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "ETHUSDT",
+   "livello": "T+1",
+   "osservato": 0.5436,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4615,
+    "nulla_p95": 0.532,
+    "p_bilaterale": 0.05,
+    "fuori_dalla_nulla": true,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5263,
+    "nulla_p05": 0.4983,
+    "nulla_p95": 0.5628,
+    "p_bilaterale": 0.535,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "ETHUSDT",
+   "livello": "T+2",
+   "osservato": 0.5369,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4444,
+    "nulla_p95": 0.5405,
+    "p_bilaterale": 0.215,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5324,
+    "nulla_p05": 0.4835,
+    "nulla_p95": 0.5834,
+    "p_bilaterale": 0.905,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "ETHUSDT",
+   "livello": "T+3",
+   "osservato": 0.4375,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.4924,
+    "nulla_p05": 0.4147,
+    "nulla_p95": 0.565,
+    "p_bilaterale": 0.22,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.541,
+    "nulla_p05": 0.4699,
+    "nulla_p95": 0.5918,
+    "p_bilaterale": 0.01,
+    "fuori_dalla_nulla": true,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "ETHUSDT",
+   "livello": "T+4",
+   "osservato": 0.4586,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5101,
+    "nulla_p05": 0.3757,
+    "nulla_p95": 0.6082,
+    "p_bilaterale": 0.435,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5612,
+    "nulla_p05": 0.4515,
+    "nulla_p95": 0.6638,
+    "p_bilaterale": 0.115,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "ETHUSDT",
+   "livello": "T+5",
+   "osservato": 0.5259,
+   "decisiva": false,
+   "fase": {
+    "nulla_mediana": 0.4577,
+    "nulla_p05": 0.2917,
+    "nulla_p95": 0.6752,
+    "p_bilaterale": 0.62,
+    "fuori_dalla_nulla": false
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5838,
+    "nulla_p05": 0.342,
+    "nulla_p95": 0.7579,
+    "p_bilaterale": 0.65,
+    "fuori_dalla_nulla": false
+   }
+  },
+  {
+   "mercato": "SOLUSDT",
+   "livello": "T",
+   "osservato": 0.4881,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4544,
+    "nulla_p95": 0.5456,
+    "p_bilaterale": 0.475,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4612,
+    "nulla_p95": 0.5529,
+    "p_bilaterale": 0.51,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "SOLUSDT",
+   "livello": "T+1",
+   "osservato": 0.5,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4516,
+    "nulla_p95": 0.5506,
+    "p_bilaterale": 1.0,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.458,
+    "nulla_p95": 0.5556,
+    "p_bilaterale": 1.0,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "SOLUSDT",
+   "livello": "T+2",
+   "osservato": 0.5179,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.5,
+    "nulla_p05": 0.4329,
+    "nulla_p95": 0.5545,
+    "p_bilaterale": 0.695,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5193,
+    "nulla_p05": 0.461,
+    "nulla_p95": 0.5797,
+    "p_bilaterale": 0.975,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "SOLUSDT",
+   "livello": "T+3",
+   "osservato": 0.4667,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.4928,
+    "nulla_p05": 0.3927,
+    "nulla_p95": 0.568,
+    "p_bilaterale": 0.65,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.5396,
+    "nulla_p05": 0.4479,
+    "nulla_p95": 0.6267,
+    "p_bilaterale": 0.2,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "SOLUSDT",
+   "livello": "T+4",
+   "osservato": 0.5262,
+   "decisiva": true,
+   "fase": {
+    "nulla_mediana": 0.4811,
+    "nulla_p05": 0.3565,
+    "nulla_p95": 0.6301,
+    "p_bilaterale": 0.625,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.578,
+    "nulla_p05": 0.4261,
+    "nulla_p95": 0.7091,
+    "p_bilaterale": 0.535,
+    "fuori_dalla_nulla": false,
+    "n_surrogati_validi": 199
+   }
+  },
+  {
+   "mercato": "SOLUSDT",
+   "livello": "T+5",
+   "osservato": 0.6899,
+   "decisiva": false,
+   "fase": {
+    "nulla_mediana": 0.4661,
+    "nulla_p05": 0.2452,
+    "nulla_p95": 0.7176,
+    "p_bilaterale": 0.1217,
+    "fuori_dalla_nulla": false
+   },
+   "passeggiata": {
+    "nulla_mediana": 0.6297,
+    "nulla_p05": 0.3706,
+    "nulla_p95": 0.813,
+    "p_bilaterale": 0.6583,
+    "fuori_dalla_nulla": false
+   }
+  }
+ ],
+ "dataset": [
+  {
+   "symbol": "BTCUSDT",
+   "tf": "D",
+   "n_bars": 3299,
+   "price_sha256": "8dcde09ab4500604"
+  },
+  {
+   "symbol": "ETHUSDT",
+   "tf": "D",
+   "n_bars": 3299,
+   "price_sha256": "1809ec8b69ba6acc"
+  },
+  {
+   "symbol": "SOLUSDT",
+   "tf": "D",
+   "n_bars": 2209,
+   "price_sha256": "8e2474b92a373992"
+  }
+ ]
+}
