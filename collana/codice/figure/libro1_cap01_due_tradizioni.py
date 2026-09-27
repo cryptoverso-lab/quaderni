@@ -21,21 +21,25 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from acbook import layout  # noqa: E402
 
-#: (anno, etichetta, riga di sotto) — la corsia della misura statistica.
+#: (anno, etichetta, riga di sotto, altezza del gambo, allineamento del testo) —
+#: la corsia della misura statistica. Altezza e allineamento si scelgono voce per
+#: voce: due lavori a un anno di distanza (2003 e 2004) hanno i gambi quasi
+#: sovrapposti, e con un'alternanza fissa il gambo dell'uno attraversava il testo
+#: dell'altro. Dove due gambi sono vicini i testi si aprono verso l'esterno.
 MISURA = [
-    (1971, "Bry e Boschan", "datazione automatica\ndei punti di svolta"),
-    (1989, "Hamilton", "modelli a cambio\ndi regime"),
-    (2003, "Pagan e Sossounov", "fasi rialziste\ne ribassiste"),
-    (2004, "Lunde e Timmermann", "dipendenza\ndalla durata"),
-    (2011, "Claessens e altri", "cicli finanziari,\n44 paesi"),
+    (1971, "Bry e Boschan", "datazione automatica\ndei punti di svolta", 0.30, "center"),
+    (1989, "Hamilton", "modelli a cambio\ndi regime", 0.30, "center"),
+    (2003, "Pagan e Sossounov", "fasi rialziste\ne ribassiste", 0.78, "right"),
+    (2004, "Lunde e Timmermann", "dipendenza\ndalla durata", 1.26, "left"),
+    (2011, "Claessens e altri", "cicli finanziari,\n44 paesi", 0.30, "left"),
 ]
 
 #: La corsia delle scuole cicliche.
 SCUOLE = [
-    (1970, "Hurst", "il modello nominale\ne i sette principi"),
-    (2001, "Ehlers", "trasformata di Hilbert\ne filtri adattativi"),
-    (2013, "Ehlers", "l'autocorrelazione\ncome periodogramma"),
-    (2005, "scuola italiana", "vent'anni di dispense\ne corsi"),
+    (1970, "Hurst", "il modello nominale\ne i sette principi", 0.30, "center"),
+    (2001, "Ehlers", "trasformata di Hilbert\ne filtri adattativi", 0.78, "right"),
+    (2013, "Ehlers", "l'autocorrelazione\ncome periodogramma", 0.30, "left"),
+    (2005, "scuola italiana", "vent'anni di dispense\ne corsi", 1.26, "left"),
 ]
 
 
@@ -48,13 +52,14 @@ def _corsia(asse, voci, verso: int, schermo: bool, indice: int) -> None:
     """
     stile = layout.serie(indice, schermo)
     colore = stile["color"]
-    for ordine, (anno, chi, cosa) in enumerate(sorted(voci)):
-        altezza = (0.30, 0.78, 1.26)[ordine % 3] * verso
+    for anno, chi, cosa, quota, allineamento in sorted(voci):
+        altezza = quota * verso
         asse.plot([anno, anno], [0.0, altezza], color=colore, linewidth=0.7)
-        asse.plot([anno], [altezza], "o", markersize=4, color=colore, zorder=5)
+        asse.plot([anno], [altezza], ("o", "s")[indice % 2], markersize=4, color=colore,
+                  zorder=5)
         asse.annotate(f"{chi}, {anno}" + chr(10) + cosa,
                       xy=(anno, altezza + 0.06 * verso),
-                      ha="center", va="bottom" if verso > 0 else "top",
+                      ha=allineamento, va="bottom" if verso > 0 else "top",
                       fontsize=6.0, color=colore, linespacing=1.2)
 
 
@@ -66,18 +71,19 @@ def disegna(schermo: bool = False) -> Path:
     _corsia(asse, MISURA, +1, schermo, 0)
     _corsia(asse, SCUOLE, -1, schermo, 1)
 
-    asse.annotate("la misura dei punti di svolta", xy=(1958.5, 0.12), fontsize=7.5,
+    # Le etichette di corsia a sinistra del primo lavoro: nessun gambo le attraversa.
+    asse.annotate("la misura\ndei punti di svolta", xy=(1944.5, 0.12), fontsize=7.5,
                   ha="left", va="bottom", style="italic")
-    asse.annotate("le scuole cicliche", xy=(1958.5, -0.12), fontsize=7.5,
+    asse.annotate("le scuole cicliche", xy=(1944.5, -0.12), fontsize=7.5,
                   ha="left", va="top", style="italic")
     asse.annotate("nessun rimando, in cinquant'anni, in nessuna delle due direzioni",
                   xy=(1993, 1.66), fontsize=7.5, ha="center", va="bottom")
 
-    asse.set_xlim(1958, 2019)
+    asse.set_xlim(1944, 2031)
     asse.set_ylim(-2.05, 2.05)
     asse.set_yticks([])
-    asse.set_xticks([1970, 1980, 1990, 2000, 2010])
-    asse.set_xticklabels(["1970", "1980", "1990", "2000", "2010"])
+    asse.set_xticks([1970, 1980, 1990, 2000, 2010, 2020])
+    asse.set_xticklabels(["1970", "1980", "1990", "2000", "2010", "2020"])
     asse.grid(visible=False)
     for lato in ("left", "bottom"):
         asse.spines[lato].set_visible(False)

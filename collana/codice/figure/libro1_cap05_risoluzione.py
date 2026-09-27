@@ -108,12 +108,20 @@ def disegna(schermo: bool = False) -> Path:
         asse.grid(visible=False)
 
     assi[0].set_ylabel("timeframe")
-    legenda = chr(10).join((
-        "livello del catalogo — nella cella, le barre che occupa",
-        "chiaro: sotto le 30 barre il rilevatore tocca il pavimento · medio: si risolve",
-        "scuro: oltre le 2000, campione troppo sottile · cornice: il proprietario",
-    ))
-    fig.supxlabel(legenda, fontsize=6.8, linespacing=1.7)
+    for asse in assi:
+        asse.set_xlabel("livello del catalogo", fontsize=6.8)
+    # Legenda coi campioni dei colori veri: la nota a parole diceva «chiaro, medio,
+    # scuro», ma a colori le tre fasce sono grigio, verde e arancio.
+    from matplotlib.patches import Patch
+    toni = layout.bande(schermo)
+    voci = [Patch(facecolor=toni[0], label="sotto le 30 barre: il rilevatore tocca il pavimento"),
+            Patch(facecolor=toni[1], label="fra 30 e 2000 barre: il livello si risolve"),
+            Patch(facecolor=toni[2], label="oltre le 2000 barre: campione troppo sottile"),
+            Patch(facecolor="white", edgecolor="#1a1a1a", linewidth=1.4,
+                  label="cornice: il timeframe proprietario")]
+    fig.legend(handles=voci, loc="outside lower center", ncols=2, frameon=False,
+               fontsize=6.4, title="nella cella, le barre che il livello occupa",
+               title_fontsize=6.6)
     return layout.salva(fig, "risoluzione_righello", libro=1, schermo=schermo)
 
 

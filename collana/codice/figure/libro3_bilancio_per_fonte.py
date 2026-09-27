@@ -38,6 +38,10 @@ SEGMENTI = (
     ("CONFERMATA", "confermate"),
     ("FALSIFICATA", "falsificate"),
     ("NON_PROVATA", "non provate"),
+    # Dal 27/09/2026 (CR-036): senza il suo segmento la carta spariva dalla barra, contata fra
+    # le testate e fra nessun verdetto. Le tinte piene sono quattro e la quarta e' delle non
+    # testate, quindi questa e' retinata.
+    ("NON_TESTABILE", "non testabili"),
 )
 LA_RICERCA = "CyclicalResearch"
 
@@ -72,14 +76,35 @@ def _per_fonte(dati: dict) -> dict:
     return fonti
 
 
-def _barre(asse, righe: list[tuple[str, dict]], schermo: bool) -> None:
+def _barre(asse, righe: list[tuple[str, dict]], schermo: bool,
+           nota_sotto: bool = False) -> None:
     posizioni = np.arange(len(righe))[::-1].astype(float)
     sinistra = np.zeros(len(righe))
     for indice, (chiave, etichetta) in enumerate(SEGMENTI):
         valori = np.array([v["verdetti"].get(chiave, 0) for _, v in righe],
                           dtype=float)
-        asse.barh(posizioni, valori, left=sinistra, height=0.6, label=etichetta,
-                  zorder=2, **layout.riempimento(indice, schermo))
+        if chiave == "NON_TESTABILE" and nota_sotto:
+            # Su una scala da ottanta un segmento largo uno e' un filo che non si vede: lo
+            # nomina un richiamo sopra la barra, col suo conteggio.
+            for posizione, inizio, quante in zip(posizioni, sinistra, valori):
+                if quante:
+                    asse.annotate(
+                        f"{int(quante)} non testabile" if quante == 1
+                        else f"{int(quante)} non testabili",
+                        (inizio + quante / 2, posizione + 0.3),
+                        xytext=(inizio + quante / 2, posizione + 0.42),
+                        ha="center", va="bottom", fontsize=6.5,
+                        arrowprops={"arrowstyle": "-", "linewidth": 0.6,
+                                    "color": layout.GRIGI[1]})
+        # Bordo nullo sui segmenti vuoti: una barra larga zero col bordo retinato si vedeva
+        # come un trattino verde in fondo alle altre.
+        stile = (layout.riempimento(indice, schermo) if indice < 3 else
+                 {"facecolor": "white", "edgecolor": layout.tinta(2, schermo),
+                  "hatch": "////", "linewidth": 0.6})
+        stile["linewidth"] = np.where(valori > 0, stile.get("linewidth", 0.0), 0.0)
+        asse.barh(posizioni, valori, left=sinistra, height=0.6,
+                  label=etichetta,
+                  zorder=2, **stile)
         sinistra += valori
     senza = np.array([v["carte"] - v["testate"] for _, v in righe], dtype=float)
     asse.barh(posizioni, senza, left=sinistra, height=0.6,
@@ -89,8 +114,14 @@ def _barre(asse, righe: list[tuple[str, dict]], schermo: bool) -> None:
     for posizione, fine, (_, voce) in zip(posizioni, sinistra + senza, righe):
         if voce["concetti"]:
             nota = "concetto" if voce["concetti"] == 1 else "concetti"
-            asse.text(fine + passo, posizione, f"+{voce['concetti']} {nota}",
-                      fontsize=6.5, va="center", ha="left", style="italic")
+            if nota_sotto:
+                # Nel pannello stretto la nota accanto alla barra usciva dal bordo della figura
+                # e veniva tagliata: sta sotto la barra, allineata alla sua fine.
+                asse.text(fine, posizione - 0.36, f"+{voce['concetti']} {nota}",
+                          fontsize=6.5, va="top", ha="right", style="italic")
+            else:
+                asse.text(fine + passo, posizione, f"+{voce['concetti']} {nota}",
+                          fontsize=6.5, va="center", ha="left", style="italic")
     asse.set_yticks(posizioni)
     asse.set_yticklabels([nome for nome, _ in righe], fontsize=8)
     asse.grid(axis="y", visible=False)
@@ -108,7 +139,7 @@ def disegna(schermo: bool = False) -> Path:
     fig, assi = layout.figura("normale", ncols=2,
                               width_ratios=[3.0, 1.6])
     _barre(assi[0], tradizioni, schermo)
-    _barre(assi[1], ricerca, schermo)
+    _barre(assi[1], ricerca, schermo, nota_sotto=True)
     assi[0].set_title("le tradizioni, e l'autore", fontsize=8.0)
     assi[1].set_title("la ricerca stessa", fontsize=8.0)
     assi[0].set_xticks(range(0, 5))

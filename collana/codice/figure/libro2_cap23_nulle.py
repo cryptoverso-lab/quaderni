@@ -111,7 +111,10 @@ def nulle_credute_e_misurate(schermo: bool = False) -> Path:
     asse.set_ylim(-0.6, len(casi) - 0.4)
     asse.grid(axis="y", visible=False)
     layout.cornice(asse)
-    layout.etichetta_curva(asse, 1.0, len(casi) - 0.5, "il riferimento creduto")
+    # Dentro il riquadro, a destra della linea: sopra, il testo stava a cavallo della
+    # cornice superiore (27/09/2026).
+    layout.etichetta_curva(asse, 1.0, len(casi) - 0.62, "il riferimento creduto",
+                           scarto=(4.0, 0.0), va="center")
     # La legenda appartiene alla FIGURA e non al riquadro: ancorata al
     # riquadro deborda a destra, perche' le etichette di sinistra spostano
     # l'area dati, e il ritaglio porta la figura a 132 mm su 130 di gabbia.

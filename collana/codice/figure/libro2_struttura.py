@@ -69,10 +69,12 @@ def livelli_sovrapposizione(schermo: bool = False) -> Path:
 
     coppie_viste: list[str] = []
     per_mercato: dict[str, dict[str, float]] = {}
+    livelli_di: dict[str, list[str]] = {}
 
     for asset, nome in MERCATI:
         traccia = next(iter(_tracce(_serie(asset, "phantom/matrix.json")).values()))
         livelli = traccia["x"]
+        livelli_di[nome] = list(livelli)
         matrice = traccia["z"]
         valori: dict[str, float] = {}
         for i in range(len(livelli) - 1):
@@ -94,6 +96,15 @@ def livelli_sovrapposizione(schermo: bool = False) -> Path:
             zorder=2,
             **layout.riempimento(indice, schermo),
         )
+        # Una coppia che un mercato non ha si DICHIARA al posto della barra, invece di
+        # lasciare un buco muto (Solana a T+7–T+8, 27/09/2026): si nomina il livello che manca.
+        for x, coppia, altezza in zip(posizioni + (indice - 1) * larghezza, coppie_viste,
+                                      altezze):
+            if np.isnan(altezza):
+                assenti = [liv for liv in coppia.split("–") if liv not in livelli_di[nome]]
+                asse.text(x, 2, f"{nome}: senza {', '.join(assenti) or coppia}",
+                          rotation=90, ha="center", va="bottom", fontsize=6.0,
+                          style="italic", color=layout.GRIGI[1])
 
     asse.axhline(
         SOGLIA_SOVRAPPOSIZIONE,

@@ -472,6 +472,7 @@
     "non decide": "does not decide",
     "non provate": "not proven",
     "non significativo": "not significant",
+    "non testabili": "not testable",
     "nove cicli su dieci": "nine cycles out of ten",
     "nube dei surrogati": "cloud of surrogates",
     "nube: fasi randomizzate": "cloud: randomised phases",
@@ -804,7 +805,6 @@
     "contando dai minimi": "counting from the lows",
     "repliche che conservano anche le code": "replicas that also keep the tails",
     "repliche con lo stesso spettro": "replicas with the same spectrum",
-    "coppie dalla parte attesa, su 182": "pairs on the expected side, out of 182",
     "dentro la fascia del massimo: 23 giorni": "inside the band of the high: 23 days",
     "dentro la fascia del minimo: 5 giorni": "inside the band of the low: 5 days",
     "dove cade la stima, 95 volte su 100": "where the estimate falls, 95 times in 100",
@@ -818,7 +818,6 @@
     "la chiusura più bassa delle ultime 22": "the lowest close of the last 22",
     "mercati col massimo meno databile": "markets whose high is harder to date",
     "metà": "half",
-    "metà delle coppie (91 su 182)": "half of the pairs (91 of 182)",
     "migliaia di dollari": "thousands of dollars",
     "numero di test": "number of tests",
     "osservato, dentro il verdetto": "observed, inside the verdict",
@@ -966,9 +965,179 @@
     "il righello\nè scelto": "the ruler\nis chosen",
     "soglia\ndichiarata\nprima della\nmisura": "threshold\ndeclared\nbefore the\nmeasurement",
     "la seconda ipotesi regge: sette mercati su dieci usano più di un righello": "the second hypothesis holds: seven markets out of ten use more than one ruler",
-    "sopra il proprio\ntermine di forma": "above its own\nshape benchmark"
+    "sopra il proprio\ntermine di forma": "above its own\nshape benchmark",
+    "valore p (scala logaritmica)": "p value (log scale)",
+    "la seconda ipotesi regge: sette mercati usano più di un righello": "the second hypothesis holds: seven markets use more than one ruler",
+    "la seconda ipotesi regge: sette su venti mercati usano più di un righello": "the second hypothesis holds: seven markets out of twenty use more than one ruler",
+    "nube: repliche a fase": "cloud: phase replicates",
+    "nube: repliche AAFT": "cloud: AAFT replicates",
+    "sei indici azionari, dal 1927 (sopra: quanti misurabili)": "six stock indices, since 1927 (above: how many measurable)",
+    "nessun\nmercato\nlo misura": "no\nmarket\nmeasures it",
+    "4 ore": "4 h",
+    "2 ore": "2 h",
+    "1 ora": "1 h",
+    "30 min": "30 min",
+    "15 min": "15 min",
+    "5 min": "5 min",
+    "1 min": "1 min",
+    "repliche che conservano anche la distribuzione dei rendimenti": "replicas that also preserve the distribution of returns",
+    "pendenza log-log\nampiezza/durata": "log-log slope\namplitude/duration",
+    "20 barre che la media centrata\nnon può ancora produrre": "20 bars the centred average\ncannot produce yet",
+    "chiusura di Bitcoin (USD)": "Bitcoin close (USD)",
+    "barre giornaliere dal 2023-01-01": "daily bars from 2023-01-01",
+    "Bitcoin: p sotto la soglia\nfra 270 e 284 barre (minimo a 279)": "Bitcoin: p below the threshold\nbetween 270 and 284 bars (minimum at 279)",
+    "la mediana osservata, 14,0 barre": "the observed median, 14.0 bars",
+    "l'intervallo bootstrap al 95%, da 12,0 a 15,0": "the 95% bootstrap interval, from 12.0 to 15.0",
+    "gli altri dieci contesti": "the other ten contexts",
+    "archi del figlio\nP = 40 barre": "child arcs\nP = 40 bars",
+    "archi del padre\nP = 120 barre": "parent arcs\nP = 120 bars",
+    "le 3.124 barre con data: scarto nullo": "the 3,124 dated bars: zero gap",
+    "data della barra del motore (tacca al 1° gennaio di ogni anno)": "date of the engine bar (tick at 1 January of each year)",
+    "la misura\ndei punti di svolta": "the measurement\nof turning points",
+    "20 cicli: il minimo per una dispersione": "20 cycles: the minimum for a dispersion",
+    "30 cicli: il minimo per un confronto coi surrogati": "30 cycles: the minimum for a comparison with surrogates",
+    "sopra la linea punteggiata:\nil tempo pesa più del prezzo": "above the dotted line:\ntime weighs more than price",
+    "π: posizione del massimo": "π: position of the maximum",
+    "sotto le 30 barre: il rilevatore tocca il pavimento": "below 30 bars: the detector hits its floor",
+    "fra 30 e 2000 barre: il livello si risolve": "between 30 and 2,000 bars: the level is resolved",
+    "oltre le 2000 barre: campione troppo sottile": "above 2,000 bars: sample too thin",
+    "cornice: il timeframe proprietario": "frame: the owning timeframe",
+    "livello del catalogo": "catalogue level",
+    "nella cella, le barre che il livello occupa": "in each cell, the bars the level occupies",
+    "barre giornaliere dal 2023-06-01": "daily bars from 2023-06-01",
+    "barre giornaliere dal 2024-01-01": "daily bars from 2024-01-01",
+    "sotto lo zero: in anticipo": "below zero: leading",
+    "mediana della nube": "median of the cloud",
+    "ammessa (8 su 16):\nl'ultima polarità è\nopposta alla prima": "admitted (8 of 16):\nthe last polarity is\nopposite to the first",
+    "gradino (3):\ntutti i ▲ prima\ndei ▼, una discesa": "step (3):\nall ▲ before\nthe ▼, one descent",
+    "ciclo madre, padre delle sezioni (P = 480 barre)": "parent cycle of the sections (P = 480 bars)",
+    "ciclo padre (P = 480 barre)": "parent cycle (P = 480 bars)",
+    "soglia dei cicli senza sotto-cicli (0,50)": "threshold for cycles without sub-cycles (0.50)",
+    "soglia della sovrapposizione (0,80)": "overlap threshold (0.80)",
+    "Bitcoin\nmercato continuo": "Bitcoin\ncontinuous market",
+    "indice italiano\nmercato regolamentato": "Italian index\nregulated market"
   },
   "modelli": [
+    [
+      "1 livello · onda più breve P = (\\d+) — (\\d+) minimi disegnati, (\\d+) previsti",
+      "1 level · shortest wave P = {0} — {1} lows drawn, {2} predicted"
+    ],
+    [
+      "(\\d+) livelli · onda più breve P = (\\d+) — (\\d+) minimi disegnati, (\\d+) previsti",
+      "{0} levels · shortest wave P = {1} — {2} lows drawn, {3} predicted"
+    ],
+    [
+      "(\\d+) minimi disegnati\\n(\\d+) previsti dai rapporti\\n\\(fascia omessa: si toccano\\)",
+      "{0} lows drawn\n{1} predicted by the ratios\n(band omitted: they touch)"
+    ],
+    [
+      "(\\d+) minimi disegnati\\n(\\d+) previsti dai rapporti",
+      "{0} lows drawn\n{1} predicted by the ratios"
+    ],
+    [
+      "(\\d+) non testabil[ei]",
+      "{0} not testable"
+    ],
+    [
+      "fuori scala: (T[+-]\\d+), su (\\d+) dei (\\d+) mercati",
+      "off the scale: {0}, on {1} of the {2} markets"
+    ],
+    [
+      "(\\d+) sostituzioni in (\\d+) giorni",
+      "{0} replacements in {1} days"
+    ],
+    [
+      "lo stesso, su meno di (\\d+) cicli \\(fuori dalla tavola\\)",
+      "the same, on fewer than {0} cycles (not in the table)"
+    ],
+    [
+      "giorn\\. · (\\w+)",
+      "daily · {0}"
+    ],
+    [
+      "settim\\. · (\\w+)",
+      "weekly · {0}"
+    ],
+    [
+      "4 ore · (\\w+)",
+      "4 h · {0}"
+    ],
+    [
+      "2 ore · (\\w+)",
+      "2 h · {0}"
+    ],
+    [
+      "1 ora · (\\w+)",
+      "1 h · {0}"
+    ],
+    [
+      "30 min · (\\w+)",
+      "30 min · {0}"
+    ],
+    [
+      "15 min · (\\w+)",
+      "15 min · {0}"
+    ],
+    [
+      "5 min · (\\w+)",
+      "5 min · {0}"
+    ],
+    [
+      "1 min · (\\w+)",
+      "1 min · {0}"
+    ],
+    [
+      "(.+) · giorn\\.",
+      "{0} · daily"
+    ],
+    [
+      "(.+) · settim\\.",
+      "{0} · weekly"
+    ],
+    [
+      "(.+) · 4 ore",
+      "{0} · 4 h"
+    ],
+    [
+      "(.+) · 2 ore",
+      "{0} · 2 h"
+    ],
+    [
+      "(.+) · 1 ora",
+      "{0} · 1 h"
+    ],
+    [
+      "(.+) · 30 min",
+      "{0} · 30 min"
+    ],
+    [
+      "(.+) · 15 min",
+      "{0} · 15 min"
+    ],
+    [
+      "(.+) · 5 min",
+      "{0} · 5 min"
+    ],
+    [
+      "(.+) · 1 min",
+      "{0} · 1 min"
+    ],
+    [
+      "(\\w+): senza (.+)",
+      "{0}: no {1}"
+    ],
+    [
+      "fascia del caso, 95 volte su 100: da (\\d+) a (\\d+)",
+      "band of chance, 95 times in 100: from {0} to {1}"
+    ],
+    [
+      "coppie dalla parte attesa, su (\\d+)",
+      "pairs on the expected side, out of {0}"
+    ],
+    [
+      "metà delle coppie \\((\\d+) su (\\d+)\\)",
+      "half of the pairs ({0} of {1})"
+    ],
     [
       "struttura (\\d+) · rapporti (\\[[\\d, ]+\\])",
       "structure {0} · ratios {1}"

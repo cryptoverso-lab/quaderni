@@ -33,7 +33,10 @@ RADICE = Path(__file__).resolve().parents[2]
 MISURE = RADICE / "dati" / "misure"
 
 BREVE = {"BTCUSDT": "BTC", "ETHUSDT": "ETH", "SOLUSDT": "SOL"}
-NOMI_TF = {"W": "settim.", "D": "giorn.", "H4": "4 ore", "H1": "1 ora"}
+#: Anche per le righe di sinistra (27/09/2026): le sigle M5, H2, M30 non erano spiegate da
+#: nessuna parte della figura, e il pannello di destra usava gia' le parole.
+NOMI_TF = {"W": "settim.", "D": "giorn.", "H4": "4 ore", "H2": "2 ore", "H1": "1 ora",
+           "M30": "30 min", "M15": "15 min", "M5": "5 min", "M1": "1 min"}
 #: I tre mercati sulla stessa riga: forma diversa, non colore — l'edizione di
 #: stampa e' in grigi e il colore li renderebbe indistinguibili.
 MARCATORE = {"BTCUSDT": "o", "ETHUSDT": "s", "SOLUSDT": "^"}
@@ -78,8 +81,9 @@ def disegna(schermo: bool = False) -> Path:
     assi[0].axvline(soglia, color=layout.GRIGI[0], linewidth=0.9, linestyle="--",
                     zorder=3, label="soglia in uso")
     assi[0].set_yticks(posizioni)
-    assi[0].set_yticklabels([f"{c} · {esteso['righello_per_coppia'][c]}"
-                             for c in ordine])
+    assi[0].set_yticklabels([
+        f"{c} · {NOMI_TF.get(esteso['righello_per_coppia'][c], esteso['righello_per_coppia'][c])}"
+        for c in ordine])
     assi[0].set_xlabel("sovrapposizione bidirezionale")
     minimo = min(min(r["osservato"], r["nulla_mediana"])
                  for righe in per_coppia.values() for r in righe)

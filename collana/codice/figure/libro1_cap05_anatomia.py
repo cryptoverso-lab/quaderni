@@ -65,10 +65,11 @@ def _anatomia(asse, serie: np.ndarray, indici: np.ndarray, schermo: bool) -> Non
               fontsize=7.0, zorder=7,
               bbox={"facecolor": "white", "edgecolor": "none", "pad": 2.0})
     # La posizione del massimo, pi, sulla freccia della durata: e' una frazione di lei.
+    # Si nomina e non si quantifica: la didascalia dichiara la figura uno schema
+    # che non aggiunge numeri al testo, e «π = 0,45» era un numero nuovo.
     asse.plot([cima, cima], [quota - 0.012 * ampiezza, quota + 0.012 * ampiezza],
               color=layout.GRIGI[1], linewidth=0.7)
-    asse.text(cima, quota + 0.02 * ampiezza,
-              f"π = {layout.numero((cima - inizio) / (fine - inizio), 2)}",
+    asse.text(cima, quota + 0.02 * ampiezza, "π: posizione del massimo",
               ha="center", va="bottom", fontsize=7.0)
 
     asse.annotate(

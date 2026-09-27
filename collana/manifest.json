@@ -1,6 +1,6 @@
 {
  "prodotto": "vetrina-cicli",
- "generato": "2026-09-23T19:55:31+00:00",
+ "generato": "2026-09-27T19:54:37+00:00",
  "capitoli": [
   "1-01",
   "1-05",
@@ -12,28 +12,28 @@
  "file": [
   {
    "percorso": "codice/figure/libro1_cap01_due_tradizioni.py",
-   "sha256": "6ddd1bc57d5ce8a06ef9e55eaf018875bde420422decb36b440a32935d5e2ff0",
-   "byte": 3825
+   "sha256": "0fbb030322682699ce10f98efff23c678652ea320d4893c22758e9b6d3a42680",
+   "byte": 4310
   },
   {
    "percorso": "codice/figure/libro1_cap01_tolleranza.py",
-   "sha256": "29ff68fea12292725c3ac636cba8818d3820465bab420a02efc03ca13a49190b",
-   "byte": 5657
+   "sha256": "c482385c399052a258df9bab7660855be6ebc84dae3170b0b0b76fc845cd2395",
+   "byte": 5828
   },
   {
    "percorso": "codice/figure/libro1_cap05_anatomia.py",
-   "sha256": "c26de11543b3cad15bb702b97e5758c07a3864950a29d3eaddfa46e202c926c2",
-   "byte": 6430
+   "sha256": "ba175c3949f816ff2822e53b766d360bf364ce9f2a90ab053cf0cf3d96051846",
+   "byte": 6540
   },
   {
    "percorso": "codice/figure/libro1_cap05_risoluzione.py",
-   "sha256": "6ccb695cbde7ff007b761d9e9877b1790400b45cd6b237b1ea79dda68ce1535c",
-   "byte": 5517
+   "sha256": "eb7c9e150496eacd3a2e4d4439d730464a160d66d37f5979b22e4f27f2ce83c7",
+   "byte": 6106
   },
   {
    "percorso": "codice/figure/libro1_cap05_tre_rilevatori.py",
-   "sha256": "9f6117ee478db588e11622a08c4f12b8414c3dcef72c52d91fb1967671e10506",
-   "byte": 3999
+   "sha256": "b404b2f86acea42666b01b6744f0824809333244b459a6791da0f0dbbce3cb7c",
+   "byte": 3906
   },
   {
    "percorso": "codice/figure/libro2_cap01_attesa_sovrapposizione.py",
@@ -47,13 +47,13 @@
   },
   {
    "percorso": "codice/figure/libro2_cap01_overlap.py",
-   "sha256": "9e8d12ddf46a5e0283ac29d732b329f83757f58d310b48bec61470d90a814abc",
-   "byte": 5327
+   "sha256": "bf0353163e7870e865e93e98a71fcb327695d2e3d4b78e70b371a08beb3dd12f",
+   "byte": 5513
   },
   {
    "percorso": "codice/figure/libro2_cap01_t_t1_righello.py",
-   "sha256": "d5f19dd07a758f16b492c9658191f0375b493f880fdce99b6f45eed0c82541e4",
-   "byte": 3782
+   "sha256": "83debc88df6ea1dd63ec445644f3db292e929b4eee998d7bd30c767263e4ed0c",
+   "byte": 3993
   },
   {
    "percorso": "codice/figure/libro2_cap23_nulla_della_posizione.py",
@@ -62,8 +62,8 @@
   },
   {
    "percorso": "codice/figure/libro2_cap23_nulle.py",
-   "sha256": "e4a456897f64341a50202c786cbae371cf972b290a32637e619c994db1ac8055",
-   "byte": 5285
+   "sha256": "38f0a79edc59839ebc9f1b8a5c1e24d6400c22d372da094b24a090da7c22afb0",
+   "byte": 5344
   },
   {
    "percorso": "codice/figure/libro2_cap23_strumento.py",
@@ -72,13 +72,13 @@
   },
   {
    "percorso": "codice/figure/libro2_struttura.py",
-   "sha256": "5ddbf4f68d91b9e987e41aca1a66b9f060c14e9a62ec7777292b04c29f03d3f6",
-   "byte": 17637
+   "sha256": "94af8de48d24b9e6f515d27214d3da6a7bf523d0d1bb62c3a48ddc23b54e5fa5",
+   "byte": 17961
   },
   {
    "percorso": "codice/figure/libro3_bilancio_per_fonte.py",
-   "sha256": "999ea2ad3660b03c2fe62a60b8e24b9a90a73b5bf962366b129f9adec06f1b02",
-   "byte": 5350
+   "sha256": "c3724ac6c779c1ec98ba919c2f62ed6b0b1aa166d30b2fdc9413cd5b7306363d",
+   "byte": 7307
   },
   {
    "percorso": "codice/figure/libro3_cap06_potere_su_fibonacci.py",
@@ -97,7 +97,7 @@
   },
   {
    "percorso": "codice/lab/capitoli.json",
-   "sha256": "520791364d93baa0e617d014b30405fac1804bfdc818734c9ff700001862fcbb",
+   "sha256": "8ed9ef3efcf69c8a84b1c5588a90e9a583cbffd47977c42b446fabc48e78f4f8",
    "byte": 4730
   },
   {
@@ -107,13 +107,13 @@
   },
   {
    "percorso": "codice/src/acbook/layout.py",
-   "sha256": "7e4b88b5502160a13c12d740f315df42270171ccdbc03c9cb1ee8b5bff3be40c",
-   "byte": 15689
+   "sha256": "5d4f7e62800d2c1be91fb325f4065ac57236066c8d70bcea4d082aa9918d9b82",
+   "byte": 15754
   },
   {
    "percorso": "codice/src/acbook/movimenti.py",
-   "sha256": "b07e8fc3b04d2eef61e6392d4445a5a071fc72c76858838c37aa6feba872469f",
-   "byte": 10828
+   "sha256": "4627119cddb3e1c51db0a6ad303b1e706ecca25092956500db8c65fbe4745005",
+   "byte": 10547
   },
   {
    "percorso": "codice/src/acbook/quaderno.py",
@@ -127,13 +127,13 @@
   },
   {
    "percorso": "codice/src/acbook/sidecar.py",
-   "sha256": "246f63d99abdfb790189c474af24235dd6c31ce1cbb33d0fc35596285e9e397f",
-   "byte": 9454
+   "sha256": "ac4eec8d4e147143c9ed136c320fe856bf14ea212cdd7551a340ad3739031c7f",
+   "byte": 9230
   },
   {
    "percorso": "codice/src/acbook/surrogati.py",
-   "sha256": "99213755d5be914b34dd3edd8ba6adf7e5fc418e863948f9e17a1ca406363c99",
-   "byte": 10184
+   "sha256": "ac2d02a5d41b5a8e0aa625bc62bd9a896126c49db0af6c1eacd956538c349752",
+   "byte": 9947
   },
   {
    "percorso": "codice/traduzione/genera_figure_en.py",
@@ -147,83 +147,83 @@
   },
   {
    "percorso": "codice/traduzione/testi_figure_en.json",
-   "sha256": "e71b4a2374cf09d6d5a7c20d8b64c4588e919fbe0c483147f4b3ddebc619f86e",
-   "byte": 74548
+   "sha256": "43c64c01c1ac3c05a4dcbe75dc2d5c1a26ca2855366793d0c1b99020acd07cee",
+   "byte": 79533
   },
   {
    "percorso": "codice/verifica/livelli_sovrapposizione.py",
-   "sha256": "caefa6e6e74c3c1ad291aa22c69b29e7f026f17ef5bd56b02b0e884f7dd0b2b4",
-   "byte": 16999
+   "sha256": "e6713d5035d0a7fe6167350d728937e99a2c822b77b26ee2733ec4cd8875be4a",
+   "byte": 16629
   },
   {
    "percorso": "codice/verifica/tre_rilevatori.py",
-   "sha256": "182705dcafb6166008bf4540fa5b09236ca31c8623895a762e923bdddaf348b2",
-   "byte": 6335
+   "sha256": "9d2672765814c38bb52a0e30948333874c484e889d67691a4c445d03d5c98430",
+   "byte": 6198
   },
   {
    "percorso": "dati/misure/asimmetria-surrogati.json",
-   "sha256": "a0a7a66735e4b0046317fe37288e5ce3fe271f8fe50556e1ed7f248af6dfde66",
-   "byte": 7446
+   "sha256": "3e3e5e37fbb11a937ab769bc9677502786fb4baf8f31632a524ed5dfbf2cb9b7",
+   "byte": 7132
   },
   {
    "percorso": "dati/misure/carte-ricerca.json",
-   "sha256": "8d0901b17b3a034eab69c4f6fd0973af4183743b2d37b948f714cdb847b04d47",
-   "byte": 57982
+   "sha256": "0e44927329e24e13625b19f0c01b6139782f2e2ab85b2c56524a3d37b538299b",
+   "byte": 70618
   },
   {
    "percorso": "dati/misure/ciclo-giornaliero.json",
-   "sha256": "9f3360a4e10a701bc85f7a09d348af573b64877ad3a1a1b4b1c90afbc7c78512",
-   "byte": 8371
+   "sha256": "cbf278d90fd5ea2b88fc3536ac6f0fd1999fb42cc6b6a0346e5adeb37a4d6b5b",
+   "byte": 8046
   },
   {
    "percorso": "dati/misure/listino-misura.json",
-   "sha256": "93dadad8b0541dd1d007d9a3766b23894a539801cc182ae8cbc908296ea14ef4",
-   "byte": 4306
+   "sha256": "82cd406a316c6f2c370001a3d0af941ddcb33bedc09964235523ede2be1ef9a8",
+   "byte": 4056
   },
   {
    "percorso": "dati/misure/livelli-sovrapposizione.json",
-   "sha256": "589f703c7eaf69d30a7023590e85cf11a7b1ea95fc149e1d2a0aa2124d50ccaa",
-   "byte": 9829
+   "sha256": "768798179e042023af7a28c6c30d63c712640a46c77d4b1235b8459865078c72",
+   "byte": 9483
   },
   {
    "percorso": "dati/misure/overlap-esteso.json",
-   "sha256": "48fac7c7d3e6e12d47e1784d540c61ebb5fec1444cf74998d7b75658b3354dd6",
-   "byte": 11939
+   "sha256": "cdc02737be7cecc119e167f96ad7e5bbfe6f938bd54c7d767e8d2c6ec4b74f88",
+   "byte": 11508
   },
   {
    "percorso": "dati/misure/overlap-nulla.json",
-   "sha256": "1e90014a924c794a2a506dc0411074f19a2fa733b22e737a36fd28fd83b5b283",
-   "byte": 9673
+   "sha256": "6a84c4309f3dfd8ee7241eb8b96c178807ecd68e9af84c5f87ee5f940c4434d6",
+   "byte": 9289
   },
   {
    "percorso": "dati/misure/posizione-massimo-nulla.json",
-   "sha256": "41cdf30d9b30387b230595df24dcdcbc1da2d5a80072daf884505c6cb0a0969e",
-   "byte": 12696
+   "sha256": "720b676d112c95dc890a4dac956e391baae4be2127a3ecf3a72a39cd013fd1c5",
+   "byte": 12168
   },
   {
    "percorso": "dati/misure/potenza-quaternario-fibonacci.json",
-   "sha256": "f06ad28cfefef40bb88d0ec0bb1adaf3e5052c07bd98311966df078139f8f1c7",
-   "byte": 1358
+   "sha256": "506ed8a59414d81363746918ee1cffefdff66f75e2edf429667a6d2f75ac5a00",
+   "byte": 1303
   },
   {
    "percorso": "dati/misure/ritracciamento.json",
-   "sha256": "0f125f385669913baea033cb696559e30f1574fd34ffbe5b9ce6d7b3708df864",
-   "byte": 32826
+   "sha256": "b498b47db4d34e2d94fea1b832a5705289345dbb52bc4471ba6c5c7771183719",
+   "byte": 31253
   },
   {
    "percorso": "dati/misure/sequenze-h4.json",
-   "sha256": "948dec3b8a0eefdee7b9ff1d4c66275fc2a0a3c287aca652181dcd7f228d8de9",
-   "byte": 6450
+   "sha256": "4d76b35d62360f957be3b87dedde51b710afd9f09e4d386ba9baa1db419b0151",
+   "byte": 6217
   },
   {
    "percorso": "dati/misure/sequenze-intervalli.json",
-   "sha256": "74b22cf9a6c9b952aec1acfaa386b20d00f3e18f63e0ec2626361d04b76c756d",
-   "byte": 2089
+   "sha256": "617b3dd96389395828a69a2c7fc900970a1f79684aa7f00d796da9862cfe02b0",
+   "byte": 1995
   },
   {
    "percorso": "dati/misure/tre-rilevatori.json",
-   "sha256": "6c2ae0aa2bafcd179b49a9cab914b25cfb81973c2d9ec1b443d4d5bb61f12cee",
-   "byte": 7949
+   "sha256": "5726c43a036d8a5392652d9c0db932612481c9d63ed783fb0552ee82e2f57835",
+   "byte": 7664
   },
   {
    "percorso": "dati/serie/BTCUSDT_D/phantom/matrix.json",
@@ -302,18 +302,18 @@
   },
   {
    "percorso": "dati/verdetti/BTCUSDT_D/cross_asset/data.json",
-   "sha256": "ed278d42af127ba26ee05bcb16d66c8f50fb59db7fc1fd54e42d20ff4e44e2f3",
-   "byte": 3261
+   "sha256": "d14712e43b1955b847d3229b67749d9cc4e30360f2fff4e684365b0e8e7ed712",
+   "byte": 3079
   },
   {
    "percorso": "dati/verdetti/ETHUSDT_D/cross_asset/data.json",
-   "sha256": "ed278d42af127ba26ee05bcb16d66c8f50fb59db7fc1fd54e42d20ff4e44e2f3",
-   "byte": 3261
+   "sha256": "d14712e43b1955b847d3229b67749d9cc4e30360f2fff4e684365b0e8e7ed712",
+   "byte": 3079
   },
   {
    "percorso": "dati/verdetti/SOLUSDT_D/cross_asset/data.json",
-   "sha256": "ed278d42af127ba26ee05bcb16d66c8f50fb59db7fc1fd54e42d20ff4e44e2f3",
-   "byte": 3261
+   "sha256": "d14712e43b1955b847d3229b67749d9cc4e30360f2fff4e684365b0e8e7ed712",
+   "byte": 3079
   }
  ],
  "scritti": [

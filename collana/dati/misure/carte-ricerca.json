@@ -1,19 +1,20 @@
 {
- "generato": "2026-09-22",
+ "generato": "2026-09-27",
  "fonte": "theory/ di CiclycalResearch: concepts, claims, contraddizioni",
- "commit_ricerca": "964e2687",
+ "commit_ricerca": "7c7d669a",
  "nota": "Anagrafica delle carte, non il loro contenuto operativo: di proposito non contiene nulla del rilevatore, delle sue soglie o della sua calibrazione. Il terzo volume cita da qui.",
  "totali": {
-  "carte": 69,
+  "carte": 73,
   "stati": {
    "ADOTTATA": 1,
    "FORMALIZZATA": 9,
-   "TESTATA": 59
+   "TESTATA": 63
   },
   "verdetti": {
-   "CONFERMATA": 25,
-   "FALSIFICATA": 19,
-   "NON_PROVATA": 16
+   "CONFERMATA": 26,
+   "FALSIFICATA": 18,
+   "NON_PROVATA": 19,
+   "NON_TESTABILE": 1
   }
  },
  "per_autore_della_fonte": {
@@ -26,12 +27,13 @@
    ]
   },
   "CyclicalResearch": {
-   "carte": 57,
-   "testate": 49,
+   "carte": 61,
+   "testate": 53,
    "verdetti": {
-    "CONFERMATA": 22,
-    "FALSIFICATA": 16,
-    "NON_PROVATA": 11
+    "CONFERMATA": 23,
+    "FALSIFICATA": 15,
+    "NON_PROVATA": 14,
+    "NON_TESTABILE": 1
    },
    "identificativi": [
     "CO-001",
@@ -88,6 +90,10 @@
     "CR-056",
     "CR-057",
     "CR-058",
+    "CR-059",
+    "CR-060",
+    "CR-061",
+    "CR-062",
     "LG-002",
     "LG-003",
     "LG-004"
@@ -151,7 +157,7 @@
   }
  },
  "per_cartella": {
-  "cyclicalresearch": 57,
+  "cyclicalresearch": 61,
   "hurst": 1,
   "luigi": 4
  },
@@ -336,7 +342,7 @@
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "su 37 asset e 9 livelli la regola marca T+1 37 volte, T+2 3 volte, tutti gli altri 0 volte",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] Su 37 asset la regola marca T+1 37 volte, T+4 13 volte, tutti gli altri livelli 0 volte. Nella misura del 20/08 marcava T+1 37 volte, T+2 3 volte, gli altri 0.",
    "file": "claims/cyclicalresearch/CR-007-validita-livelli.md"
   },
   {
@@ -453,7 +459,7 @@
    "id": "CR-016",
    "famiglia": "claims",
    "scuola": "cyclicalresearch",
-   "titolo": "Lo swing incondizionato non discrimina — la condizione contata come successo e' vera in 185 cicli padre su 186",
+   "titolo": "Lo swing incondizionato non discrimina — la condizione e' vera in tutti i 286 cicli padre su H4",
    "autore": "Elico64",
    "autore_grezzo": "Elico64",
    "stato": "TESTATA",
@@ -492,13 +498,13 @@
    "id": "CR-019",
    "famiglia": "claims",
    "scuola": "cyclicalresearch",
-   "titolo": "L'armonicita' falsificata con un test che ha potere — il 21 su 21 intraday era la banda della nulla",
+   "titolo": "L'armonicita' falsificata con un test che ha potere — il 18 su 18 intraday era la banda della nulla",
    "autore": "Hurst",
    "autore_grezzo": "Hurst",
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "surrogati",
-   "valore_misurato": "Sul giornaliero, righello del primo giro, rimisurato dalla corsa pavimento-COMPLETO-20260908. Scala intera: osservato 0,00716 su BTCUSDT (mediana della nube 0,02022, frac_above 0,9295) e 0,01638 su ETHUSDT (0,03677, frac_above 0,929) — nessuno dei due sotto il 5% inferiore. Scala binaria: 0,2184 contro 0,15827 (frac_above 0,079) su BTCUSDT e 0,20265 contro 0,18742 (0,3265) su ETHUSDT. SOLUSDT ha 3 picchi e non entra. Sui sette righelli intraday (H4, H2, H1, M30, M15, M5, M1) i picchi sono da 16 a 24 per contesto e la scala intera sta sotto il 5% inferiore della nube in 21 contesti su 21 (frac_above da 0,9975 a 1,0; osservato da 0,01017 a 0,01986 contro mediane da 0,04765 a 0,05302); la binaria in nessuno (frac_above massimo 0,7355). Controllo di potenza: sulla serie sintetica armonica la distanza vale 0,0233 (binaria, frac_above 0,9985) e 0,0000 (intera, frac_above 1,000) — il test riconosce una scala vera.",
+   "valore_misurato": "Sul giornaliero, righello del primo giro, rimisurato dalla corsa pavimento-COMPLETO-20260908. Scala intera: osservato 0,00716 su BTCUSDT (mediana della nube 0,02022, frac_above 0,9295) e 0,01638 su ETHUSDT (0,03677, frac_above 0,929) — nessuno dei due sotto il 5% inferiore. Scala binaria: 0,2184 contro 0,15827 (frac_above 0,079) su BTCUSDT e 0,20265 contro 0,18742 (0,3265) su ETHUSDT. SOLUSDT ha 3 picchi e non entra. Sui sei righelli intraday dell'evidenza (H4, H2, H1, M30, M15, M1; M5 manca) i picchi sono da 16 a 24 per contesto e la scala intera sta sotto il 5% inferiore della nube in 18 contesti su 18 (frac_above da 0,9975 a 1,0; osservato da 0,01017 a 0,01986 contro mediane da 0,04765 a 0,05302); la binaria in nessuno (frac_above massimo 0,7355). Controllo di potenza: sulla serie sintetica armonica la distanza vale 0,0233 (binaria, frac_above 0,9985) e 0,0000 (intera, frac_above 1,000) — il test riconosce una scala vera.",
    "file": "claims/cyclicalresearch/CR-019-armonicita-scala.md"
   },
   {
@@ -602,20 +608,20 @@
    "stato": "TESTATA",
    "verdetto": "NON_PROVATA",
    "nulla": "surrogati",
-   "valore_misurato": "Mediana della nube nulla sull'overlap di T/T+1, per classe: crypto 0.902, indici 0.9087, large_cap 0.9038, mid_cap 0.9018, small_cap 0.9049, commodities 0.8976. Le soglie calibrate per classe (mediana delle soglie per coppia) sono: crypto: overlap 0.6193, rapporto 1.5854, quota_vuoti 0.5396, delta_cliff 0.5866, dev_nominale 0.3417 indici: overlap 0.6059, rapporto 1.6103, quota_vuoti 0.5047, delta_cliff 0.6157, dev_nominale 0.2918 large_cap: overlap 0.6062, rapporto 1.6036, quota_vuoti 0.5213, delta_cliff 0.6006, dev_nominale 0.3007 mid_cap: overlap 0.6048, rapporto 1.6309, quota_vuoti 0.5241, delta_cliff 0.5949, dev_nominale 0.2816 small_cap: overlap 0.5834, rapporto 1.6906, quota_vuoti 0.4936, delta_cliff 0.6341, dev_nominale 0.3 commodities: overlap 0.5821, rapporto 1.6701, quota_vuoti 0.4864, delta_cliff 0.6347, dev_nominale 0.2754 Su T-1/T e T/T+1 tutte e tre le soglie ereditate risultano CIECHE su tutte e 6 le classi: la mediana della nube nulla sta gia' dalla parte \"ridondante\" della soglia in uso.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] Le coppie T-1/T, T/T+1 e T+1/T+2 non sono piu' nel campione (catena Daily per classe da T+2 a T+7). Mediana della nube nulla sulla quota di cicli vuoti di T+3/T+4, per classe: crypto 0.5, indici 0.5385, large_cap 0.5172, mid_cap 0.5385, small_cap 0.5578, commodities 0.5172, valute 0.5, obbligazioni 0.4756. Le soglie calibrate per classe (mediana delle soglie per coppia su T+2/T+3, T+3/T+4 e T+4/T+5) sono: crypto: overlap 0.5909, rapporto 1.5087, quota_vuoti 0.5, delta_cliff 0.6863, dev_nominale 0.2117 indici: overlap 0.5696, rapporto 1.7774, quota_vuoti 0.4446, delta_cliff 0.7265, dev_nominale 0.2062 large_cap: overlap 0.5569, rapporto 1.794, quota_vuoti 0.4224, delta_cliff 0.7485, dev_nominale 0.1975 mid_cap: overlap 0.5732, rapporto 1.7497, quota_vuoti 0.4652, delta_cliff 0.7145, dev_nominale 0.2233 small_cap: overlap 0.5696, rapporto 1.787, quota_vuoti 0.4583, delta_cliff 0.7287, dev_nominale 0.2083 commodities: overlap 0.5784, rapporto 1.7233, quota_vuoti 0.4425, delta_cliff 0.7311, dev_nominale 0.2035 valute: overlap 0.5276, rapporto 1.8864, quota_vuoti 0.3847, delta_cliff 0.7805, dev_nominale 0.197 obbligazioni: overlap 0.538, rapporto 1.8222, quota_vuoti 0.4, delta_cliff 0.769, dev_nominale 0.1625 La sola soglia ereditata CIECA e' la quota di cicli vuoti su T+3/T+4, in cinque classi (tutte tranne crypto, valute e obbligazioni). [MISURA PRECEDENTE, 20/08.] Mediana della nube nulla sull'overlap di T/T+1, per classe: crypto 0.902, indici 0.9087, large_cap 0.9038, mid_cap 0.9018, small_cap 0.9049, commodities 0.8976. Le soglie calibrate per classe (mediana delle soglie per coppia) sono: crypto: overlap 0.6193, rapporto 1.5854, quota_vuoti 0.5396, delta_cliff 0.5866, dev_nominale 0.3417 indici: overlap 0.6059, rapporto 1.6103, quota_vuoti 0.5047, delta_cliff 0.6157, dev_nominale 0.2918 large_cap: overlap 0.6062, rapporto 1.6036, quota_vuoti 0.5213, delta_cliff 0.6006, dev_nominale 0.3007 mid_cap: overlap 0.6048, rapporto 1.6309, quota_vuoti 0.5241, delta_cliff 0.5949, dev_nominale 0.2816 small_cap: overlap 0.5834, rapporto 1.6906, quota_vuoti 0.4936, delta_cliff 0.6341, dev_nominale 0.3 commodities: overlap 0.5821, rapporto 1.6701, quota_vuoti 0.4864, delta_cliff 0.6347, dev_nominale 0.2754 Su T-1/T e T/T+1 tutte e tre le soglie ereditate risultavano CIECHE su tutte e 6 le classi: la mediana della nube nulla stava gia' dalla parte \"ridondante\" della soglia in uso.",
    "file": "claims/cyclicalresearch/CR-027-soglie-per-classe.md"
   },
   {
    "id": "CR-028",
    "famiglia": "claims",
    "scuola": "cyclicalresearch",
-   "titolo": "Il no-repaint delle lingue mature non regge su ogni timeframe",
+   "titolo": "Il no-repaint delle lingue mature regge su ogni coppia testabile, ma una coppia resta non testabile",
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "FALSIFICATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "analitica",
-   "valore_misurato": "Rigettata su BTCUSDT/H1: col guard della regola (1334) la copertura densa riporta 25 cut falliti su 86 e 7 coppie distinte instabili. Non rigettata su BTCUSDT/D (0 su 18), ETHUSDT/D (0 su 17) e BTCUSDT/H4 (0 su 53). Col guard storico era rigettata anche sulle Daily (14 su 37 e 15 su 37), che i cinque cut ufficiali dichiaravano PASS.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] Non rigettata su nessuna coppia testabile: col guard della regola la copertura densa da' 0 cut falliti su 23 (BTCUSDT/D), 0 su 22 (ETHUSDT/D), 0 su 705 (BTCUSDT/H1) e 0 su 175 (BTCUSDT/H4). SOLUSDT/D resta non testabile (2234 barre contro guard+300 = 2396). Col guard storico resta rigettata su quattro coppie: 7 su 41, 10 su 41, 76 su 795, 61 su 197. [STORICO, fasatore di prima:] Rigettata su BTCUSDT/H1: col guard della regola (1334) la copertura densa riporta 25 cut falliti su 86 e 7 coppie distinte instabili. Non rigettata su BTCUSDT/D (0 su 18), ETHUSDT/D (0 su 17) e BTCUSDT/H4 (0 su 53). Col guard storico era rigettata anche sulle Daily (14 su 37 e 15 su 37), che i cinque cut ufficiali dichiaravano PASS.",
    "file": "claims/cyclicalresearch/CR-028-no-repaint-intraday.md"
   },
   {
@@ -667,7 +673,7 @@
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "Il pavimento permutato fa **75,74 barre** di errore mediano nel braccio risolto, contro **73,54** del fattore vero e **74,50** della mediana semplice: il fattore vero batte il permutato, quindi l'ampiezza porta informazione — ma di cosi' poco che non arriva alla soglia. Nel braccio allargato il permutato fa **10,64** contro **11,28** del fattore vero e **9,00** della mediana semplice: li' il fattore vero e' **peggio** del proprio placebo. E il permutato riduce oltre il 15% in **6 celle su 142**, contro la previsione di §8.2 che diceva «piu' di un terzo»: SMENTITA.",
+   "valore_misurato": "Il pavimento permutato fa **75,74 barre** di errore mediano nel braccio risolto, contro **73,54** del fattore vero e **74,50** della mediana semplice: il fattore vero batte il permutato, quindi l'ampiezza porta informazione — ma di cosi' poco che non arriva alla soglia. Nel braccio allargato [rimisura del 2026-09-25; col fasatore di prima 10,64, 11,28 e 9,00] il permutato fa **11,13** contro **11,70** del fattore vero e **9,50** della mediana semplice: li' il fattore vero e' **peggio** del proprio placebo. E il permutato riduce oltre il 15% in **6 celle su 142**, contro la previsione di §8.2 che diceva «piu' di un terzo»: SMENTITA.",
    "file": "claims/cyclicalresearch/CR-032-fattore-ampiezza-proiezioni.md"
   },
   {
@@ -693,20 +699,20 @@
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "analitica",
-   "valore_misurato": "Rimisura del 26/08: livelli che cambiano verdetto fra L e R **0 su tutte e cinque** le coppie; anchor che superano il guard 139, 139, 0, 1194, 2934; record nello store 27837, 7477, 0, 27837, 27837. Su questa sola misura la nulla NON si rigetta. Misura del 22/08, conservata in `CR-034-20260822-prima-della-rimisura.json`: 0, 0, 0, 4, 5 e 7 -- cioe' 4 su BTCUSDT/D, 5 su H4, 7 su H1, con anchor 3525, 15390, 34214 e 49492 record. **Il verdetto poggia sul CONFRONTO fra le due, non su una sola**: la seconda da sola non distinguerebbe «dipende dallo store» da «non dipende da nulla».",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] Livelli che cambiano verdetto fra L e R: **1 su BTCUSDT/D** (T+4: RIDONDANTE in R, VALIDO in L) e 0 sulle altre quattro coppie; anchor che superano il guard 245, 139, 0, 665, 595; record nello store 17989, 2656, 2031, 17989, 17989. Su questa sola misura la nulla SI rigetta, con un controesempio. [STORICO] Rimisura del 26/08: livelli che cambiano verdetto fra L e R **0 su tutte e cinque** le coppie; anchor che superano il guard 139, 139, 0, 1194, 2934; record nello store 27837, 7477, 0, 27837, 27837. Su questa sola misura la nulla NON si rigetta. Misura del 22/08, conservata in `CR-034-20260822-prima-della-rimisura.json`: 0, 0, 0, 4, 5 e 7 -- cioe' 4 su BTCUSDT/D, 5 su H4, 7 su H1, con anchor 3525, 15390, 34214 e 49492 record. **Il verdetto poggia sul CONFRONTO fra le due, non su una sola**: la seconda da sola non distinguerebbe «dipende dallo store» da «non dipende da nulla».",
    "file": "claims/cyclicalresearch/CR-034-verdetti-catena-non-calibrata.md"
   },
   {
    "id": "CR-035",
    "famiglia": "claims",
    "scuola": "cyclicalresearch",
-   "titolo": "Il pin anti-repaint riduce l'instabilita' sull'intraday; il verso contrario sul Daily era lo store inquinato",
+   "titolo": "Il pin anti-repaint e' utile su un timeframe, ma quale timeframe cambia da una misura all'altra",
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "analitica",
-   "valore_misurato": "Rimisura del 26/08 — BTCUSDT/D: 0 instabilita' con pin, 0 senza; la nulla NON si rigetta su questa coppia. BTCUSDT/H4: 7 con pin, 31 senza; la nulla si rigetta, nel verso positivo. Prima misura del 22/08, per confronto: Daily 7 contro 1, H4 0 contro 395.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] BTCUSDT/D: 0 instabilita' con pin, 8 senza; la nulla si rigetta, nel verso positivo. BTCUSDT/H4: 12 con pin, 3 senza; la nulla si rigetta, nel verso NEGATIVO. [STORICO] Rimisura del 26/08 — BTCUSDT/D: 0 instabilita' con pin, 0 senza; la nulla NON si rigetta su questa coppia. BTCUSDT/H4: 7 con pin, 31 senza; la nulla si rigetta, nel verso positivo. Prima misura del 22/08, per confronto: Daily 7 contro 1, H4 0 contro 395.",
    "file": "claims/cyclicalresearch/CR-035-pin-antirepaint-utilita.md"
   },
   {
@@ -717,9 +723,9 @@
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "CONFERMATA",
+   "verdetto": "NON_TESTABILE",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "Distanza mediana, D meno B: +0.047 su BTCUSDT/D, -0.004 su ETHUSDT/D, +0.039 su SOLUSDT/D. Quota di non classificabili, D contro B: 0.285 contro 0.647, 0.327 contro 0.642, 0.284 contro 0.638.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente: il confronto NON e' piu' ponibile.] La catena del runner e' ora la sola banda del Daily, T+2, T+3, T+4, T+5, T+7: T e T+1 non ci sono, quindi B, C e D coincidono con A. D meno B vale 0.0 su tutti e tre gli asset per costruzione. [STORICO, 25/08] Distanza mediana, D meno B: +0.047 su BTCUSDT/D, -0.004 su ETHUSDT/D, +0.039 su SOLUSDT/D. Quota di non classificabili, D contro B: 0.285 contro 0.647, 0.327 contro 0.642, 0.284 contro 0.638.",
    "file": "claims/cyclicalresearch/CR-036-catena-adattiva-cablabile.md"
   },
   {
@@ -732,7 +738,7 @@
    "stato": "TESTATA",
    "verdetto": "NON_PROVATA",
    "nulla": "surrogati",
-   "valore_misurato": "p(N1) fra 0,0010 e 0,0020 e p(N2) fra 0,0010 e 0,0020 su tutte e 20 le coppie: il minimo dichiarabile con mille estrazioni. Nessuna coppia distingue. Compreso ^GSPC/T+7, che ha tasso 0,2143 contro una marginale di 1,0000.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] p(N1) e p(N2) fra 0,0010 e 0,0020 su 19 coppie su 20: il minimo dichiarabile con mille estrazioni. La ventesima, ^GSPC/T+7, ha p(N1) 0,0120 e p(N2) 0,0040: supera anche lei entrambe le nulle. Nessuna coppia distingue. Compreso ^GSPC/T+7, che ha tasso 0,2222 contro una marginale di 1,0000 (erano 0,2143 e 1,0000).",
    "file": "claims/cyclicalresearch/CR-037-protocollo-conferma-cross-tf.md"
   },
   {
@@ -745,46 +751,46 @@
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "b = 1,1157 [1,0609, 1,1705] contro b = 1,6034 [1,4744, 1,7325]: intervalli disgiunti. Rapporto al punto piu' alto 38,58x con 13 livelli contro 5, cioe' 14,84x per livello -- H0 prevedeva 1x per livello. La rimisura del 2026-08-26 rigetta H0 con piu' margine della prima: la separazione fra i due bracci non era un effetto del codice lento.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] b = 1,023 [0,9418, 1,1041] contro b = 1,1851 [1,0911, 1,279]: intervalli sovrapposti per 0,013. Rapporto al punto piu' alto 12,01x con 13 livelli contro 5, cioe' 4,62x per livello -- H0 prevedeva 1x per livello: H0 resta rigettata dal rapporto fra bracci, non piu' dalla separazione degli esponenti. [STORICO, fasatore di prima:] b = 1,1157 [1,0609, 1,1705] contro b = 1,6034 [1,4744, 1,7325]: intervalli disgiunti. Rapporto al punto piu' alto 38,58x con 13 livelli contro 5, cioe' 14,84x per livello -- H0 prevedeva 1x per livello. La rimisura del 2026-08-26 rigetta H0 con piu' margine della prima: la separazione fra i due bracci non era un effetto del codice lento.",
    "file": "claims/cyclicalresearch/CR-038-costo-phaser-scala.md"
   },
   {
    "id": "CR-039",
    "famiglia": "claims",
    "scuola": "cyclicalresearch",
-   "titolo": "La finestra di controllo ciclo + 1 sopra + 2 sotto e' ultima fra sei, ma la regola dichiarata non la falsifica",
+   "titolo": "La finestra di controllo ciclo + 1 sopra + 2 sotto non vince in nessuna coppia, ma la regola dichiarata non la falsifica",
    "autore": "Luigi Garone",
-   "autore_grezzo": "Luigi",
+   "autore_grezzo": "Luigi Garone",
    "stato": "TESTATA",
    "verdetto": "NON_PROVATA",
    "nulla": "surrogati",
-   "valore_misurato": "0 confronti su 45 (15 coppie x 3 metriche) escono dalla nube. Esempio BTCUSDT/T+1: distanza_mediana p = 0,4286; quota_non_classificabili p = 0,9048; cv_target p = 0,6190.",
+   "valore_misurato": "[Rimisura del 2026-09-25.] 2 confronti su 45 escono dalla nube, entrambi con p = 0,0476 (il minimo dichiarabile): BTCUSDT/T+2 sulla quota di non classificabili e SOLUSDT/T+3 sulla distanza dall'alfabeto. In nessuna delle due coppie W2 vince due metriche, quindi la prima clausola di CONFERMATA resta non soddisfatta. BTCUSDT/T+1: distanza_mediana p = 0,1429; quota_non_classificabili p = 0,7619; cv_target p = 0,5238. [STORICO, fasatore di prima:] 0 confronti su 45 (15 coppie x 3 metriche) escono dalla nube. Esempio BTCUSDT/T+1: distanza_mediana p = 0,4286; quota_non_classificabili p = 0,9048; cv_target p = 0,6190.",
    "file": "claims/cyclicalresearch/CR-039-finestra-di-controllo.md"
   },
   {
    "id": "CR-040",
    "famiglia": "claims",
    "scuola": "cyclicalresearch",
-   "titolo": "L'accordo cross-timeframe lo produce il ricampionamento -- un surrogato AAFT lo riproduce, e anche meglio",
+   "titolo": "L'accordo cross-timeframe lo produce il ricampionamento -- un surrogato AAFT lo riproduce altrettanto bene",
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "surrogati",
-   "valore_misurato": "p(tasso) = 0,8571 su T+2, 0,5714 su T+3, 0,9048 su T+4. Zero livelli su tre sotto 0,05. Osservato pari o inferiore alla mediana del nullo in tutti e tre.",
+   "valore_misurato": "[Rimisura del 2026-09-25.] p(tasso) = 0,5238 su T+2, 0,5714 su T+3, 0,5714 su T+4. Zero livelli su tre sotto 0,05. L'osservato sta sopra la mediana del nullo su T+2 (di 0,002), sotto su T+3, pari su T+4. [STORICO, fasatore di prima:] p(tasso) = 0,8571 su T+2, 0,5714 su T+3, 0,9048 su T+4. Zero livelli su tre sotto 0,05. Osservato pari o inferiore alla mediana del nullo in tutti e tre.",
    "file": "claims/cyclicalresearch/CR-040-n3-ricampionamento.md"
   },
   {
    "id": "CR-041",
    "famiglia": "claims",
    "scuola": "cyclicalresearch",
-   "titolo": "Il rapporto mediana/nominale lo produce il RILEVATORE -- una nube di serie senza cicli lo riproduce su 28 celle su 37",
+   "titolo": "Il rapporto mediana/nominale lo produce il RILEVATORE -- una nube di serie senza cicli lo riproduce su 33 celle su 37",
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "surrogati",
-   "valore_misurato": "28 celle su 37 dentro la banda della nube senza cicli (quota 0,7568). Per livello: T 9/9, T+1 9/9, T+2 3/9, T+3 3/9, T+4 8/9, T+5 6/6, T+7 1/1. Il minimo valore p dichiarabile con 100 repliche e' 0,0099.",
+   "valore_misurato": "[Rimisura del 2026-09-25.] 33 celle su 37 dentro la banda della nube senza cicli (quota 0,8919). Per livello: T 5/6, T+1 6/6, T+2 6/6, T+3 5/6, T+4 6/6, T+5 4/6, T+7 1/1. Il minimo valore p dichiarabile con 100 repliche e' 0,0099. [STORICO, fasatore di prima:] 28 celle su 37 dentro la banda della nube senza cicli (quota 0,7568). Per livello: T 9/9, T+1 9/9, T+2 3/9, T+3 3/9, T+4 8/9, T+5 6/6, T+7 1/1. Il minimo valore p dichiarabile con 100 repliche e' 0,0099.",
    "file": "claims/cyclicalresearch/CR-041-reticolo-rilevatore.md"
   },
   {
@@ -797,7 +803,7 @@
    "stato": "TESTATA",
    "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "H0 NON e' rigettata da nessuno dei tre. C1 margine 0,0000 punti (soglia 2), C2 0,0069 (soglia 2), C3 2,1621 (soglia 3). Tre criteri testabili, zero voti: INDISTINGUIBILE. Sul set di conferma C1 0,0001 e C2 0,3299, stessa conclusione con due ordini di grandezza di campione in piu'.",
+   "valore_misurato": "[Rimisura del 2026-09-25.] H0 NON e' rigettata da nessuno dei tre. C1 margine 0,0 punti (soglia 2), C2 0,0659 (soglia 2), C3 1,2442 (soglia 3). Tre criteri testabili, zero voti: INDISTINGUIBILE. Sul set di conferma C1 0,0 e C2 0,2647. [STORICO, fasatore di prima:] H0 NON e' rigettata da nessuno dei tre. C1 margine 0,0000 punti (soglia 2), C2 0,0069 (soglia 2), C3 2,1621 (soglia 3). Tre criteri testabili, zero voti: INDISTINGUIBILE. Sul set di conferma C1 0,0001 e C2 0,3299, stessa conclusione con due ordini di grandezza di campione in piu'.",
    "file": "claims/cyclicalresearch/CR-043-polarita-sorgente-unica.md"
   },
   {
@@ -810,7 +816,7 @@
    "stato": "TESTATA",
    "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "H0 non e' rigettata da nessuno dei due criteri testabili, e il modo in cui non lo e' conta: C1 da' 1,6075 punti a favore di `close` (soglia 2), C2 da' 1,6217 punti a favore di `high` (soglia 3). Non e' «nessuna differenza»: e' una differenza che esiste in entrambi i criteri e **cambia segno** a seconda di quale qualita' si misura. Sul set di conferma C1 da' 0,5974 punti su 427.192 perturbazioni, stesso verso e margine ancora piu' piccolo.",
+   "valore_misurato": "[Rimisura del 2026-09-25.] H0 non e' rigettata da nessuno dei due criteri testabili. C1 da' 1,5689 punti a favore di `close` (soglia 2), C2 2,3328 punti a favore di `high` (soglia 3): la differenza cambia ancora segno fra i due criteri. Sul set di conferma C1 da' 0,5947 punti su 387.759 perturbazioni, stesso verso. [STORICO, fasatore di prima:] H0 non e' rigettata da nessuno dei due criteri testabili, e il modo in cui non lo e' conta: C1 da' 1,6075 punti a favore di `close` (soglia 2), C2 da' 1,6217 punti a favore di `high` (soglia 3). Non e' «nessuna differenza»: e' una differenza che esiste in entrambi i criteri e **cambia segno** a seconda di quale qualita' si misura. Sul set di conferma C1 da' 0,5974 punti su 427.192 perturbazioni, stesso verso e margine ancora piu' piccolo.",
    "file": "claims/cyclicalresearch/CR-044-massimo-datazione-unica.md"
   },
   {
@@ -823,7 +829,7 @@
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "Test: scarto relativo massimo di C fra gli otto TF senza tetto, su 54 coppie (3 simboli x 18 livelli), 0.001528 — due ordini di grandezza sotto la soglia 0.01, e il TF peggiore e' sempre il Weekly (l'ultimo secchio settimanale e' parziale). Controllo: su M1, dove il tetto morde, lo scarto e' 0.795814 su BTCUSDT ed ETHUSDT e 0.695061 su SOLUSDT, per tutti e 18 i livelli di ciascun simbolo — il controllo supera la soglia di due ordini di grandezza, quindi il criterio discrimina.",
+   "valore_misurato": "[Rimisura del 2026-09-25.] Test: scarto relativo massimo di C fra gli otto TF senza tetto, su 54 coppie, 0.002758 -- sotto la soglia 0.01, e il TF peggiore e' ancora sempre il Weekly. Controllo: su M1 lo scarto e' fra 0.797321 e 0.79735 su BTCUSDT ed ETHUSDT e fra 0.698421 e 0.698474 su SOLUSDT, per tutti e 18 i livelli -- il criterio discrimina. [STORICO, misura del 01/09:] Test: scarto relativo massimo di C fra gli otto TF senza tetto, su 54 coppie (3 simboli x 18 livelli), 0.001528 — due ordini di grandezza sotto la soglia 0.01, e il TF peggiore e' sempre il Weekly (l'ultimo secchio settimanale e' parziale). Controllo: su M1, dove il tetto morde, lo scarto e' 0.795814 su BTCUSDT ed ETHUSDT e 0.695061 su SOLUSDT, per tutti e 18 i livelli di ciascun simbolo — il controllo supera la soglia di due ordini di grandezza, quindi il criterio discrimina.",
    "file": "claims/cyclicalresearch/CR-045-griglia-timeframe-veloci.md"
   },
   {
@@ -836,7 +842,7 @@
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "Braccio (a): 12 coppie discordi su 12 confrontabili. Controllo di identita' (b): 0 discordi su 12 — il criterio non spara a vuoto. Controllo di inadeguatezza (c), il Weekly: 12 discordi su 12 — il criterio discrimina. La discordanza e' guidata dal CV (11 coppie su 12) e dalla mediana (9 su 12); il numero di cicli discorda in 4; la quota di cicli ribassisti non discorda mai, scarto massimo 0.0833 contro una soglia di 0.10.",
+   "valore_misurato": "[Rimisura del 2026-09-24, fasatore corrente.] Braccio (a): 8 coppie discordi su 12 confrontabili (erano 12 col fasatore del 01/09). Controllo di identita' (b): 0 discordi su 12 — il criterio non spara a vuoto. Controllo di inadeguatezza (c), il Weekly: 12 discordi su 12 — il criterio discrimina. La discordanza e' guidata dal CV (7 coppie su 12) e dalla mediana (7 su 12); il numero di cicli discorda in 4; la quota di cicli ribassisti non discorda mai, scarto massimo 0.0887 contro una soglia di 0.10.",
    "file": "claims/cyclicalresearch/CR-046-timeframe-che-risolve.md"
   },
   {
@@ -849,7 +855,7 @@
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "La carta di controllo TIENE, e nel verso che rende attribuibili gli scarti: a n = 78 986 il braccio a cinque livelli (M1) misura 2,799 s contro i 3,303 s del braccio in banda di CR-038 allo stesso punto — dentro la banda IC95 [1,7 ; 5,8], rapporto 0,847. Gli scarti ai punti alti sono percio' attribuibili alla SCALA, non a dati o catena diversi. Sullo stesso punto il braccio a sette livelli (M5) misura 17,035 s, cioe' 5,157 volte: e' il gruppo che NON entra nel giudizio (b) e la misura di quanto costino due livelli in piu'.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] La carta di controllo TIENE: a n = 78 986 il braccio a cinque livelli (M1) misura 2,18 s, dentro la banda IC95 [1,7 ; 5,8], rapporto 0,66 sui 3,303 s del braccio in banda di CR-038 (valore cablato nel modulo, vedi aree grigie). Sullo stesso punto il braccio a sette livelli (M5) misura 9,028 s, rapporto 2,733: e' il gruppo che NON entra nel giudizio (b). [STORICO: la prima corsa del 01/09 dava 2,799 s e 17,035 s; quella del 02/09 2,63 s e 13,535 s.]",
    "file": "claims/cyclicalresearch/CR-047-pavimento-m5-m1-costo.md"
   },
   {
@@ -862,7 +868,7 @@
    "stato": "TESTATA",
    "verdetto": "NON_PROVATA",
    "nulla": "surrogati",
-   "valore_misurato": "INDISTINGUIBILE su 18 celle su 18. Zero celle sotto la nube delle permutazioni e zero sopra, alla soglia del 5%: la copertura fuori campione della banda stimata sul passato non si distingue da quella che si ottiene permutando l'ordine delle durate. Le durate sono scambiabili nel tempo, e percio' la banda descrive la MARGINALE, non il tempo. Il valore p piu' estremo osservato e' 1,000 in due celle (l'osservato al massimo della nube); con 199 permutazioni il minimo dichiarabile sarebbe stato 0,005, e nessuna cella ci si e' avvicinata.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] Il codice scrive DISTINGUIBILE: 17 celle su 18 stanno dentro la nube, UNA sta sopra — SOLUSDT/H1/T-1, copertura 0,9318, uguale al quantile 97,5% della nube, p_sopra 0,05, cioe' esattamente sulla soglia. Zero celle sotto. Il verso «sopra» e' quello che la regola legge come «la prima parte e' piu' dispersa della seconda», non come una banda che segue il tempo. La regola «basta una cella» sta nel codice e non nella dichiarazione, e non corregge per le 18 celle x 2 versi. Il verdetto NON_PROVATA tiene (vedi corpo). [STORICO, fasatore di prima:] INDISTINGUIBILE su 18 celle su 18. Zero celle sotto la nube delle permutazioni e zero sopra, alla soglia del 5%: la copertura fuori campione della banda stimata sul passato non si distingue da quella che si ottiene permutando l'ordine delle durate. Le durate sono scambiabili nel tempo, e percio' la banda descrive la MARGINALE, non il tempo. Il valore p piu' estremo osservato e' 1,000 in due celle (l'osservato al massimo della nube); con 199 permutazioni il minimo dichiarabile sarebbe stato 0,005, e nessuna cella ci si e' avvicinata.",
    "file": "claims/cyclicalresearch/CR-048-banda-elasticita-adattativa.md"
   },
   {
@@ -875,7 +881,7 @@
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "(1) Daily: T+1 RIDONDANTE 3 su 3, rapporto 1,15-1,25, overlap 0,835-0,870, vuoti 0,829-0,869 — dentro le bande che il difetto 148 misura sul Daily (1,06-1,30; 0,835-0,904; 0,829-0,911). PASSA. (2) H1: T+1 VALIDO 3 su 3, rapporto 2,11-2,21, dentro la banda 1,79-2,34 del difetto 148. PASSA. (3) Verso opposto: la regola marca TRE livelli su ogni braccio nuovo (M30: T-4, T-5, T-6; M15: T-5, T-6, T-7; M5: T-5, T-6), quindi non tace: e' una regola attiva che T-3 lo lascia stare.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] (1) Daily: T+1 RIDONDANTE 3 su 3, rapporto 1,24-1,35, overlap 0,744-0,803, vuoti 0,70-0,774. PASSA per la regola dichiarata (RIDONDANTE su tutti gli asset), ma i numeri escono dalle bande del difetto 148, che erano misurate col fasatore di prima: il confronto con quelle bande non vale piu'. (2) H1: T+1 VALIDO 3 su 3, rapporto 1,96-2,08, dentro la banda 1,79-2,34. PASSA. (3) Verso opposto: M30 T-4, T-5, T-6; M15 T-5, T-6, T-7; M5 T-5, T-6 — invariato; sul Daily la regola marca ora anche T+4 in 1 asset su 3. [STORICO, fasatore di prima:] (1) Daily: T+1 RIDONDANTE 3 su 3, rapporto 1,15-1,25, overlap 0,835-0,870, vuoti 0,829-0,869 — dentro le bande che il difetto 148 misura sul Daily (1,06-1,30; 0,835-0,904; 0,829-0,911). PASSA. (2) H1: T+1 VALIDO 3 su 3, rapporto 2,11-2,21, dentro la banda 1,79-2,34 del difetto 148. PASSA. (3) Verso opposto: la regola marca TRE livelli su ogni braccio nuovo (M30: T-4, T-5, T-6; M15: T-5, T-6, T-7; M5: T-5, T-6), quindi non tace: e' una regola attiva che T-3 lo lascia stare.",
    "file": "claims/cyclicalresearch/CR-049-ciclo-giornaliero-timeframe-che-lo-risolve.md"
   },
   {
@@ -888,7 +894,7 @@
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "H1: 2 livelli su 9 confrontabili migliorano, quota 0,2222 contro una soglia dichiarata prima di 0,50 — FALSIFICATA. Dove il confronto e' legittimo la regola sceglie quasi sempre il righello unico stesso, e l'attesa risulta identica. H2: 7 asset su 10 usano piu' di un righello fra i livelli decidibili, e quattro ne usano tre o piu' — CONFERMATA, la scelta non e' inerte. Su 133 coppie valutate, 49 decidibili e 84 NON_DECIDIBILI, queste ultime tutte perche' l'attesa non e' misurata su nessun candidato ammissibile.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente, attese all'istantanea del 2026-09-23 su 20 asset e 67 contesti.] H1: 2 livelli su 24 confrontabili migliorano, quota 0,0833 contro 0,50 — FALSIFICATA. I due sono gli stessi di prima (BNBUSDT T+2 su H4, BTCUSDT T+3 su H2); negli altri 22 la regola sceglie il Daily stesso. H2: 7 asset usano piu' di un righello — CONFERMATA. 229 coppie, 69 decidibili, 160 NON_DECIDIBILI. [STORICO, fasatore di prima:] H1: 2 livelli su 9 confrontabili migliorano, quota 0,2222 contro una soglia dichiarata prima di 0,50 — FALSIFICATA. Dove il confronto e' legittimo la regola sceglie quasi sempre il righello unico stesso, e l'attesa risulta identica. H2: 7 asset su 10 usano piu' di un righello fra i livelli decidibili, e quattro ne usano tre o piu' — CONFERMATA, la scelta non e' inerte. Su 133 coppie valutate, 49 decidibili e 84 NON_DECIDIBILI, queste ultime tutte perche' l'attesa non e' misurata su nessun candidato ammissibile.",
    "file": "claims/cyclicalresearch/CR-050-righello-per-livello.md"
   },
   {
@@ -901,7 +907,7 @@
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "Undici contesti (H2 e H4), 21 celle — un livello si misura SOLO dove e' risolto (CR-045/CR-049), e la prima corsa aveva 61 celle su 82 fuori banda. NESSUN dichiaratore passa in nessun contesto. Sulla corsa larga il verdetto. Il limite non e' la precisione ma la COPERTURA: VTL_SUB supera il tasso di base in 52 celle su 53 e batte il placebo di forma in 48, ma copre meta' dei minimi in 0 celle su 53; VOL_PREC e VTL_LIV coprono 1 su 82 e 0 su 82; VOL_SUB e' il piu' vicino, 6 contesti su 21. NEST e' il rovescio: copre 44 su 53 ed e' sopra il tasso di base in 36. I controlli si comportano come devono: PLACEBO uniforme significativo in 0 celle su 82; PLACEBO_ROTTURA sopra il tasso di base in 62 su 82 — il vantaggio di forma e' reale e grande, ed e' la ragione per cui il secondo controllo e' stato aggiunto.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente: istantanea del 2026-09-24, undici contesti, 22 celle — LINKUSDT/H4 T+2 entra.] NESSUN dichiaratore passa in nessun contesto. VTL_SUB sopra la base in 17 celle su 19, batte la forma in 13, copre meta' dei minimi in 0; NEST copre in 18 su 19, sopra la base in 10. PLACEBO uniforme significativo in 0 celle su 22; PLACEBO_ROTTURA sopra la base in 18 su 22. [STORICO, fasatore di prima:] Undici contesti (H2 e H4), 21 celle — un livello si misura SOLO dove e' risolto (CR-045/CR-049), e la prima corsa aveva 61 celle su 82 fuori banda. NESSUN dichiaratore passa in nessun contesto. Sulla corsa larga il verdetto. Il limite non e' la precisione ma la COPERTURA: VTL_SUB supera il tasso di base in 52 celle su 53 e batte il placebo di forma in 48, ma copre meta' dei minimi in 0 celle su 53; VOL_PREC e VTL_LIV coprono 1 su 82 e 0 su 82; VOL_SUB e' il piu' vicino, 6 contesti su 21. NEST e' il rovescio: copre 44 su 53 ed e' sopra il tasso di base in 36. I controlli si comportano come devono: PLACEBO uniforme significativo in 0 celle su 82; PLACEBO_ROTTURA sopra il tasso di base in 62 su 82 — il vantaggio di forma e' reale e grande, ed e' la ragione per cui il secondo controllo e' stato aggiunto.",
    "file": "claims/cyclicalresearch/CR-051-anticipo-conferma-minimo.md"
   },
   {
@@ -914,7 +920,7 @@
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "VENTUNO celle su undici contesti (H2, H4), tutte sul timeframe che risolve il livello. Sulla corsa larga a 82 celle i segni sono gli stessi. INV_VOL (statico): minimi veri violati nel 65% dei casi, falsi nel 92%; veri < falsi in 21 celle su 21; 18 significative dopo Holm; 9 contesti su 11 (82%) — CONFERMATA. INV_VTL (dinamico): veri 47%, falsi 46% — violati quanto i falsi; veri < falsi in 8 celle su 21; ZERO significative; 0 contesti su 11.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente: 22 celle su undici contesti.] INV_VOL: veri violati il 66,6%, falsi il 92,1%; veri < falsi in 22 celle su 22; 19 significative dopo Holm; 9 contesti su 11 — CONFERMATA. INV_VTL: veri 45,7%, falsi 42,8%; veri < falsi in 7 celle su 22; ZERO significative; 0 contesti su 11. [STORICO, fasatore di prima:] VENTUNO celle su undici contesti (H2, H4), tutte sul timeframe che risolve il livello. Sulla corsa larga a 82 celle i segni sono gli stessi. INV_VOL (statico): minimi veri violati nel 65% dei casi, falsi nel 92%; veri < falsi in 21 celle su 21; 18 significative dopo Holm; 9 contesti su 11 (82%) — CONFERMATA. INV_VTL (dinamico): veri 47%, falsi 46% — violati quanto i falsi; veri < falsi in 8 celle su 21; ZERO significative; 0 contesti su 11.",
    "file": "claims/cyclicalresearch/CR-052-violazione-minimo-statica-e-dinamica.md"
   },
   {
@@ -927,7 +933,7 @@
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "MISURATA il 2026-09-18, 21 celle su 11 contesti. La spiegazione **cade**, e cade sulla predizione che la distingueva dalla lettura banale. Il riferimento del minimo stesso discrimina come in `CR-052` — veri violati 1.342 su 2.003 (65,4% di mediana per cella) contro falsi 1.837 su 2.003 (92,0%), veri<falsi in 21 celle su 21, 9 contesti su 11. **Nessun altro prezzo scambiato lo fa, e due vanno nel verso opposto**: il minimo PRECEDENTE dello stesso livello da' veri 0,508 contro falsi 0,411 e sta sotto i falsi in 1 cella su 21; l'ultimo minimo del SOTTO-livello da' 0,697 contro 0,532 e sta sotto in 0 celle su 21. Zero celle significative per entrambi. La **retta discretizzata** sui prezzi scambiati — il test che decide — resta indistinguibile dalla continua: 0,493 contro 0,492, zero celle significative su 21, zero contesti recuperati dei 21 in cui la continua non passa.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente: 22 celle su 11 contesti.] La spiegazione cade ancora. Il minimo stesso discrimina: veri 1.343 su 2.018 (65,35% di mediana per cella) contro falsi 1.859 su 2.018 (92,17%), veri < falsi in 22 celle su 22, 9 contesti su 11. Il minimo precedente da' 0,5091 contro 0,4057 (veri sotto i falsi in 1 cella su 22), l'ultimo minimo del sotto-livello 0,6958 contro 0,5251 (0 su 22): zero celle significative. La retta discretizzata: 0,4897 contro 0,4734 fra veri e falsi, zero celle significative, zero recuperate delle 22 in cui la continua non passa. [STORICO, fasatore di prima:] MISURATA il 2026-09-18, 21 celle su 11 contesti. La spiegazione **cade**, e cade sulla predizione che la distingueva dalla lettura banale. Il riferimento del minimo stesso discrimina come in `CR-052` — veri violati 1.342 su 2.003 (65,4% di mediana per cella) contro falsi 1.837 su 2.003 (92,0%), veri<falsi in 21 celle su 21, 9 contesti su 11. **Nessun altro prezzo scambiato lo fa, e due vanno nel verso opposto**: il minimo PRECEDENTE dello stesso livello da' veri 0,508 contro falsi 0,411 e sta sotto i falsi in 1 cella su 21; l'ultimo minimo del SOTTO-livello da' 0,697 contro 0,532 e sta sotto in 0 celle su 21. Zero celle significative per entrambi. La **retta discretizzata** sui prezzi scambiati — il test che decide — resta indistinguibile dalla continua: 0,493 contro 0,492, zero celle significative su 21, zero contesti recuperati dei 21 in cui la continua non passa.",
    "file": "claims/cyclicalresearch/CR-053-livello-scambiato-contro-costruzione.md"
   },
   {
@@ -940,7 +946,7 @@
    "stato": "TESTATA",
    "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "MISURATA il 2026-09-18, dopo che il rimedio di §3 del criterio ha prodotto il campo mancante. Le celle sono **21** contro un pavimento di 20: superato di una. `R2` in convalida leave-one-out, come il criterio impone: M1  q ~ f(x), isotona non crescente ......  +0,6397 M2  q ~ livello (l'ipotesi rivale) .......  +0,0274 M3  q ~ righello (il controllo) ..........  -0,2189 M4  q ~ f(x) + livello ...................  +0,6019 Il livello aggiunto a `x` **toglie** 3,8 punti fuori campione; il righello da solo fa **peggio della media globale**. La nulla per permutazione di `x` (10.000 estrazioni, seme 20260918) non raggiunge mai l'`R2` osservato: `p = 9,999e-05`, che con 10.000 estrazioni e' il minimo dichiarabile. **Ma `x` da solo spiega il 64,0% contro il 70% dichiarato il 07/09**, e la soglia non si sposta per far passare l'ipotesi: il verdetto e' `NON_PROVATA` per sei punti. Il collasso c'e', e' forte, non e' il caso, e non arriva alla soglia che la carta stessa aveva fissato. **Il controllo entro un solo livello smentisce la previsione scomoda scritta nell'addendum**, dove avevo previsto `ARITMETICA` o `INDISTINGUIBILE`: su `T+1` (9 celle, nove asset diversi) Spearman vale **-0,933** con `p = 0,0002`, su `T+2` (8 celle) vale -0,452; mediana **-0,693**, dentro la soglia `<= -0,5` dichiarata prima. Qualificatore **MERCATO**: a livello fermo, fra asset con ampiezze diverse, la relazione regge. Non e' solo l'aritmetica della soglia fissa.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] Le celle sono **22** contro un pavimento di 20 (erano 21). `R2` in convalida leave-one-out: M1 `x` da solo +0,5850 (era +0,6397); M2 livello +0,1240 (era +0,0274); M3 righello -0,1938 (era -0,2189); M4 `x` + livello +0,5738 (era +0,6019). Il livello aggiunto a `x` toglie 1,1 punti (erano 3,8). Nulla per permutazione: 1 estrazione su 10.000 raggiunge l'`R2` osservato, `p = 2,0e-04` (era 0 su 10.000, `p = 9,999e-05`). Controllo entro il livello: `T+1` -0,8833 su 9 celle, `p = 0,0016`; `T+2` -0,4435 su 9 celle; mediana -0,6634, dentro la soglia `<= -0,5`: qualificatore MERCATO. `x` spiega il 58,5% contro il 70%: il verdetto `NON_PROVATA` tiene, e si allontana dalla soglia. [STORICO, fasatore di prima.] MISURATA il 2026-09-18, dopo che il rimedio di §3 del criterio ha prodotto il campo mancante. Le celle sono **21** contro un pavimento di 20: superato di una. `R2` in convalida leave-one-out, come il criterio impone: M1  q ~ f(x), isotona non crescente ......  +0,6397 M2  q ~ livello (l'ipotesi rivale) .......  +0,0274 M3  q ~ righello (il controllo) ..........  -0,2189 M4  q ~ f(x) + livello ...................  +0,6019 Il livello aggiunto a `x` **toglie** 3,8 punti fuori campione; il righello da solo fa **peggio della media globale**. La nulla per permutazione di `x` (10.000 estrazioni, seme 20260918) non raggiunge mai l'`R2` osservato: `p = 9,999e-05`, che con 10.000 estrazioni e' il minimo dichiarabile. **Ma `x` da solo spiega il 64,0% contro il 70% dichiarato il 07/09**, e la soglia non si sposta per far passare l'ipotesi: il verdetto e' `NON_PROVATA` per sei punti. Il collasso c'e', e' forte, non e' il caso, e non arriva alla soglia che la carta stessa aveva fissato. **Il controllo entro un solo livello smentisce la previsione scomoda scritta nell'addendum**, dove avevo previsto `ARITMETICA` o `INDISTINGUIBILE`: su `T+1` (9 celle, nove asset diversi) Spearman vale **-0,933** con `p = 0,0002`, su `T+2` (8 celle) vale -0,452; mediana **-0,693**, dentro la soglia `<= -0,5` dichiarata prima. Qualificatore **MERCATO**: a livello fermo, fra asset con ampiezze diverse, la relazione regge. Non e' solo l'aritmetica della soglia fissa.",
    "file": "claims/cyclicalresearch/CR-054-collasso-della-conferma.md"
   },
   {
@@ -953,7 +959,7 @@
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "MISURATO il 2026-09-07, e il controllo dice **conta il segnale**: su 34 coppie `VOL_SUB`/`VTL_SUB` — stessa ancora, stesso tetto per costruzione — le coperture differiscono di **22,4 punti percentuali** in mediana, oltre il doppio della soglia di 10 pp dichiarata nel criterio. A parita' di latenza il segnale fa una differenza grande, quindi l'ancora non comanda. Nota sul dato grezzo: la carta lo dichiarava gia' disponibile. NON lo era. Le durate delle finestre non erano nell'esito di `CR-051`, che registrava solo `n_finestre`; ne' vi era l'attesa del sotto-livello. Difetto 242: una carta puo' dichiarare un dataset che non esiste, e finche' nessuno lo legge la dichiarazione sembra vera. I due campi li scrive ora il produttore.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] Il controllo dice ancora **conta il segnale**: su 38 coppie `VOL_SUB`/`VTL_SUB` le coperture differiscono di **23,36 punti percentuali** in mediana (erano 22,41 su 34 coppie), oltre il doppio della soglia di 10 pp. [STORICO, fasatore di prima.] MISURATO il 2026-09-07, e il controllo dice **conta il segnale**: su 34 coppie `VOL_SUB`/`VTL_SUB` — stessa ancora, stesso tetto per costruzione — le coperture differiscono di **22,4 punti percentuali** in mediana, oltre il doppio della soglia di 10 pp dichiarata nel criterio. A parita' di latenza il segnale fa una differenza grande, quindi l'ancora non comanda. Nota sul dato grezzo: la carta lo dichiarava gia' disponibile. NON lo era. Le durate delle finestre non erano nell'esito di `CR-051`, che registrava solo `n_finestre`; ne' vi era l'attesa del sotto-livello. Difetto 242: una carta puo' dichiarare un dataset che non esiste, e finche' nessuno lo legge la dichiarazione sembra vera. I due campi li scrive ora il produttore.",
    "file": "claims/cyclicalresearch/CR-055-copertura-limitata-dalla-latenza-dell-ancora.md"
   },
   {
@@ -979,7 +985,7 @@
    "stato": "TESTATA",
    "verdetto": "CONFERMATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "CROLLO, e non e' un decadimento. `q(d)` = quota di contesti in cui la famiglia passa: `q(0) = 0,818` (9 contesti su 11, 17 celle su 21), e poi **zero per ogni altra distanza** — d=1, 2, 3, 5, 8, 13, tutte a 0 su 11. La quota dei minimi VERI violati sale da 0,670 a 0,906 spostando il riferimento di **una sola barra**, e continua a salire fino a 0,990 a tredici barre; quella dei falsi resta quasi ferma, da 0,917 a 0,833. Le due curve si incrociano fra d=0 e d=1 e non si reincontrano piu'.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] CROLLO, e il verdetto tiene. `q(0) = 0,818` (9 contesti su 11, 19 celle su 22) e **zero per ogni altra distanza**, d=1..13. La quota dei minimi VERI violati sale da 0,6655 a 0,9039 spostando il riferimento di una barra, e arriva a 0,9941 a tredici barre; quella dei falsi va da 0,9212 a 0,832. Le curve si incrociano ancora fra d=0 e d=1. [STORICO, fasatore di prima.] CROLLO, e non e' un decadimento. `q(d)` = quota di contesti in cui la famiglia passa: `q(0) = 0,818` (9 contesti su 11, 17 celle su 21), e poi **zero per ogni altra distanza** — d=1, 2, 3, 5, 8, 13, tutte a 0 su 11. La quota dei minimi VERI violati sale da 0,670 a 0,906 spostando il riferimento di **una sola barra**, e continua a salire fino a 0,990 a tredici barre; quella dei falsi resta quasi ferma, da 0,917 a 0,833. Le due curve si incrociano fra d=0 e d=1 e non si reincontrano piu'.",
    "file": "claims/cyclicalresearch/CR-057-potere-del-livello-e-distanza.md"
   },
   {
@@ -992,8 +998,60 @@
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "gruppo_di_controllo",
-   "valore_misurato": "MISURATA il 2026-09-18, corsa separata di 626 s su 28 contesti (21 con livelli, 11 nel gruppo di Holm), istantanea 2026-09-18T11:19:11Z, lettura primaria `AMPIEZZA`. **Il migliore dei due combinatori passa in 1 contesto su 11 (9%)** — `COMBI-P`; `COMBI-N` in **0 su 11**. La soglia di §E per dichiarare una combinazione anche solo PARZIALE e' un terzo dei contesti: **NON COMBINA**. **E il pavimento di sola forma fa MEGLIO del combinatore vero**: `COMBI-FORMA-N` passa in **2 contesti su 11 (18%)**, il doppio del migliore combinatore vero. Non e' «la combinazione non basta»: e' che cio' che la combinazione produce lo produce gia' la forma. Cella per cella, sulle 21 celle misurate: `COMBI-N` supera il tasso di base in 19, resta significativo dopo Holm in **1**, batte il proprio pavimento di forma in **5**, copre almeno meta' dei minimi in **2**, batte il miglior dichiaratore singolo della stessa cella in **7**. `COMBI-P`: 17, **2**, 9, 9, **7**. Precisione mediana 79% e 75% contro un tasso di base del 67%; copertura 38% e 48%. **La prova del banco di §E e' superata**: nessun pavimento di sola forma raggiunge la soglia di COMBINAZIONE UTILE, quindi la misura si puo' leggere.",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] Corsa di 382,8 s, istantanea 2026-09-24T08:39:35Z, lettura primaria `AMPIEZZA`, 11 contesti nel gruppo di Holm, 22 celle per dichiaratore (erano 21). Il verdetto tiene: `COMBI-P` passa in 1 contesto su 11, `COMBI-N` in 0, `COMBI-FORMA-N` in 2, `COMBI-FORMA-P` in 0 — gli stessi conteggi di prima. **NON COMBINA**. Cella per cella, su 22: `COMBI-N` 20 sopra la base, **2** significative dopo Holm (era 1), 5 batte la forma, 2 copertura >= 50%, **8** batte il miglior singolo (era 7). `COMBI-P`: 19, 2, 10, 9, **9** (erano 17, 2, 9, 9, 7). Precisione mediana 77% e 75% (erano 79% e 75%), copertura 40% e 46% (erano 38% e 48%). La prova del banco resta superata. [STORICO, fasatore di prima.] MISURATA il 2026-09-18, corsa separata di 626 s su 28 contesti (21 con livelli, 11 nel gruppo di Holm), istantanea 2026-09-18T11:19:11Z, lettura primaria `AMPIEZZA`. **Il migliore dei due combinatori passa in 1 contesto su 11 (9%)** — `COMBI-P`; `COMBI-N` in **0 su 11**. La soglia di §E per dichiarare una combinazione anche solo PARZIALE e' un terzo dei contesti: **NON COMBINA**. **E il pavimento di sola forma fa MEGLIO del combinatore vero**: `COMBI-FORMA-N` passa in **2 contesti su 11 (18%)**, il doppio del migliore combinatore vero. Non e' «la combinazione non basta»: e' che cio' che la combinazione produce lo produce gia' la forma. Cella per cella, sulle 21 celle misurate: `COMBI-N` supera il tasso di base in 19, resta significativo dopo Holm in **1**, batte il proprio pavimento di forma in **5**, copre almeno meta' dei minimi in **2**, batte il miglior dichiaratore singolo della stessa cella in **7**. `COMBI-P`: 17, **2**, 9, 9, **7**. Precisione mediana 79% e 75% contro un tasso di base del 67%; copertura 38% e 48%. **La prova del banco di §E e' superata**: nessun pavimento di sola forma raggiunge la soglia di COMBINAZIONE UTILE, quindi la misura si puo' leggere.",
    "file": "claims/cyclicalresearch/CR-058-combinatore-dei-dichiaratori.md"
+  },
+  {
+   "id": "CR-059",
+   "famiglia": "claims",
+   "scuola": "cyclicalresearch",
+   "titolo": "L'aderenza delle statistiche rapide ordina i contesti per prevedibilita' del ciclo successivo",
+   "autore": "CyclicalResearch",
+   "autore_grezzo": "CyclicalResearch",
+   "stato": "TESTATA",
+   "verdetto": "NON_PROVATA",
+   "nulla": "surrogati",
+   "valore_misurato": "RIMISURA del 24/09 dopo l'errata §12.519 (la penalita' del campione conta i cicli): P1 rho1 -0,698, p 0,0001 in entrambe le nulle; errore mediano per terzile 0,353 / 0,247 / 0,250 — NON monotono. P2: rho medio 0,017 (164 contesti), p del verso promesso 0,9998, del contrario 0,0003. Prima della correzione: rho1 -0,682, P2 0,016 (`esito_prima_12519.json`).",
+   "file": "claims/cyclicalresearch/CR-059-aderenza-delle-statistiche-rapide.md"
+  },
+  {
+   "id": "CR-060",
+   "famiglia": "claims",
+   "scuola": "cyclicalresearch",
+   "titolo": "Il rank composito delle statistiche rapide ordina asset e livelli per prevedibilita' del ciclo",
+   "autore": "CyclicalResearch",
+   "autore_grezzo": "CyclicalResearch",
+   "stato": "TESTATA",
+   "verdetto": "NON_PROVATA",
+   "nulla": "surrogati",
+   "valore_misurato": "P1: rho1 -0,626, p 0,0001 in entrambe le nulle; errore mediano per terzile 0,353 / 0,247 / 0,251 — NON monotono. P2: rho medio 0,022 (171 contesti), p contrario 0,0001.",
+   "file": "claims/cyclicalresearch/CR-060-rank-composito-delle-statistiche-rapide.md"
+  },
+  {
+   "id": "CR-061",
+   "famiglia": "claims",
+   "scuola": "cyclicalresearch",
+   "titolo": "La regolarita' semplice (CV% delle durate) ordina i contesti per prevedibilita' del ciclo successivo",
+   "autore": "CyclicalResearch",
+   "autore_grezzo": "CyclicalResearch",
+   "stato": "TESTATA",
+   "verdetto": "CONFERMATA",
+   "nulla": "surrogati",
+   "valore_misurato": "P1: rho1 -0,725, p 0,0001 in entrambe le nulle (il minimo dichiarabile); errore mediano per terzile 0,353 / 0,250 / 0,247 — monotono. P2: rho medio 0,014 (171 contesti), p del verso promesso 0,9976, del contrario 0,0025.",
+   "file": "claims/cyclicalresearch/CR-061-regolarita-semplice-delle-statistiche-rapide.md"
+  },
+  {
+   "id": "CR-062",
+   "famiglia": "claims",
+   "scuola": "cyclicalresearch",
+   "titolo": "La fascia interquartile dei ritracciamenti contiene il ritracciamento del ciclo successivo una volta su due",
+   "autore": "CyclicalResearch",
+   "autore_grezzo": "CyclicalResearch",
+   "stato": "TESTATA",
+   "verdetto": "CONFERMATA",
+   "nulla": "gruppo_di_controllo",
+   "valore_misurato": "Tool calibrato in 4 contesti valutabili su 4 (copertura 0,444-0,496); Fibonacci in 0 su 4 (0,180-0,263, per difetto). ETH/D e SOL/D insufficienti (6 e 3 istanti).",
+   "file": "claims/cyclicalresearch/CR-062-fascia-del-ritracciamento-calibrata.md"
   },
   {
    "id": "HU-001",
@@ -1057,7 +1115,7 @@
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "surrogati",
-   "valore_misurato": "mediana della nube per statistica e coppia, in evidence/LG-004.json",
+   "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] mediana della nube per statistica e coppia, in evidence/LG-004.json; la misura precedente in evidence/LG-004-20260924-prima-del-codice-del-5-settembre.json",
    "file": "claims/luigi/LG-004-struttura-multi-asset.md"
   }
  ]

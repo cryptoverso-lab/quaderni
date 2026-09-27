@@ -59,7 +59,10 @@ def disegna(schermo: bool = False) -> Path:
         asse = assi[indice]
         for posizione, riga in zip(x, righe):
             ridondante = riga["esito"] == "RIDONDANTE"
-            stile = layout.riempimento(2 if ridondante else 0, schermo)
+            # La barra del braccio di controllo e' CHIARA davvero, come dice la didascalia:
+            # il verde pieno aveva la luminanza del blu, e in grigi le due erano uguali.
+            stile = ({"facecolor": layout.BANDE_GRIGI[0], "edgecolor": layout.tinta(2, schermo),
+                      "linewidth": 0.9} if ridondante else layout.riempimento(0, schermo))
             altezza = (riga[chiave_lo] + riga[chiave_hi]) / 2.0
             asse.bar(posizione, altezza, width=0.6, zorder=2, **stile)
             asse.plot([posizione, posizione], [riga[chiave_lo], riga[chiave_hi]],

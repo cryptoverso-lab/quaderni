@@ -78,7 +78,9 @@ def disegna(schermo: bool = False) -> Path:
     posizione = {c: k for k, c in enumerate(coppie)}
     for indice, (mercato, breve) in enumerate(MERCATI.items()):
         etichette, valori = dati[mercato]
-        x = [posizione[c] for c in etichette]
+        # Un piccolo scarto orizzontale per mercato: rapporti quasi uguali
+        # (T+2→T+1 su ETH e SOL) altrimenti si coprono l'un l'altro.
+        x = [posizione[c] + (indice - 1) * 0.16 for c in etichette]
         sinistra.plot(x, valori, SEGNI[indice], markersize=4, linestyle="none",
                       label=breve, **{k: v for k, v in
                                       layout.serie(indice, schermo).items()
@@ -104,8 +106,10 @@ def disegna(schermo: bool = False) -> Path:
         y = _quota_compatibile(tutti, np.array([soglia]))[0]
         destra.plot([soglia * 100], [y], "o", markersize=4, color="#1a1a1a" if not (schermo or layout.STAMPA_A_COLORI) else "#a63603")
         destra.annotate(f"±{int(soglia * 100)}%: {layout.numero(y, 0)}%",
-                        # Le soglie a pari quota si scrivono una sotto e una sopra.
-                        xy=(soglia * 100, y), xytext=(-2, 5 if soglia == 0.50 else -11),
+                        # Tutte sotto il punto (sopra il ±50% il gradino della
+                        # curva attraversava la scritta), le due a pari quota
+                        # su due righe diverse.
+                        xy=(soglia * 100, y), xytext=(-2, -22 if soglia == 0.50 else -11),
                         textcoords="offset points", fontsize=6.5, ha="left")
     destra.set_xlabel("tolleranza attorno al due (%)")
     destra.set_ylabel("compatibili (%)")

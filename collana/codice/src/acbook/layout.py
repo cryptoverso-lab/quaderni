@@ -172,10 +172,12 @@ def bande(schermo: bool = False) -> tuple[str, str, str]:
 
 
 def serie(indice: int, schermo: bool = False) -> dict:
-    """Stile della n-esima serie: colore **e** tratto, mai uno solo dei due."""
-    if schermo:
-        return {"color": COLORI_SCHERMO[indice % len(COLORI_SCHERMO)], "linestyle": "-"}
-    if STAMPA_A_COLORI:
+    """Stile della n-esima serie: colore **e** tratto, mai uno solo dei due.
+
+    Anche a schermo: fino al 27/09/2026 lo schermo dava sempre il continuo e le
+    serie dell'EPUB si distinguevano per il solo colore (DIRETTIVE §2).
+    """
+    if schermo or STAMPA_A_COLORI:
         return {"color": COLORI_SCHERMO[indice % len(COLORI_SCHERMO)],
                 "linestyle": TRATTI[indice % len(TRATTI)]}
     return {

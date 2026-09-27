@@ -19,7 +19,7 @@
    "figure_dal_testo": [],
    "figure_senza_generatore": [],
    "misure": [],
-   "secondi_stimati": 1.3
+   "secondi_stimati": 1.4
   },
   "1-05": {
    "quaderno": "v1_c05_misurare_un_ciclo.py",
@@ -49,11 +49,11 @@
     {
      "esito": "tre-rilevatori.json",
      "script": "tre_rilevatori.py",
-     "secondi": 1.51,
+     "secondi": 1.83,
      "modo": "rifai"
     }
    ],
-   "secondi_stimati": 3.8
+   "secondi_stimati": 4.4
   },
   "2-01": {
    "quaderno": "v2_c01_quanti_livelli.py",
@@ -95,7 +95,7 @@
     {
      "esito": "livelli-sovrapposizione.json",
      "script": "livelli_sovrapposizione.py",
-     "secondi": 6.06,
+     "secondi": 5.76,
      "modo": "rifai"
     },
     {
@@ -117,7 +117,7 @@
      "modo": "senza"
     }
    ],
-   "secondi_stimati": 10.5
+   "secondi_stimati": 10.8
   },
   "2-23": {
    "quaderno": "v2_c23_misurare_lo_strumento.py",
@@ -157,7 +157,7 @@
      "modo": "senza"
     }
    ],
-   "secondi_stimati": 2.1
+   "secondi_stimati": 2.9
   },
   "3-01": {
    "quaderno": "v3_c01_bilancio.py",
