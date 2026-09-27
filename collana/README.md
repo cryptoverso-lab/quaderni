@@ -24,6 +24,13 @@ Il codice e i dati degli altri capitoli sono riservati a chi possiede il volume.
 acquistati, hanno invece una **licenza d'uso personale**, scritta nel file `LICENZA.md` di ciascun
 pacchetto. Il testo dei volumi non è in questa cartella e resta protetto.
 
+**Dati.** La licenza MIT copre il codice, non i dati di mercato. I prezzi delle criptovalute in
+`dati/snapshot/` sono di **Binance**, dagli archivi pubblici di **Binance Vision**
+(<https://data.binance.vision>), con licenza
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it), e le serie derivate in
+`dati/serie/` portano la stessa attribuzione e la stessa licenza. Fonte, licenza e trasformazioni sono
+in [dati/snapshot/FONTE-E-LICENZA.md](dati/snapshot/FONTE-E-LICENZA.md).
+
 ---
 
 # Falsificationist Cycle Analysis — the notebooks on show
@@ -38,3 +45,10 @@ volume.
 [LICENSE](LICENSE). The volume packages, which the setup notebook brings into their buyers' Drive,
 carry a **personal-use licence** instead, in each package's `LICENZA.md`. The text of the volumes is
 not in this folder and remains protected.
+
+**Data.** The MIT licence covers the code, not the market data. The crypto prices in
+`dati/snapshot/` are **Binance** data from the public **Binance Vision** archives
+(<https://data.binance.vision>), under
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), and the derived series in
+`dati/serie/` carry the same attribution and licence. Source, licence and transformations are in
+[dati/snapshot/FONTE-E-LICENZA.md](dati/snapshot/FONTE-E-LICENZA.md).

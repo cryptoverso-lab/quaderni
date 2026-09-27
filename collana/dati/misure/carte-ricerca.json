@@ -1,7 +1,7 @@
 {
  "generato": "2026-09-27",
  "fonte": "theory/ di CiclycalResearch: concepts, claims, contraddizioni",
- "commit_ricerca": "7c7d669a",
+ "commit_ricerca": "e366d137",
  "nota": "Anagrafica delle carte, non il loro contenuto operativo: di proposito non contiene nulla del rilevatore, delle sue soglie o della sua calibrazione. Il terzo volume cita da qui.",
  "totali": {
   "carte": 73,
@@ -12,8 +12,8 @@
   },
   "verdetti": {
    "CONFERMATA": 26,
-   "FALSIFICATA": 18,
-   "NON_PROVATA": 19,
+   "FALSIFICATA": 15,
+   "NON_PROVATA": 22,
    "NON_TESTABILE": 1
   }
  },
@@ -31,8 +31,8 @@
    "testate": 53,
    "verdetti": {
     "CONFERMATA": 23,
-    "FALSIFICATA": 15,
-    "NON_PROVATA": 14,
+    "FALSIFICATA": 12,
+    "NON_PROVATA": 17,
     "NON_TESTABILE": 1
    },
    "identificativi": [
@@ -671,7 +671,7 @@
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "FALSIFICATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
    "valore_misurato": "Il pavimento permutato fa **75,74 barre** di errore mediano nel braccio risolto, contro **73,54** del fattore vero e **74,50** della mediana semplice: il fattore vero batte il permutato, quindi l'ampiezza porta informazione — ma di cosi' poco che non arriva alla soglia. Nel braccio allargato [rimisura del 2026-09-25; col fasatore di prima 10,64, 11,28 e 9,00] il permutato fa **11,13** contro **11,70** del fattore vero e **9,50** della mediana semplice: li' il fattore vero e' **peggio** del proprio placebo. E il permutato riduce oltre il 15% in **6 celle su 142**, contro la previsione di §8.2 che diceva «piu' di un terzo»: SMENTITA.",
    "file": "claims/cyclicalresearch/CR-032-fattore-ampiezza-proiezioni.md"
@@ -918,7 +918,7 @@
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "FALSIFICATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
    "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente: 22 celle su undici contesti.] INV_VOL: veri violati il 66,6%, falsi il 92,1%; veri < falsi in 22 celle su 22; 19 significative dopo Holm; 9 contesti su 11 — CONFERMATA. INV_VTL: veri 45,7%, falsi 42,8%; veri < falsi in 7 celle su 22; ZERO significative; 0 contesti su 11. [STORICO, fasatore di prima:] VENTUNO celle su undici contesti (H2, H4), tutte sul timeframe che risolve il livello. Sulla corsa larga a 82 celle i segni sono gli stessi. INV_VOL (statico): minimi veri violati nel 65% dei casi, falsi nel 92%; veri < falsi in 21 celle su 21; 18 significative dopo Holm; 9 contesti su 11 (82%) — CONFERMATA. INV_VTL (dinamico): veri 47%, falsi 46% — violati quanto i falsi; veri < falsi in 8 celle su 21; ZERO significative; 0 contesti su 11.",
    "file": "claims/cyclicalresearch/CR-052-violazione-minimo-statica-e-dinamica.md"
@@ -931,7 +931,7 @@
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "FALSIFICATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
    "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente: 22 celle su 11 contesti.] La spiegazione cade ancora. Il minimo stesso discrimina: veri 1.343 su 2.018 (65,35% di mediana per cella) contro falsi 1.859 su 2.018 (92,17%), veri < falsi in 22 celle su 22, 9 contesti su 11. Il minimo precedente da' 0,5091 contro 0,4057 (veri sotto i falsi in 1 cella su 22), l'ultimo minimo del sotto-livello 0,6958 contro 0,5251 (0 su 22): zero celle significative. La retta discretizzata: 0,4897 contro 0,4734 fra veri e falsi, zero celle significative, zero recuperate delle 22 in cui la continua non passa. [STORICO, fasatore di prima:] MISURATA il 2026-09-18, 21 celle su 11 contesti. La spiegazione **cade**, e cade sulla predizione che la distingueva dalla lettura banale. Il riferimento del minimo stesso discrimina come in `CR-052` — veri violati 1.342 su 2.003 (65,4% di mediana per cella) contro falsi 1.837 su 2.003 (92,0%), veri<falsi in 21 celle su 21, 9 contesti su 11. **Nessun altro prezzo scambiato lo fa, e due vanno nel verso opposto**: il minimo PRECEDENTE dello stesso livello da' veri 0,508 contro falsi 0,411 e sta sotto i falsi in 1 cella su 21; l'ultimo minimo del SOTTO-livello da' 0,697 contro 0,532 e sta sotto in 0 celle su 21. Zero celle significative per entrambi. La **retta discretizzata** sui prezzi scambiati — il test che decide — resta indistinguibile dalla continua: 0,493 contro 0,492, zero celle significative su 21, zero contesti recuperati dei 21 in cui la continua non passa.",
    "file": "claims/cyclicalresearch/CR-053-livello-scambiato-contro-costruzione.md"

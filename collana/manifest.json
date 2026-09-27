@@ -1,6 +1,6 @@
 {
  "prodotto": "vetrina-cicli",
- "generato": "2026-09-27T19:54:37+00:00",
+ "generato": "2026-09-27T22:01:10+00:00",
  "capitoli": [
   "1-01",
   "1-05",
@@ -167,12 +167,12 @@
   },
   {
    "percorso": "dati/misure/carte-ricerca.json",
-   "sha256": "0e44927329e24e13625b19f0c01b6139782f2e2ab85b2c56524a3d37b538299b",
+   "sha256": "50f63f68521f65d5b66e5c761e67481f52a0c2f9d2a9da5c4b1a87acd24d7078",
    "byte": 70618
   },
   {
    "percorso": "dati/misure/ciclo-giornaliero.json",
-   "sha256": "cbf278d90fd5ea2b88fc3536ac6f0fd1999fb42cc6b6a0346e5adeb37a4d6b5b",
+   "sha256": "dc605e845bfacc8c64a49a8e2d3d70daf999cad16109cc5062e4df16f565aa0f",
    "byte": 8046
   },
   {
@@ -192,7 +192,7 @@
   },
   {
    "percorso": "dati/misure/overlap-nulla.json",
-   "sha256": "6a84c4309f3dfd8ee7241eb8b96c178807ecd68e9af84c5f87ee5f940c4434d6",
+   "sha256": "b4d87d7badd5e013f5f508bad318a5e778ddcc4dd686cb16fcdf58c8d62ae5b2",
    "byte": 9289
   },
   {
@@ -202,12 +202,12 @@
   },
   {
    "percorso": "dati/misure/potenza-quaternario-fibonacci.json",
-   "sha256": "506ed8a59414d81363746918ee1cffefdff66f75e2edf429667a6d2f75ac5a00",
+   "sha256": "a817cee21ac3e18751c02ec02ebc6d1b6053b5a5511611ca318f5ccdd4c336c3",
    "byte": 1303
   },
   {
    "percorso": "dati/misure/ritracciamento.json",
-   "sha256": "b498b47db4d34e2d94fea1b832a5705289345dbb52bc4471ba6c5c7771183719",
+   "sha256": "89e7efd272d6f9c2bd3a534419a7251e470a078c1211cf08691e51e1682d6cb9",
    "byte": 31253
   },
   {
@@ -296,9 +296,29 @@
    "byte": 170680
   },
   {
+   "percorso": "dati/snapshot/FONTE-E-LICENZA.md",
+   "sha256": "8617ff94cd2fdff7933ac672adea44a90f136e05a154fb7a4c2e50eea8dab90e",
+   "byte": 4431
+  },
+  {
    "percorso": "dati/snapshot/SOLUSDT_D.csv",
    "sha256": "c59b0e65dc3a6c30b185122917d68bc7f697d855c8737e456a17cdba09d59228",
    "byte": 102871
+  },
+  {
+   "percorso": "dati/snapshot/registro-h4.json",
+   "sha256": "7c24043c717495d2ab04f4ec3f9853bfa2e66f0381cb5f5ddecf893f2137add3",
+   "byte": 1281
+  },
+  {
+   "percorso": "dati/snapshot/registro-serie-italiane.json",
+   "sha256": "9d6523f2edbc3fdcde0fe180ba7692cb96550df2557e01cccc834810a8c49473",
+   "byte": 763
+  },
+  {
+   "percorso": "dati/snapshot/registro.json",
+   "sha256": "f4c3a2724d34e5cafcf9f3e19373ca35733941b8cb08a3f658c9fd1e2b224b32",
+   "byte": 1036
   },
   {
    "percorso": "dati/verdetti/BTCUSDT_D/cross_asset/data.json",
@@ -504,7 +524,19 @@
    "percorso": "dati/snapshot/ETHUSDT_D.csv"
   },
   {
+   "percorso": "dati/snapshot/FONTE-E-LICENZA.md"
+  },
+  {
    "percorso": "dati/snapshot/SOLUSDT_D.csv"
+  },
+  {
+   "percorso": "dati/snapshot/registro-h4.json"
+  },
+  {
+   "percorso": "dati/snapshot/registro-serie-italiane.json"
+  },
+  {
+   "percorso": "dati/snapshot/registro.json"
   },
   {
    "percorso": "dati/verdetti/BTCUSDT_D/cross_asset/data.json"

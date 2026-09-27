@@ -19,3 +19,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+This licence does not cover the market data under `dati/`: the Binance prices
+(source: Binance Vision, https://data.binance.vision) and the series derived
+from them are under CC BY-NC-SA 4.0, as stated in dati/snapshot/FONTE-E-LICENZA.md.

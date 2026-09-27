@@ -3,11 +3,12 @@ MIT License
 Copyright (c) 2026 Luigi Garone / Cryptoverso
 
 This licence covers the contents of this folder only: the showcase notebooks, the
-`avvio.py` start module, the `cvbook` modules and the data snapshots published
-here, with their register. The data are price series derived from public archives;
-the licence covers their selection, transformation and format, and grants no
-rights over third-party databases. Source and extraction date of every series are
-in `codice/dati/registro.json` and must be kept in any reuse.
+`avvio.py` start module and the `cvbook` modules. It does NOT cover the market
+data in `codice/dati/snapshot/`: they are Binance data from the public Binance
+Vision archives (https://data.binance.vision), distributed under CC BY-NC-SA 4.0
+(https://creativecommons.org/licenses/by-nc-sa/4.0/). Source, extraction date
+and transformations of every series are in `codice/dati/registro.json` and
+`codice/dati/FONTE-E-LICENZA.md`, and must be kept in any reuse.
 
 NOT covered: the text of the book "La matematica di chi perde", its printed figures and cover (all
 rights reserved), and the buyers' package with the full set of notebooks, figure

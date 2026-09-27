@@ -1,0 +1,41 @@
+{
+  "generato": "2026-08-20T03:53:50",
+  "fonte": "data.binance.vision — dump mensili spot klines 4h",
+  "taglio": "2026-06-15",
+  "barre_al_giorno": 6,
+  "serie": {
+    "BTCUSDT": {
+      "barre": 19332,
+      "giorni_coperti": 3225,
+      "barre_per_giorno_medie": 5.994,
+      "giornate_incomplete": 11,
+      "barre_mancanti": 18,
+      "prima": "2017-08-17 04:00:00",
+      "ultima": "2026-06-15 20:00:00",
+      "mesi_mancanti": [],
+      "sha256_parquet": "eff28187a8950f2eed1617bd081c54b3603f521540b3b5b2ec05e845afd6b672"
+    },
+    "ETHUSDT": {
+      "barre": 19332,
+      "giorni_coperti": 3225,
+      "barre_per_giorno_medie": 5.994,
+      "giornate_incomplete": 11,
+      "barre_mancanti": 18,
+      "prima": "2017-08-17 04:00:00",
+      "ultima": "2026-06-15 20:00:00",
+      "mesi_mancanti": [],
+      "sha256_parquet": "f2709c8e053bddfa315ae525780be807afd1c1590eab2cf0963b21a8036bb5dc"
+    },
+    "SOLUSDT": {
+      "barre": 12809,
+      "giorni_coperti": 2135,
+      "barre_per_giorno_medie": 6.0,
+      "giornate_incomplete": 1,
+      "barre_mancanti": 1,
+      "prima": "2020-08-11 04:00:00",
+      "ultima": "2026-06-15 20:00:00",
+      "mesi_mancanti": [],
+      "sha256_parquet": "09f40cfbb09d68fed49cf014948e1cad16d81961389d89ffad2289a6c1cd900e"
+    }
+  }
+}

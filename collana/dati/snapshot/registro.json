@@ -1,0 +1,35 @@
+{
+  "generato": "2026-08-20T03:03:54",
+  "fonte": "data.binance.vision — dump mensili spot klines 1d",
+  "taglio": "2026-06-15",
+  "serie": {
+    "BTCUSDT": {
+      "barre": 3225,
+      "prima": "2017-08-17",
+      "ultima": "2026-06-15",
+      "mesi_mancanti": [],
+      "sha256_parquet": "b17853dc1cf37388176f817af25315b166879cf11650f1099060ca05804a00b9"
+    },
+    "ETHUSDT": {
+      "barre": 3225,
+      "prima": "2017-08-17",
+      "ultima": "2026-06-15",
+      "mesi_mancanti": [],
+      "sha256_parquet": "f514ca51b320e8b00dd21e48034b6a00fca3f658c6c592e7961955b3eaa800b0"
+    },
+    "SOLUSDT": {
+      "barre": 2135,
+      "prima": "2020-08-11",
+      "ultima": "2026-06-15",
+      "mesi_mancanti": [],
+      "sha256_parquet": "8240242da95a7575e40ddc3d574112f711343a68cd05a5bb410bef19d3fb7bcf"
+    },
+    "BNBUSDT": {
+      "barre": 3144,
+      "prima": "2017-11-06",
+      "ultima": "2026-06-15",
+      "mesi_mancanti": [],
+      "sha256_parquet": "dd62731e0c5bda6caf00f18ee84ea6ff7fdf99e226b8d0dc79133606265b5d96"
+    }
+  }
+}

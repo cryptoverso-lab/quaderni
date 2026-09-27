@@ -1,0 +1,18 @@
+{
+  "copiate_il": "2026-09-03",
+  "perche": "Le sei serie italiane erano lette da un percorso assoluto dentro il repository di un altro libro, e quel percorso non esiste piu'. Ogni prodotto tiene la propria copia congelata: due depositi che dicono lo stesso numero sono coerenti, non duplicati.",
+  "provenienza": "snapshot congelato de «La matematica di chi perde», codice/dati/snapshot/",
+  "colonne": {
+    "prezzo": "chiusura",
+    "volume": "volume",
+    "data": "data"
+  },
+  "impronte_sha256_16": {
+    "ftsemib.parquet": "ad37e8ac1ea979dc",
+    "eni.parquet": "6db634e458915b70",
+    "enel.parquet": "f96245c6b593edcc",
+    "intesa.parquet": "25b40b095ee7f728",
+    "generali.parquet": "7e14bf4937ce324e",
+    "eurusd.parquet": "da3f9b7c629d7805"
+  }
+}

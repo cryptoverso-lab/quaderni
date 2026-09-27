@@ -18,7 +18,11 @@ cryptoverso.net, che consegna un codice d'accesso personale. Con quel codice,
 pacchetto completo, ne verifica ogni file e lo copia nel tuo Google Drive.
 
 I dati sono file congelati, gli stessi con cui sono state stampate le figure:
-nessun quaderno chiama un'API di mercato.
+nessun quaderno chiama un'API di mercato. Le serie cripto sono di **Binance**,
+dagli archivi pubblici di **Binance Vision** (<https://data.binance.vision>), con
+licenza [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it):
+fonte e trasformazioni in
+[codice/dati/FONTE-E-LICENZA.md](codice/dati/FONTE-E-LICENZA.md).
 
 Licenza: MIT per il contenuto di questa cartella (`LICENSE`). Il pacchetto degli
 acquirenti ha una licenza d'uso personale e non si ridistribuisce.
@@ -32,4 +36,7 @@ each chapter's QR code leads to the lab page on cryptoverso.net, which hands out
 a personal access code; `avvio_matematica_en.ipynb` then downloads the full
 package, verifies every file and copies it into your Google Drive. Licence: MIT
 for this folder (`LICENSE`); the buyers' package is under a personal-use licence
-and may not be redistributed.
+and may not be redistributed. The crypto series are **Binance** data from the
+public **Binance Vision** archives (<https://data.binance.vision>), under
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/): source
+and transformations in [codice/dati/FONTE-E-LICENZA.md](codice/dati/FONTE-E-LICENZA.md).
