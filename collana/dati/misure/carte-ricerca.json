@@ -1,7 +1,7 @@
 {
  "generato": "2026-09-28",
  "fonte": "theory/ di CiclycalResearch: concepts, claims, contraddizioni",
- "commit_ricerca": "13043b42",
+ "commit_ricerca": "ae251dbb",
  "nota": "Anagrafica delle carte, non il loro contenuto operativo: di proposito non contiene nulla del rilevatore, delle sue soglie o della sua calibrazione. Il terzo volume cita da qui.",
  "totali": {
   "carte": 73,
@@ -11,8 +11,8 @@
    "TESTATA": 63
   },
   "verdetti": {
-   "CONFERMATA": 26,
-   "FALSIFICATA": 11,
+   "CONFERMATA": 25,
+   "FALSIFICATA": 12,
    "NON_PROVATA": 26,
    "NON_TESTABILE": 1
   }
@@ -30,8 +30,8 @@
    "carte": 61,
    "testate": 53,
    "verdetti": {
-    "CONFERMATA": 23,
-    "FALSIFICATA": 8,
+    "CONFERMATA": 22,
+    "FALSIFICATA": 9,
     "NON_PROVATA": 21,
     "NON_TESTABILE": 1
    },
@@ -323,11 +323,11 @@
    "id": "CR-006",
    "famiglia": "claims",
    "scuola": "cyclicalresearch",
-   "titolo": "Togliere T+1 dalla catena crypto Daily migliora la gerarchia e non tocca i livelli alti",
+   "titolo": "Togliere T+1 dove il righello lo risolve rompe la gerarchia — il miglioramento sul Daily era fuori banda",
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "CONFERMATA",
+   "verdetto": "FALSIFICATA",
    "nulla": "gruppo_di_controllo",
    "valore_misurato": null,
    "file": "claims/cyclicalresearch/CR-006-rimozione-t1.md"
