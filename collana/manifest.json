@@ -1,6 +1,6 @@
 {
  "prodotto": "vetrina-cicli",
- "generato": "2026-09-28T02:55:39+00:00",
+ "generato": "2026-09-28T10:09:00+00:00",
  "capitoli": [
   "1-01",
   "1-05",
@@ -167,8 +167,8 @@
   },
   {
    "percorso": "dati/misure/carte-ricerca.json",
-   "sha256": "50f63f68521f65d5b66e5c761e67481f52a0c2f9d2a9da5c4b1a87acd24d7078",
-   "byte": 70618
+   "sha256": "0bb5cacbd073f65cd31ceb262e0524aaafb19889f75e15e960982bda577ed7f0",
+   "byte": 70717
   },
   {
    "percorso": "dati/misure/ciclo-giornaliero.json",

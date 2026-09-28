@@ -1,7 +1,7 @@
 {
- "generato": "2026-09-27",
+ "generato": "2026-09-28",
  "fonte": "theory/ di CiclycalResearch: concepts, claims, contraddizioni",
- "commit_ricerca": "e366d137",
+ "commit_ricerca": "13043b42",
  "nota": "Anagrafica delle carte, non il loro contenuto operativo: di proposito non contiene nulla del rilevatore, delle sue soglie o della sua calibrazione. Il terzo volume cita da qui.",
  "totali": {
   "carte": 73,
@@ -12,8 +12,8 @@
   },
   "verdetti": {
    "CONFERMATA": 26,
-   "FALSIFICATA": 15,
-   "NON_PROVATA": 22,
+   "FALSIFICATA": 11,
+   "NON_PROVATA": 26,
    "NON_TESTABILE": 1
   }
  },
@@ -31,8 +31,8 @@
    "testate": 53,
    "verdetti": {
     "CONFERMATA": 23,
-    "FALSIFICATA": 12,
-    "NON_PROVATA": 17,
+    "FALSIFICATA": 8,
+    "NON_PROVATA": 21,
     "NON_TESTABILE": 1
    },
    "identificativi": [
@@ -262,7 +262,7 @@
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "FALSIFICATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "analitica",
    "valore_misurato": "dip limitato superiormente a 0.25",
    "file": "claims/cyclicalresearch/CR-001-modalita-durate.md"
@@ -374,7 +374,7 @@
    "stato": "TESTATA",
    "verdetto": "FALSIFICATA",
    "nulla": "analitica",
-   "valore_misurato": "quota_sfasati = 0/15 = 0.0 (BTCUSDT 0/5, ETHUSDT 0/5, SOLUSDT 0/5): H0 NON rigettata su nessuna delle 15 combinazioni livello/simbolo valutabili (T+1..T+5, 3 simboli).",
+   "valore_misurato": "quota_sfasati = 0/35 = 0.0 su otto righelli con celle valutabili (D 0/5, H4 0/6, H2 0/3, H1 0/3, M30 0/3, M15 0/3, M5 0/6, M1 0/6; W nessuna cella, DATI_INSUFFICIENTI): H0 NON rigettata su nessuna delle 35 combinazioni righello/livello/simbolo valutabili (3 simboli).",
    "file": "claims/cyclicalresearch/CR-009-sfasamento-daily.md"
   },
   {
@@ -892,7 +892,7 @@
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "FALSIFICATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
    "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente, attese all'istantanea del 2026-09-23 su 20 asset e 67 contesti.] H1: 2 livelli su 24 confrontabili migliorano, quota 0,0833 contro 0,50 — FALSIFICATA. I due sono gli stessi di prima (BNBUSDT T+2 su H4, BTCUSDT T+3 su H2); negli altri 22 la regola sceglie il Daily stesso. H2: 7 asset usano piu' di un righello — CONFERMATA. 229 coppie, 69 decidibili, 160 NON_DECIDIBILI. [STORICO, fasatore di prima:] H1: 2 livelli su 9 confrontabili migliorano, quota 0,2222 contro una soglia dichiarata prima di 0,50 — FALSIFICATA. Dove il confronto e' legittimo la regola sceglie quasi sempre il righello unico stesso, e l'attesa risulta identica. H2: 7 asset su 10 usano piu' di un righello fra i livelli decidibili, e quattro ne usano tre o piu' — CONFERMATA, la scelta non e' inerte. Su 133 coppie valutate, 49 decidibili e 84 NON_DECIDIBILI, queste ultime tutte perche' l'attesa non e' misurata su nessun candidato ammissibile.",
    "file": "claims/cyclicalresearch/CR-050-righello-per-livello.md"
@@ -905,7 +905,7 @@
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "FALSIFICATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
    "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente: istantanea del 2026-09-24, undici contesti, 22 celle — LINKUSDT/H4 T+2 entra.] NESSUN dichiaratore passa in nessun contesto. VTL_SUB sopra la base in 17 celle su 19, batte la forma in 13, copre meta' dei minimi in 0; NEST copre in 18 su 19, sopra la base in 10. PLACEBO uniforme significativo in 0 celle su 22; PLACEBO_ROTTURA sopra la base in 18 su 22. [STORICO, fasatore di prima:] Undici contesti (H2 e H4), 21 celle — un livello si misura SOLO dove e' risolto (CR-045/CR-049), e la prima corsa aveva 61 celle su 82 fuori banda. NESSUN dichiaratore passa in nessun contesto. Sulla corsa larga il verdetto. Il limite non e' la precisione ma la COPERTURA: VTL_SUB supera il tasso di base in 52 celle su 53 e batte il placebo di forma in 48, ma copre meta' dei minimi in 0 celle su 53; VOL_PREC e VTL_LIV coprono 1 su 82 e 0 su 82; VOL_SUB e' il piu' vicino, 6 contesti su 21. NEST e' il rovescio: copre 44 su 53 ed e' sopra il tasso di base in 36. I controlli si comportano come devono: PLACEBO uniforme significativo in 0 celle su 82; PLACEBO_ROTTURA sopra il tasso di base in 62 su 82 — il vantaggio di forma e' reale e grande, ed e' la ragione per cui il secondo controllo e' stato aggiunto.",
    "file": "claims/cyclicalresearch/CR-051-anticipo-conferma-minimo.md"
@@ -996,7 +996,7 @@
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "FALSIFICATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
    "valore_misurato": "[Rimisura del 2026-09-25, fasatore corrente.] Corsa di 382,8 s, istantanea 2026-09-24T08:39:35Z, lettura primaria `AMPIEZZA`, 11 contesti nel gruppo di Holm, 22 celle per dichiaratore (erano 21). Il verdetto tiene: `COMBI-P` passa in 1 contesto su 11, `COMBI-N` in 0, `COMBI-FORMA-N` in 2, `COMBI-FORMA-P` in 0 — gli stessi conteggi di prima. **NON COMBINA**. Cella per cella, su 22: `COMBI-N` 20 sopra la base, **2** significative dopo Holm (era 1), 5 batte la forma, 2 copertura >= 50%, **8** batte il miglior singolo (era 7). `COMBI-P`: 19, 2, 10, 9, **9** (erano 17, 2, 9, 9, 7). Precisione mediana 77% e 75% (erano 79% e 75%), copertura 40% e 46% (erano 38% e 48%). La prova del banco resta superata. [STORICO, fasatore di prima.] MISURATA il 2026-09-18, corsa separata di 626 s su 28 contesti (21 con livelli, 11 nel gruppo di Holm), istantanea 2026-09-18T11:19:11Z, lettura primaria `AMPIEZZA`. **Il migliore dei due combinatori passa in 1 contesto su 11 (9%)** — `COMBI-P`; `COMBI-N` in **0 su 11**. La soglia di §E per dichiarare una combinazione anche solo PARZIALE e' un terzo dei contesti: **NON COMBINA**. **E il pavimento di sola forma fa MEGLIO del combinatore vero**: `COMBI-FORMA-N` passa in **2 contesti su 11 (18%)**, il doppio del migliore combinatore vero. Non e' «la combinazione non basta»: e' che cio' che la combinazione produce lo produce gia' la forma. Cella per cella, sulle 21 celle misurate: `COMBI-N` supera il tasso di base in 19, resta significativo dopo Holm in **1**, batte il proprio pavimento di forma in **5**, copre almeno meta' dei minimi in **2**, batte il miglior dichiaratore singolo della stessa cella in **7**. `COMBI-P`: 17, **2**, 9, 9, **7**. Precisione mediana 79% e 75% contro un tasso di base del 67%; copertura 38% e 48%. **La prova del banco di §E e' superata**: nessun pavimento di sola forma raggiunge la soglia di COMBINAZIONE UTILE, quindi la misura si puo' leggere.",
    "file": "claims/cyclicalresearch/CR-058-combinatore-dei-dichiaratori.md"
