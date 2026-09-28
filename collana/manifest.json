@@ -1,6 +1,6 @@
 {
  "prodotto": "vetrina-cicli",
- "generato": "2026-09-27T22:01:10+00:00",
+ "generato": "2026-09-28T02:55:39+00:00",
  "capitoli": [
   "1-01",
   "1-05",
@@ -82,8 +82,8 @@
   },
   {
    "percorso": "codice/figure/libro3_cap06_potere_su_fibonacci.py",
-   "sha256": "27608ce61aabe95088ad220a9b2ea131cc34e119cb858fe662927bab8e33ba01",
-   "byte": 3498
+   "sha256": "992e36664ae6d025575edd7df661e6dfbf04bf152d5ce87ee928801aa2d01dfa",
+   "byte": 3501
   },
   {
    "percorso": "codice/figure/libro3_cap06_ritracciamento.py",
@@ -147,8 +147,8 @@
   },
   {
    "percorso": "codice/traduzione/testi_figure_en.json",
-   "sha256": "43c64c01c1ac3c05a4dcbe75dc2d5c1a26ca2855366793d0c1b99020acd07cee",
-   "byte": 79533
+   "sha256": "2737a945703b9d91a386c536de68454499b5328f6c2c5f87da20ef9152bb5dd8",
+   "byte": 79524
   },
   {
    "percorso": "codice/verifica/livelli_sovrapposizione.py",

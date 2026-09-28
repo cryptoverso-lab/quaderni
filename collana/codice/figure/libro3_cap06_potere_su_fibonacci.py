@@ -4,9 +4,9 @@ Il paragrafo chiede, prima di chiamare falsificata l'affermazione sul ritracciam
 procedura avrebbe riconosciuto un addensamento vero. La figura porta il controllo di potenza:
 serie costruite con una quota nota di cicli che chiude sul 61,8 per cento, passate per la stessa
 procedura, cento prove per ogni quota. La curva piena conta le prove in cui la procedura
-riconosce il livello impiantato; la tratteggiata quelle in cui conferma anche lo 0,786, che nelle
+riconosce il rapporto impiantato; la tratteggiata quelle in cui conferma anche lo 0,786, che nelle
 serie non c'e'. La riga orizzontale e' la soglia di potere dichiarata prima, la verticale la quota
-minima perche' il livello serva come aspettativa.
+minima perche' il rapporto serva come aspettativa.
 
 Da `dati/misure/potenza-quaternario-fibonacci.json` (blocco `a46`).
 
@@ -47,7 +47,7 @@ def disegna(schermo: bool = False) -> Path:
     asse.axhline(SOGLIA_DI_POTERE, color=layout.GRIGI[2], linewidth=0.8, linestyle="-.", zorder=1,
                  label=f"potere richiesto, {SOGLIA_DI_POTERE} prove su 100")
     asse.axvline(QUOTA_MINIMA, color=layout.GRIGI[2], linewidth=0.8, linestyle=":", zorder=1,
-                 label="quota minima perché il livello serva")
+                 label="quota minima perché il rapporto serva")
     asse.plot(x, riconosciuto, marker="o", markersize=4, label="0,618 riconosciuto (impiantato)",
               **layout.composito(schermo))
     asse.plot(x, vicino, marker="s", markersize=3.6, label="0,786 confermato (non impiantato)",

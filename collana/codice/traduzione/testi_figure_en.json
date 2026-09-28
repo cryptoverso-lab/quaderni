@@ -430,8 +430,6 @@
     "livello della scala ciclica": "level of the cyclical scale",
     "livello della scala ereditata": "level of the inherited scale",
     "livello interrogato": "level queried",
-    "livello statico\n(il minimo precedente)": "static level\n(the previous low)",
-    "livello statico\n(il minimo stesso)": "static level\n(the low itself)",
     "livello, e casi disponibili per mercato (Bitcoin / Ethereum / Solana)": "level, and cases available per market (Bitcoin / Ethereum / Solana)",
     "lo stesso conteggio, due nulle": "the same count, two nulls",
     "log prezzo": "log price",
@@ -881,9 +879,6 @@
     "il ciclo: quando il minimo è dovuto": "the cycle: when the low is due",
     "la liquidità: dove stanno gli ordini": "liquidity: where the orders sit",
     "le 80 celle, valori p ordinati": "the 80 cells, sorted p-values",
-    "livello statico\ndel sotto-livello": "static level\nof the sub-level",
-    "livello statico del sotto-livello": "static level of the sub-level",
-    "livello statico precedente": "previous static level",
     "mediana della nulla AAFT": "median of the AAFT null",
     "mediana della nulla a fase": "median of the phase null",
     "minimo dichiarabile 0,005": "minimum declarable 0.005",
@@ -1015,7 +1010,12 @@
     "soglia dei cicli senza sotto-cicli (0,50)": "threshold for cycles without sub-cycles (0.50)",
     "soglia della sovrapposizione (0,80)": "overlap threshold (0.80)",
     "Bitcoin\nmercato continuo": "Bitcoin\ncontinuous market",
-    "indice italiano\nmercato regolamentato": "Italian index\nregulated market"
+    "indice italiano\nmercato regolamentato": "Italian index\nregulated market",
+    "area statica\n(il minimo stesso)": "static area\n(the low itself)",
+    "area statica\ndel sotto-livello": "static area\nof the sub-level",
+    "area statica del sotto-livello": "static area of the sub-level",
+    "area statica precedente": "previous static area",
+    "quota minima perché il rapporto serva": "minimum share for the ratio to be useful"
   },
   "modelli": [
     [
