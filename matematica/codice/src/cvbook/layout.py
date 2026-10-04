@@ -73,6 +73,14 @@ def gutter_richiesto(pagine: int) -> float:
     raise ValueError(f"{pagine} pagine: oltre il massimo KDP di {PAGINE_MASSIME_KDP}")
 
 
+#: **Anche la stampa e' a colori** (Luigi, 28/09/2026 sera: «tutti i libri in
+#: vendita con tutti i grafici a colori, anche le build di stampa, perche'
+#: verranno stampati a colori»; stessa linea della collana, `acbook.layout`).
+#: Le figure di stampa tengono i tratti e i retini della stampa ma prendono la
+#: tavolozza dello schermo (`cvbook.tinte`). Rimettere False riporta l'interno
+#: in grigi senza toccare nessun generatore.
+STAMPA_A_COLORI = True
+
 #: Requisiti KDP che vincolano il disegno delle figure.
 KDP_MIN_LINEWIDTH_PT = 0.75   # tratti piu' sottili spariscono in stampa
 KDP_MIN_FONTSIZE_PT = 7.0     # corpo minimo ammesso

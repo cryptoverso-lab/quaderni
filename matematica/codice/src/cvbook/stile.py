@@ -20,6 +20,7 @@ from .layout import (
     CORPO_ETICHETTE_PT,
     KDP_MIN_FONTSIZE_PT,
     KDP_MIN_LINEWIDTH_PT,
+    STAMPA_A_COLORI,
     figsize,
 )
 from .lingua import t
@@ -160,22 +161,37 @@ _SCHERMO = _COMUNE | {
 CONTESTI = {"stampa": _STAMPA, "schermo": _SCHERMO}
 
 
+def a_colori(destinazione: str) -> bool:
+    """La figura per questa destinazione e' a colori? Lo schermo sempre, la stampa se
+    `layout.STAMPA_A_COLORI` (dal 28/09/2026). Per i generatori che scrivono un colore
+    anche nel testo («in blu: ...»)."""
+    return destinazione == "schermo" or STAMPA_A_COLORI
+
+
 def _numeri_italiani() -> bool:
     """Virgola decimale sulle tacche degli assi: e' un libro italiano.
 
     Vale solo per l'edizione italiana. Con `CVBOOK_LANG=en` la virgola decimale
     non e' uno stile diverso, e' un numero sbagliato: le tacche di un asse
-    inglese vogliono il punto. In quel caso la locale numerica torna a "C" —
-    punto decimale, nessun separatore di migliaia — e matplotlib formatta come
-    farebbe di suo.
+    inglese vogliono il punto. In quel caso la locale numerica e' quella
+    inglese — punto decimale, virgola per le migliaia.
 
-    Restituisce False se la locale italiana non e' disponibile sulla macchina,
+    Restituisce False se la locale della lingua non e' disponibile sulla macchina,
     cosi' la build non si rompe: le figure escono col punto decimale invece che
     con la virgola, che e' un difetto estetico, non un errore.
     """
     if t("it", "en") == "en":
-        # Esplicito e non per omissione: nello stesso processo qualcun altro
-        # puo' aver gia' impostato la locale italiana.
+        # La locale inglese, non "C": con "C" le migliaia restavano senza
+        # separatore («32500», «1000») mentre le etichette scritte a mano dicono
+        # «100,000» (revisione del 04/10/2026). Senza locale inglese sulla
+        # macchina si torna a "C", esplicitamente: nello stesso processo
+        # qualcun altro puo' aver gia' impostato la locale italiana.
+        for nome in ("en_US.UTF-8", "en_US", "English_United States.1252", "English"):
+            try:
+                locale.setlocale(locale.LC_NUMERIC, nome)
+                return True
+            except locale.Error:
+                continue
         locale.setlocale(locale.LC_NUMERIC, "C")
         return False
     for nome in ("it_IT.UTF-8", "it_IT", "Italian_Italy.1252", "Italian"):
@@ -205,7 +221,14 @@ def contesto(destinazione: str = "stampa"):
         raise ValueError(
             f"destinazione sconosciuta: {destinazione!r} — usa {sorted(CONTESTI)}"
         )
-    with mpl.rc_context(CONTESTI[destinazione]):
+    stile = CONTESTI[destinazione]
+    if destinazione == "stampa" and STAMPA_A_COLORI:
+        # Il testo di serie in `notte` come a schermo: `cvbook.tinte` lascia stare
+        # l'indaco e ricolora solo il nero scritto a mano (etichette dirette). Col
+        # nero di serie della stampa ogni annotazione avrebbe preso il colore di una
+        # serie.
+        stile = stile | {"text.color": BRAND["notte"], "axes.titlecolor": BRAND["notte"]}
+    with mpl.rc_context(stile):
         yield
 
 
@@ -260,9 +283,9 @@ MESI_BREVI = ("gen", "feb", "mar", "apr", "mag", "giu",
 
 #: Stessa cosa in inglese, per `CVBOOK_LANG=en`. Le tacche di data sono
 #: un'etichetta d'asse a tutti gli effetti: seguono la lingua attiva come tutto
-#: il resto.
-_MESI_BREVI_EN = ("jan", "feb", "mar", "apr", "may", "jun",
-                   "jul", "aug", "sep", "oct", "nov", "dec")
+#: il resto. In inglese i mesi vogliono la maiuscola anche abbreviati.
+_MESI_BREVI_EN = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 
 
 def _mesi_brevi() -> tuple[str, ...]:
@@ -335,6 +358,26 @@ def firma(fig, fonte: str, estratto: str) -> None:
     )
 
 
+def voce(ax, x: float, y: float, testo: str, serie, **kw):
+    """Voce di legenda scritta a mano: un campione del tratto di `serie` e, accanto, il nome.
+
+    Coordinate in frazione degli assi, `y` al centro della riga. Una legenda di sole parole
+    non dice quale curva sia quale (revisione del 04/10/2026): il campione lo dice anche in
+    grigi, e il testo dichiara la serie, cosi' a colori ne prende la tinta.
+    """
+    from matplotlib.lines import Line2D
+
+    from .tinte import nomina
+
+    campione = Line2D([x, x + 0.035, x + 0.07], [y, y, y], transform=ax.transAxes,
+                      color=serie.get_color(), linestyle=serie.get_linestyle(),
+                      linewidth=serie.get_linewidth(), marker=serie.get_marker(),
+                      markersize=serie.get_markersize(), markevery=[1], clip_on=False)
+    ax.add_line(campione)
+    kw.setdefault("color", serie.get_color())
+    return nomina(ax.text(x + 0.09, y, testo, transform=ax.transAxes, va="center", **kw), serie)
+
+
 def _appiattisci(percorso, destinazione: str) -> None:
     """Toglie il canale alpha dal PNG appena salvato.
 
@@ -345,9 +388,9 @@ def _appiattisci(percorso, destinazione: str) -> None:
     cosa; il controllo sui grigi non se ne accorgeva perche' guarda il colore,
     non l'alpha.
 
-    La stampa diventa a un canale (`L`): e' gia' tutto grigio, il file dimezza
-    e nel PDF non entra piu' nessuna maschera. Lo schermo resta a colori ma
-    perde l'alpha, composto su bianco.
+    Una figura in grigi (stampa con `STAMPA_A_COLORI` spento) diventa a un
+    canale (`L`): il file dimezza e nel PDF non entra piu' nessuna maschera.
+    Una figura a colori resta RGB ma perde l'alpha, composta su bianco.
     """
     from PIL import Image
 
@@ -357,7 +400,7 @@ def _appiattisci(percorso, destinazione: str) -> None:
         img = img.convert("RGBA")
         fondo = Image.new("RGBA", img.size, (255, 255, 255, 255))
         piatta = Image.alpha_composite(fondo, img)
-        piatta = piatta.convert("L" if destinazione == "stampa" else "RGB")
+        piatta = piatta.convert("RGB" if a_colori(destinazione) else "L")
         dpi = 600 if destinazione == "stampa" else 300
         piatta.save(percorso, dpi=(dpi, dpi))
 
@@ -375,7 +418,14 @@ def salva(fig, percorso, destinazione: str = "stampa") -> None:
     finisce nell'ebook oltre che nei notebook: sotto i 300 le etichette piccole
     si sgranano sui lettori ad alta densita', sopra si paga peso a ogni copia
     consegnata senza che nessuno veda la differenza.
+
+    Colore: i grigi scritti a mano nei generatori passano ai colori del marchio
+    (`cvbook.tinte`) a schermo e, con `layout.STAMPA_A_COLORI`, anche in stampa.
     """
+    if a_colori(destinazione):
+        from .tinte import tingi
+
+        tingi(fig)
     fig.savefig(percorso, format="png", dpi=600 if destinazione == "stampa" else 300)
     plt.close(fig)
     _appiattisci(percorso, destinazione)
