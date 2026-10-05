@@ -1,6 +1,6 @@
 {
  "prodotto": "vetrina-cicli",
- "generato": "2026-09-28T14:50:43+00:00",
+ "generato": "2026-10-05T03:19:37+00:00",
  "capitoli": [
   "1-01",
   "1-05",
@@ -32,8 +32,8 @@
   },
   {
    "percorso": "codice/figure/libro1_cap05_tre_rilevatori.py",
-   "sha256": "b404b2f86acea42666b01b6744f0824809333244b459a6791da0f0dbbce3cb7c",
-   "byte": 3906
+   "sha256": "8a3d67c7934fa7dedcbb206161d9c3f7b1c196e984541ecbdbea686e777c5a1c",
+   "byte": 4127
   },
   {
    "percorso": "codice/figure/libro2_cap01_attesa_sovrapposizione.py",
@@ -147,8 +147,8 @@
   },
   {
    "percorso": "codice/traduzione/testi_figure_en.json",
-   "sha256": "2737a945703b9d91a386c536de68454499b5328f6c2c5f87da20ef9152bb5dd8",
-   "byte": 79524
+   "sha256": "083687166b63c5037e24baded800a0891b2316b5ae3494ab66c703a0813d22bc",
+   "byte": 80399
   },
   {
    "percorso": "codice/verifica/livelli_sovrapposizione.py",
@@ -167,8 +167,8 @@
   },
   {
    "percorso": "dati/misure/carte-ricerca.json",
-   "sha256": "6913610c6ae495dfda1f00cb386378ad6e225fbef4185252160ccb50fa81ca97",
-   "byte": 70737
+   "sha256": "cb4ded2d80d9a81851940a1e2e167b0aab91c8e9333c12803e34f04d5a50c83b",
+   "byte": 71341
   },
   {
    "percorso": "dati/misure/ciclo-giornaliero.json",

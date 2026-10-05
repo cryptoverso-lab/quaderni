@@ -1,19 +1,19 @@
 {
- "generato": "2026-09-28",
+ "generato": "2026-10-05",
  "fonte": "theory/ di CiclycalResearch: concepts, claims, contraddizioni",
- "commit_ricerca": "ae251dbb",
+ "commit_ricerca": "f8e177fb",
  "nota": "Anagrafica delle carte, non il loro contenuto operativo: di proposito non contiene nulla del rilevatore, delle sue soglie o della sua calibrazione. Il terzo volume cita da qui.",
  "totali": {
-  "carte": 73,
+  "carte": 74,
   "stati": {
    "ADOTTATA": 1,
    "FORMALIZZATA": 9,
-   "TESTATA": 63
+   "TESTATA": 64
   },
   "verdetti": {
-   "CONFERMATA": 25,
-   "FALSIFICATA": 12,
-   "NON_PROVATA": 26,
+   "CONFERMATA": 23,
+   "FALSIFICATA": 11,
+   "NON_PROVATA": 30,
    "NON_TESTABILE": 1
   }
  },
@@ -27,12 +27,12 @@
    ]
   },
   "CyclicalResearch": {
-   "carte": 61,
-   "testate": 53,
+   "carte": 62,
+   "testate": 54,
    "verdetti": {
     "CONFERMATA": 22,
-    "FALSIFICATA": 9,
-    "NON_PROVATA": 21,
+    "FALSIFICATA": 8,
+    "NON_PROVATA": 23,
     "NON_TESTABILE": 1
    },
    "identificativi": [
@@ -94,6 +94,7 @@
     "CR-060",
     "CR-061",
     "CR-062",
+    "CR-063",
     "LG-002",
     "LG-003",
     "LG-004"
@@ -113,9 +114,8 @@
    "carte": 4,
    "testate": 4,
    "verdetti": {
-    "CONFERMATA": 2,
     "FALSIFICATA": 1,
-    "NON_PROVATA": 1
+    "NON_PROVATA": 3
    },
    "identificativi": [
     "CR-012",
@@ -157,7 +157,7 @@
   }
  },
  "per_cartella": {
-  "cyclicalresearch": 61,
+  "cyclicalresearch": 62,
   "hurst": 1,
   "luigi": 4
  },
@@ -472,11 +472,11 @@
    "id": "CR-017",
    "famiglia": "claims",
    "scuola": "cyclicalresearch",
-   "titolo": "I due segnali ribassisti di Elico64 reggono su 3 mercati su 3 e 7 righelli su 9, ma il numero del paper era gonfiato",
+   "titolo": "I segnali ribassisti di Elico64 battono il gruppo di controllo ma non la nulla dello strumento; il paper era gonfiato",
    "autore": "Elico64",
    "autore_grezzo": "Elico64",
    "stato": "TESTATA",
-   "verdetto": "CONFERMATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
    "valore_misurato": "Su H4, base rate dei ribassisti sui cicli padre: 0,426 su BTCUSDT, 0,457 su ETHUSDT, 0,397 su SOLUSDT. Quota di ribassisti fra chi NON rompe presto il minimo di partenza: 0,233 / 0,119 / 0,071 — molto SOTTO il base rate. Quota fra chi rompe presto: 0,554 / 0,683 / 0,600.",
    "file": "claims/cyclicalresearch/CR-017-rotture-ribassiste.md"
@@ -515,7 +515,7 @@
    "autore": "Elico64",
    "autore_grezzo": "Elico64",
    "stato": "TESTATA",
-   "verdetto": "CONFERMATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "gruppo_di_controllo",
    "valore_misurato": "Base rate dei cicli padre rialzisti: 0,571 su BTCUSDT, 0,630 su ETHUSDT, 0,518 su SOLUSDT. Tasso nel gruppo SENZA D>P: 0,444 (36 cicli), 0,311 (45), 0,360 (25). Tasso nel gruppo con D>P: 0,632 (76), 0,824 (74), 0,583 (60). L'inclusione insiemistica NON esiste: verificata falsa su 3 mercati su 3.",
    "file": "claims/cyclicalresearch/CR-020-dp-con-marginale.md"
@@ -1054,6 +1054,19 @@
    "file": "claims/cyclicalresearch/CR-062-fascia-del-ritracciamento-calibrata.md"
   },
   {
+   "id": "CR-063",
+   "famiglia": "claims",
+   "scuola": "cyclicalresearch",
+   "titolo": "Il ritracciamento gia' compiuto dal ciclo in corso non predice quello finale oltre cio' che fa la definizione del ciclo",
+   "autore": "CyclicalResearch",
+   "autore_grezzo": "CyclicalResearch",
+   "stato": "TESTATA",
+   "verdetto": "NON_PROVATA",
+   "nulla": "surrogati",
+   "valore_misurato": "m = 1: 16 celle valutabili su 36; A passa Holm in 10, B in nessuna. m = 3: 6 valutabili, A passa in 6, B in nessuna.",
+   "file": "claims/cyclicalresearch/CR-063-ritracciamento-condizionale-della-definizione.md"
+  },
+  {
    "id": "HU-001",
    "famiglia": "claims",
    "scuola": "hurst",
@@ -1100,7 +1113,7 @@
    "autore": "CyclicalResearch",
    "autore_grezzo": "CyclicalResearch",
    "stato": "TESTATA",
-   "verdetto": "FALSIFICATA",
+   "verdetto": "NON_PROVATA",
    "nulla": "surrogati",
    "valore_misurato": "mediana della nube: q23 0.10-0.82, k=1 0.18-0.90 secondo coppia",
    "file": "claims/luigi/LG-003-phaser-vs-surrogati.md"

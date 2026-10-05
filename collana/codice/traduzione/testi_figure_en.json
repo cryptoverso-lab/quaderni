@@ -95,7 +95,9 @@
     "verifica": "test",
     "vista a mezzogiorno UTC": "seen at noon UTC",
     "$p$ esattamente uno": "$p$ exactly one",
+    "p esattamente uno": "p exactly one",
     "$p$ sotto uno": "$p$ below one",
+    "p sotto uno": "p below one",
     "+ cambio di livello": "+ level change",
     "+ ciclo\ncompresso": "+ compressed\ncycle",
     "+ lettura\ninversa": "+ inverse\nreading",
@@ -190,13 +192,15 @@
     "ancora aperte": "still open",
     "ancora: ultimo minimo confermato": "anchor: last confirmed low",
     "anno": "year",
+    "barre in ordine (tacca alla prima barra di ogni anno)": "bars in order (tick at the first bar of each year)",
+    "barre del motore in ordine (tacca alla prima barra di ogni anno)": "engine bars in order (tick at the first bar of each year)",
     "argento": "silver",
     "armonica vera\n(controllo)": "true harmonic\n(control)",
     "asimmetria di datazione\nfra minimi e massimi": "dating asymmetry\nbetween lows and highs",
     "asimmetria fra minimi e massimi": "asymmetry between lows and highs",
     "asset confrontabili della riga": "comparable assets in the row",
     "asset confrontabili in cui la strategia batte il comprare-e-tenere": "comparable assets where the strategy beats buy-and-hold",
-    "associazione fra figura ed esito": "association between pattern and outcome",
+    "associazione fra figura ed esito": "association between linking figure and outcome",
     "associazione fra regime e durata del ciclo": "association between regime and cycle duration",
     "associazione osservata": "observed association",
     "attesa (barre)": "wait (bars)",
@@ -233,7 +237,7 @@
     "che restano": "remaining",
     "chi ritarda, e di quanto": "who lags, and by how much",
     "chiusura anticipata:\npossibile, ma anomala": "early close:\npossible, but anomalous",
-    "chiusura in finestra:\nil caso atteso": "close inside the window:\nthe expected case",
+    "chiusura in finestra:\nil caso atteso": "in-window close:\nthe expected case",
     "cicli": "cycles",
     "cicli brevi": "short cycles",
     "cicli compatibili con l'attesa (%)": "cycles compatible with the expectation (%)",
@@ -270,7 +274,7 @@
     "composito normalizzato": "normalised composite",
     "con il filtro": "with the filter",
     "con la condizione": "with the condition",
-    "con la figura": "with the pattern",
+    "con la figura": "with the linking figure",
     "condizione contata come successo": "condition counted as a success",
     "confermate": "confirmed",
     "confermati causalmente": "confirmed causally",
@@ -333,7 +337,7 @@
     "falsificate": "falsified",
     "figlio": "child",
     "finestra\ne soglia": "window\nand threshold",
-    "finestra attesa": "expected window",
+    "finestra attesa": "expected\nwindow",
     "finestra di attesa": "waiting window",
     "frequenza di base": "base rate",
     "fuori dal caso": "outside chance",
@@ -372,7 +376,7 @@
     "in frazione del periodo": "as a fraction of the period",
     "in rapporto al riferimento creduto": "relative to the believed reference",
     "incertezza sul periodo (% del periodo)": "uncertainty on the period (% of the period)",
-    "incertezza sulla data della quadratura": "uncertainty on the date of the quartering",
+    "incertezza sulla data della quadratura": "uncertain date of the quartering",
     "incrocio": "crossover",
     "indice italiano — mercato regolamentato": "Italian index — regulated market",
     "indici azionari": "stock indices",
@@ -386,13 +390,14 @@
     "l'autore": "the author",
     "l'imbuto, su tutte le combinazioni": "the funnel, over all combinations",
     "l'insegnamento": "the teaching",
-    "la correlazione fra durata e ampiezza": "the correlation between duration and amplitude",
+    "la correlazione fra durata e ampiezza": "correlation of duration and amplitude",
     "la dispensa": "the course notes",
     "la lingua come cautela": "the tongue as caution",
     "la metà corta": "the short half",
     "la misura dei punti di svolta": "the measurement of turning points",
     "la pendenza della stessa relazione": "the slope of the same relation",
     "la prima ipotesi: falsificata": "the first hypothesis: falsified",
+    "la prima ipotesi: non provata": "the first hypothesis: not proven",
     "la ricerca stessa": "the research itself",
     "la ridondanza del volume": "the redundancy of volume",
     "la seconda ipotesi regge: 7 mercati su dieci usano più di un righello": "the second hypothesis holds: 7 markets out of ten use more than one ruler",
@@ -402,7 +407,7 @@
     "la tolleranza dichiarata": "the declared tolerance",
     "larghezza della finestra, in percento del periodo nominale": "window width, as a percentage of the nominal period",
     "latenza di conferma / periodo del livello": "confirmation latency / period of the level",
-    "le due componenti, ancora al minimo": "the two components, anchored at the low",
+    "le due componenti, ancora al minimo": "two components, anchored at the low",
     "le due linee: venti cicli, il minimo per misurare una dispersione;\ntrenta, il minimo per un confronto con una nulla a surrogati": "the two lines: twenty cycles, the minimum to measure a dispersion;\nthirty, the minimum for a comparison against a surrogate null",
     "le materie prime, una per una": "commodities, one by one",
     "le scuole cicliche": "the cyclical schools",
@@ -459,7 +464,7 @@
     "minimi falsi, stessa durata": "false lows, same duration",
     "minimi trovati su Bitcoin": "lows found on Bitcoin",
     "minimi violati (%)": "lows violated (%)",
-    "minimo centrale il più profondo": "central low the deepest",
+    "minimo centrale il più profondo": "share with the deepest central low",
     "nessun rimando, in cinquant'anni, in nessuna delle due direzioni": "no reference, in fifty years, in either direction",
     "nessuna associazione": "no association",
     "nessuna carta": "no card",
@@ -586,7 +591,7 @@
     "rumore puro": "pure noise",
     "salita e discesa uguali": "rise and fall equal",
     "scala intera (×2, ×3, …)": "whole-number scale (×2, ×3, …)",
-    "scarto dal listino (%)": "deviation from the catalogue (%)",
+    "scarto dal listino (%)": "deviation from\nthe catalogue (%)",
     "scarto dal rumore, in deviazioni standard\n(a sinistra dello zero i mercati veri fanno peggio)": "deviation from noise, in standard deviations\n(to the left of zero the real markets do worse)",
     "scegliere fra mercati": "choosing between markets",
     "scritte, non ancora testate": "written, not yet tested",
@@ -624,12 +629,12 @@
     "statistica dell'esito (unità arbitrarie: lo schema non misura nulla)": "outcome statistic (arbitrary units: the diagram measures nothing)",
     "statistica sulle durate": "statistic on durations",
     "stessa precisione": "same precision",
-    "stretto": "narrow",
+    "stretto": "strict",
     "strutture a quattro tempi\ncaso: 50%": "four-beat structures\nchance: 50%",
     "strutture a tre tempi\ncaso: 75%": "three-beat structures\nchance: 75%",
     "strutture conformi (%)": "conforming structures (%)",
     "surrogati": "surrogates",
-    "surrogati, dal 5° al 95° percentile": "surrogates, from the 5th to the 95th percentile",
+    "surrogati, dal 5° al 95° percentile": "surrogates, 5th to 95th percentile",
     "swing condizionato\nchiusure previste (%)": "conditional swing\ncloses predicted (%)",
     "swing incondizionato": "unconditional swing",
     "swing incondizionato\nBTCUSDT": "unconditional swing\nBTCUSDT",
@@ -686,7 +691,7 @@
     "volatilità dei cicli brevi / volatilità dei cicli lunghi": "volatility of short cycles / volatility of long cycles",
     "volume": "volume",
     "«senza\nritardo»": "«without\nlag»",
-    "«senza ritardo»": "«without lag»",
+    "«senza ritardo»": "«lag-free»",
     "×2": "×2",
     "×3": "×3",
     "√(periodi)": "√(periods)",
@@ -706,7 +711,7 @@
     "deriva favorevole": "favourable drift",
     "deriva sfavorevole": "unfavourable drift",
     "dip di Hartigan sulle stesse durate": "Hartigan's dip on the same durations",
-    "effetto dell'etichetta di lingua (correlazione biseriale di rango)": "effect of the tongue label (rank-biserial correlation)",
+    "effetto dell'etichetta di lingua (correlazione biseriale di rango)": "effect of the linking-figure label (rank-biserial correlation)",
     "effetto misurato": "measured effect",
     "fascia di indistinguibilità dichiarata prima": "indistinguishability band declared beforehand",
     "la moneta: 50%": "the coin: 50%",
@@ -953,7 +958,7 @@
     "cicli normali confermati": "confirmed normal cycles",
     "sei indici azionari, dal 1927": "six stock indices, from 1927",
     "esito mediano\nnell'orizzonte dichiarato": "median outcome\nover the declared horizon",
-    "associazione fra\nfigura ed esito": "association between\npattern and outcome",
+    "associazione fra\nfigura ed esito": "association between\nlinking figure and outcome",
     "132 punti: un mercato a un livello\n67 sopra la diagonale, 65 sotto": "132 points: one market at one level\n67 above the diagonal, 65 below",
     "soglie ±2": "thresholds ±2",
     "le tradizioni, e l'autore": "the traditions, and the author",
@@ -1041,6 +1046,10 @@
     [
       "fuori scala: (T[+-]\\d+), su (\\d+) dei (\\d+) mercati",
       "off the scale: {0}, on {1} of the {2} markets"
+    ],
+    [
+      "fuori scala, oltre il bordo destro: (T[+-]\\d+), su (\\d+) dei (\\d+) mercati",
+      "off the scale, beyond the right edge: {0}, on {1} of the {2} markets"
     ],
     [
       "(\\d+) sostituzioni in (\\d+) giorni",
@@ -1152,7 +1161,7 @@
     ],
     [
       "cicli senza sotto-cicli\\nridondante sopra ([\\d,]+)",
-      "cycles with no sub-cycles\nredundant above {0}"
+      "cycles, no sub-cycles\nredundant above {0}"
     ],
     [
       "rapporto fra le durate\\nridondante sotto ([\\d,]+)",
@@ -1277,6 +1286,14 @@
     [
       "([\\d,]+) contro ([\\d,]+) sul rumore",
       "{0} against {1} on noise"
+    ],
+    [
+      "([\\d,]+)% contro ([\\d,]+)% sul rumore",
+      "{0}% against {1}% on noise"
+    ],
+    [
+      "([\\d,]+) punti contro ([\\d,]+) punti sul rumore",
+      "{0} points against {1} points on noise"
     ],
     [
       "lingua_(\\d+)",
@@ -1508,7 +1525,7 @@
     ],
     [
       "cicli senza sotto-cicli\\nridondante sopra di ([\\d,]+)",
-      "cycles with no sub-cycles\nredundant above {0}"
+      "cycles, no sub-cycles\nredundant above {0}"
     ],
     [
       "rapporto fra le durate\\nridondante sotto di ([\\d,]+)",
@@ -1557,6 +1574,10 @@
     [
       "stazionarietà locale \\((\\d+)\\)",
       "local stationarity ({0})"
+    ],
+    [
+      "stazionarietà, giornaliero \\((\\d+)\\)",
+      "stationarity, daily ({0})"
     ],
     [
       "asimmetria salita-discesa \\((\\d+)\\)",

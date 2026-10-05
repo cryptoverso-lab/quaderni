@@ -70,10 +70,12 @@ def disegna(schermo: bool = False) -> Path:
             [r["accordo"][coppia]["quota_sul_primo_pct"] for r in righe])))
         medie["secondo"].append(float(np.mean(
             [r["accordo"][coppia]["quota_sul_secondo_pct"] for r in righe])))
+    # Tinte che il pannello sinistro non usa: il rosso li' e' «a finestra», e ripetuto qui
+    # per «dalla prima alla seconda» dava alla stessa tinta due significati (04/10/2026).
     destra.bar(base2 - 0.19, medie["primo"], width=0.36, label="dalla prima alla seconda",
-               **layout.riempimento(1, schermo))
-    destra.bar(base2 + 0.19, medie["secondo"], width=0.36, label="dalla seconda alla prima",
                **layout.riempimento(3, schermo))
+    destra.bar(base2 + 0.19, medie["secondo"], width=0.36, label="dalla seconda alla prima",
+               facecolor="white", edgecolor=layout.tinta(3, schermo), linewidth=0.9)
     destra.set_xticks(base2)
     # Etichette corte e fitte: in inglese le tre coppie si toccavano, e l'asse
     # lungo urtava la legenda in alto.
